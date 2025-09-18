@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet" />
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🚚</text></svg>">
-    <link rel="preload" as="image" href="./assets/opek.png?v=2" />
+    <link rel="preload" as="image" href="./assets/Opek.png?v=3" />
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -121,7 +121,13 @@
     <section id="home" class="relative isolate min-h-[96vh] md:min-h-[100vh] grid place-items-center overflow-hidden">
       <!-- Background image (local only) -->
       <div class="absolute inset-0 -z-10">
+<<<<<<< HEAD
         <img id="hero-img" src="./assets/Opek.png?v=2" alt="Opek Moving team with moving truck" class="h-full w-full object-cover object-center lg:object-left" />
+=======
+        <img id="hero-img" src="./assets/Opek.png?v=3" alt="Opek Moving team with moving truck" class="h-full w-full object-cover object-center lg:object-left" />
+        <!-- Dark overlay for readability across all screens -->
+        <div class="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/20"></div>
+>>>>>>> da640cd (site updates)
       </div>
 
       <!-- Decorative shapes removed to prevent color overlay on content -->
@@ -350,19 +356,14 @@
       const iconClose = document.getElementById('icon-close')
       const heroImg = document.getElementById('hero-img')
 
-      function setHeaderSolid(solid) {
-        header.classList.toggle('backdrop-blur', solid)
-        header.classList.toggle('bg-white/80', solid)
-        header.classList.toggle('shadow-lg', solid)
-        header.classList.toggle('border-b', solid)
-        header.classList.toggle('border-white/20', solid)
-        // Adjust nav link colors for contrast
+      function setHeaderSolid(_solid) {
+        // Keep header transparent at all times
+        header.classList.remove('backdrop-blur', 'bg-white/80', 'shadow-lg', 'border-b', 'border-white/20')
+        // Ensure nav links are white for contrast on hero
         const links = document.querySelectorAll('.nav-link')
         links.forEach((l) => {
-          l.classList.toggle('text-white', !solid)
-          l.classList.toggle('hover:text-brand-100', !solid)
-          l.classList.toggle('text-slate-800', solid)
-          l.classList.toggle('hover:text-slate-900', solid)
+          l.classList.add('text-white', 'hover:text-brand-100')
+          l.classList.remove('text-slate-800', 'hover:text-slate-900')
         })
       }
 
@@ -408,9 +409,9 @@
       // Close on escape
       document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeMenu() })
 
-      // Style hooks for reusable links
+      // Style hooks for reusable links (keep white across scroll)
       document.querySelectorAll('.nav-link').forEach((el) => {
-        el.classList.add('text-[15px]', 'font-semibold', 'transition')
+        el.classList.add('text-[15px]', 'font-semibold', 'transition', 'text-white', 'hover:text-brand-100')
       })
       document.querySelectorAll('#mobile-nav .mobile-link').forEach((el) => {
         el.classList.add('block', 'rounded-xl', 'px-4', 'py-3', 'text-[15px]', 'font-semibold', 'text-slate-800', 'hover:bg-slate-100')
