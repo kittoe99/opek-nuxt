@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet" />
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🚚</text></svg>">
+    <link rel="preload" as="image" href="./assets/opek.png" />
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -121,7 +122,7 @@
       <!-- Background image (local only) -->
       <div class="absolute inset-0 -z-10">
         <img id="hero-img" src="./assets/opek.png" alt="Opek Moving team with moving truck" class="h-full w-full object-cover object-center lg:object-left" />
-        <div class="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/20 via-black/10 to-transparent md:from-black/55 md:via-black/30 md:to-black/15"></div>
+        <div class="pointer-events-none absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-transparent lg:from-black/55 lg:via-black/30 lg:to-black/15"></div>
       </div>
 
       <!-- Decorative shapes -->
@@ -378,17 +379,10 @@
 
       if (heroSentinel) io.observe(heroSentinel)
 
-      // Hero image: use local PNG only; if it fails, apply a gentle gradient (no remote fallbacks)
+      // Hero image: static local path; on error, show a gentle gradient (no remote fallbacks)
       if (heroImg) {
         const section = document.getElementById('home')
-        const local = './assets/opek.png'
-        const bust = `${local}?v=${Date.now()}`
-        if (!heroImg.src.includes('assets/opek.png') || !heroImg.src.includes('?v=')) {
-          heroImg.src = bust
-        }
         heroImg.addEventListener('error', () => {
-          // Remove the image if it cannot load and show a gradient background
-          heroImg.remove()
           section && section.classList.add('bg-gradient-to-b', 'from-brand-50', 'to-white')
         }, { once: true })
       }
