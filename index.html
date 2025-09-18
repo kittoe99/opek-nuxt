@@ -102,15 +102,79 @@
       <!-- Mobile Nav Panel -->
       <div id="mobile-nav" class="lg:hidden invisible opacity-0 pointer-events-none transition-all duration-300">
         <div class="mx-4 rounded-2xl bg-white/90 backdrop-blur ring-1 ring-black/5 shadow-elevated">
-          <nav class="px-4 py-4">
-            <ul class="grid gap-2">
-              <li><a class="mobile-link" href="#home">Home</a></li>
-              <li><a class="mobile-link" href="#services">Services</a></li>
-              <li><a class="mobile-link" href="#about">About</a></li>
-              <li><a class="mobile-link" href="#reviews">Reviews</a></li>
-              <li><a class="mobile-link" href="#pricing">Pricing</a></li>
-              <li class="pt-2 border-t border-slate-200"><a class="mobile-link" href="#contact">Contact</a></li>
-              <li><a class="mobile-cta" href="#quote">Get a Quote</a></li>
+          <nav class="px-4 py-4" aria-label="Mobile">
+            <ul class="grid gap-1">
+              <li>
+                <a class="mobile-link" href="#home">
+                  <span class="inline-flex items-center gap-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="h-5 w-5 text-slate-700">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M3 10.5 12 3l9 7.5M4.5 9.75V21h6v-6h3v6h6V9.75"/>
+                    </svg>
+                    <span>Home</span>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a class="mobile-link" href="#services">
+                  <span class="inline-flex items-center gap-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="h-5 w-5 text-slate-700">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 7.5h6.75V3.75H3.75V7.5zm9.75 0h6.75V3.75H13.5V7.5zM3.75 20.25h6.75V9.75H3.75v10.5zm9.75 0h6.75V12.75H13.5V20.25z"/>
+                    </svg>
+                    <span>Services</span>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a class="mobile-link" href="#about">
+                  <span class="inline-flex items-center gap-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="h-5 w-5 text-slate-700">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5zM10.5 9h3v8.25h-3V9z"/>
+                      <circle cx="12" cy="12" r="9"/>
+                    </svg>
+                    <span>About</span>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a class="mobile-link" href="#reviews">
+                  <span class="inline-flex items-center gap-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="h-5 w-5 text-slate-700">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 17.25l-4.33 2.277.828-4.827-3.5-3.41 4.84-.703L12 6l2.162 4.587 4.84.703-3.5 3.41.828 4.827z"/>
+                    </svg>
+                    <span>Reviews</span>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a class="mobile-link" href="#pricing">
+                  <span class="inline-flex items-center gap-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="h-5 w-5 text-slate-700">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v18M7.5 7.5h6a3 3 0 0 1 0 6h-3a3 3 0 0 0 0 6h6"/>
+                    </svg>
+                    <span>Pricing</span>
+                  </span>
+                </a>
+              </li>
+              <li class="pt-2 border-t border-slate-200">
+                <a class="mobile-link" href="#contact">
+                  <span class="inline-flex items-center gap-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="h-5 w-5 text-slate-700">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75A2.25 2.25 0 0 1 4.5 4.5h3.133c.51 0 .985.287 1.22.74l1.2 2.4a1.35 1.35 0 0 1-.298 1.566l-1.38 1.38a12.04 12.04 0 0 0 5.837 5.837l1.38-1.38a1.35 1.35 0 0 1 1.566-.298l2.4 1.2c.453.235.74.71.74 1.22V19.5a2.25 2.25 0 0 1-2.25 2.25H18A15.75 15.75 0 0 1 2.25 6.75z"/>
+                    </svg>
+                    <span>Contact</span>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a class="mobile-cta" href="#quote">
+                  <span class="inline-flex items-center justify-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="h-5 w-5">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 4.5h13.5v9H12L8.25 16.5V13.5H5.25z"/>
+                    </svg>
+                    <span>Get a Quote</span>
+                  </span>
+                </a>
+              </li>
             </ul>
           </nav>
         </div>
