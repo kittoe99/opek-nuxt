@@ -118,7 +118,7 @@
 
     <!-- Hero -->
     <section id="home" class="relative isolate min-h-[96vh] md:min-h-[100vh] grid place-items-center overflow-hidden">
-      <!-- Background image -->
+      <!-- Background image (local only) -->
       <div class="absolute inset-0 -z-10">
         <img id="hero-img" src="./assets/opek.png" alt="Opek Moving team with moving truck" class="h-full w-full object-cover object-center lg:object-left" />
         <div class="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/20 via-black/10 to-transparent md:from-black/55 md:via-black/30 md:to-black/15"></div>
@@ -243,7 +243,7 @@
         </div>
         <div class="relative">
           <div class="relative aspect-[4/3] overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-elevated">
-            <img src="https://images.unsplash.com/photo-1597092451673-c1d82d1377c4?q=80&w=1887&auto=format&fit=crop" alt="Movers carrying boxes" class="h-full w-full object-cover" />
+            <img src="./assets/about.jpg" alt="Movers carrying boxes" class="h-full w-full object-cover" />
           </div>
         </div>
       </div>
@@ -378,29 +378,18 @@
 
       if (heroSentinel) io.observe(heroSentinel)
 
-      // Hero image: keep local PNG, only fall back to remotes if it fails
+      // Hero image: use local PNG only; if it fails, apply a gentle gradient (no remote fallbacks)
       if (heroImg) {
         const section = document.getElementById('home')
         const local = './assets/opek.png'
-        const remote1 = 'https://images.unsplash.com/photo-1587139223878-020a3d524d0f?q=80&w=1974&auto=format&fit=crop'
-        const remote2 = 'https://picsum.photos/id/1084/1600/900'
-
-        // Add a light cache-bust to ensure latest local image is shown
         const bust = `${local}?v=${Date.now()}`
-        if (!heroImg.src.includes('assets/opek.png')) {
-          heroImg.src = bust
-        } else if (!heroImg.src.includes('?v=')) {
+        if (!heroImg.src.includes('assets/opek.png') || !heroImg.src.includes('?v=')) {
           heroImg.src = bust
         }
-
-        heroImg.addEventListener('error', function onErr() {
-          heroImg.removeEventListener('error', onErr)
-          heroImg.src = remote1
-          heroImg.addEventListener('error', () => {
-            heroImg.src = remote2
-            // If even remote fails, set a gentle gradient bg on the section
-            section && section.classList.add('bg-gradient-to-b', 'from-brand-50', 'to-white')
-          }, { once: true })
+        heroImg.addEventListener('error', () => {
+          // Remove the image if it cannot load and show a gradient background
+          heroImg.remove()
+          section && section.classList.add('bg-gradient-to-b', 'from-brand-50', 'to-white')
         }, { once: true })
       }
 
