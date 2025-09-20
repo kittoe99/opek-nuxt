@@ -19,16 +19,16 @@
           extend: {
             colors: {
               brand: {
-                50: '#ecfdf5',
-                100: '#d1fae5',
-                200: '#a7f3d0',
-                300: '#6ee7b7',
-                400: '#34d399',
-                500: '#10b981',
-                600: '#059669',
-                700: '#047857',
-                800: '#065f46',
-                900: '#064e3b'
+                50: '#e9fbf1',
+                100: '#c9f5de',
+                200: '#95eac0',
+                300: '#5adf9f',
+                400: '#25d07f',
+                500: '#0ea05a',
+                600: '#0a8a4c',
+                700: '#066f3e',
+                800: '#055832',
+                900: '#034428'
               }
             },
             boxShadow: {
@@ -50,18 +50,8 @@
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="flex h-20 items-center justify-between">
           <!-- Brand -->
-          <a href="#" class="group inline-flex items-center gap-3">
-            <span class="inline-grid h-10 w-10 place-items-center rounded-xl bg-white/90 ring-1 ring-black/5 shadow-elevated backdrop-blur group-hover:scale-105 transition">
-              <!-- Truck logo icon -->
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="h-6 w-6 text-brand-700">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 7.5h9.75v6.75H2.25zM12 10.5h4.628a2.25 2.25 0 0 1 1.8.9l1.697 2.265a2.25 2.25 0 0 1 .425 1.312V14.25a1.5 1.5 0 0 0-1.5-1.5H12V10.5z"/>
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 18.75a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm10.5 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
-              </svg>
-            </span>
-            <div class="flex flex-col">
-              <span class="text-xl font-extrabold tracking-tight">Opek Moving LLC</span>
-              <span class="text-xs text-slate-500 -mt-0.5">Move easy. Move happy.</span>
-            </div>
+          <a href="#" class="group inline-flex items-center">
+            <img src="./assets/opek-logo.png" alt="Opek Moving LLC logo" class="h-20 lg:h-24 w-auto object-contain" />
           </a>
 
           <!-- Desktop Nav -->
@@ -78,7 +68,7 @@
 
           <!-- CTAs -->
           <div class="hidden lg:flex items-center gap-4">
-            <a href="#contact" class="inline-flex items-center gap-2 rounded-xl px-4 py-2 text-sm font-semibold text-slate-700 hover:text-slate-900 transition">
+            <a href="#contact" class="inline-flex items-center gap-2 rounded-xl px-4 py-2 text-sm font-semibold text-white hover:text-brand-100 transition">
               <span class="i">Call us</span>
             </a>
             <a href="#quote" class="inline-flex items-center gap-2 rounded-xl bg-brand-600 px-5 py-2.5 text-sm font-semibold text-white shadow-elevated hover:bg-brand-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-400 focus-visible:ring-offset-2 focus-visible:ring-offset-white transition">
@@ -438,11 +428,38 @@
       </div>
     </section>
 
-    <footer id="contact" class="border-t border-slate-200 py-10">
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div class="flex flex-col items-center justify-between gap-6 sm:flex-row">
-          <p class="text-sm text-slate-500">© <span id="year"></span> Opek Moving LLC. All rights reserved.</p>
-          <div class="text-sm text-slate-600">Call: <a href="tel:+1234567890" class="font-semibold text-brand-700 hover:text-brand-800">(123) 456-7890</a></div>
+    <footer id="contact" class="mt-20 bg-black text-white">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+        <!-- Top row: Logo + Nav -->
+        <div class="flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
+          <!-- Logo -->
+          <a href="#home" class="inline-flex items-center gap-3">
+            <img src="./assets/opek-logo.png" alt="Opek Moving LLC logo" class="h-20 w-auto object-contain" />
+            <span class="sr-only">Opek Moving LLC</span>
+          </a>
+
+          <!-- Footer Nav (same as header) -->
+          <nav aria-label="Footer" class="-ml-2">
+            <ul class="flex flex-wrap items-center gap-x-6 gap-y-3">
+              <li><a href="#home" class="text-sm font-semibold text-white/90 hover:text-white">Home</a></li>
+              <li><a href="#services" class="text-sm font-semibold text-white/90 hover:text-white">Services</a></li>
+              <li><a href="#about" class="text-sm font-semibold text-white/90 hover:text-white">About</a></li>
+              <li><a href="#reviews" class="text-sm font-semibold text-white/90 hover:text-white">Reviews</a></li>
+              <li><a href="#pricing" class="text-sm font-semibold text-white/90 hover:text-white">Pricing</a></li>
+              <li><a href="#contact" class="text-sm font-semibold text-white/90 hover:text-white">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- Divider -->
+        <div class="mt-8 h-px w-full bg-white/10"></div>
+
+        <!-- Bottom row: Copy + Contact -->
+        <div class="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+          <p class="text-sm text-white/60">© <span id="year"></span> Opek Moving LLC. All rights reserved.</p>
+          <div class="text-sm text-white/80">
+            Call: <a href="tel:+1234567890" class="font-semibold text-white hover:text-brand-300">(123) 456-7890</a>
+          </div>
         </div>
       </div>
     </footer>
@@ -457,10 +474,20 @@
       const iconClose = document.getElementById('icon-close')
       const heroImg = document.getElementById('hero-img')
 
-      function setHeaderSolid(_solid) {
-        // Keep header transparent at all times
-        header.classList.remove('backdrop-blur', 'bg-white/80', 'shadow-lg', 'border-b', 'border-white/20')
-        // Ensure nav links are white for contrast on hero
+      function setHeaderSolid(solid) {
+        // Toggle dark background when scrolled past hero; transparent over hero
+        const solidClasses = ['bg-black/80', 'backdrop-blur', 'shadow-lg', 'ring-1', 'ring-black/10']
+        const transparentClasses = ['bg-transparent', 'ring-0', 'shadow-none']
+
+        if (solid) {
+          header.classList.add(...solidClasses)
+          header.classList.remove(...transparentClasses)
+        } else {
+          header.classList.remove(...solidClasses)
+          header.classList.add(...transparentClasses)
+        }
+
+        // Keep nav links white for readability on both hero and dark header
         const links = document.querySelectorAll('.nav-link')
         links.forEach((l) => {
           l.classList.add('text-white', 'hover:text-brand-100')
