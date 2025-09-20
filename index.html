@@ -216,24 +216,65 @@
             </a>
           </div>
 
-          <!-- Trust badges -->
-          <div class="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-4">
-            <div class="rounded-xl bg-white/10 px-4 py-3 ring-1 ring-white/20 backdrop-blur">
-              <p class="text-2xl font-extrabold">1k+</p>
-              <p class="text-xs text-white/80">Moves Completed</p>
-            </div>
-            <div class="rounded-xl bg-white/10 px-4 py-3 ring-1 ring-white/20 backdrop-blur">
-              <p class="text-2xl font-extrabold">4.9★</p>
-              <p class="text-xs text-white/80">Average Rating</p>
-            </div>
-            <div class="rounded-xl bg-white/10 px-4 py-3 ring-1 ring-white/20 backdrop-blur">
-              <p class="text-2xl font-extrabold">On-time</p>
-              <p class="text-xs text-white/80">Reliable Scheduling</p>
-            </div>
-            <div class="rounded-xl bg-white/10 px-4 py-3 ring-1 ring-white/20 backdrop-blur">
-              <p class="text-2xl font-extrabold">Insured</p>
-              <p class="text-xs text-white/80">Licensed & Covered</p>
-            </div>
+          <!-- Trust badges (solid design) -->
+          <div class="mt-10 rounded-2xl bg-white border border-slate-200 shadow-elevated">
+            <ul class="grid grid-cols-2 sm:grid-cols-4 divide-y sm:divide-y-0 sm:divide-x divide-slate-200">
+              <!-- Moves Completed -->
+              <li class="flex items-center gap-4 p-4 sm:p-5">
+                <span class="inline-grid h-10 w-10 place-items-center rounded-full bg-brand-50 text-brand-700 ring-1 ring-brand-100">
+                  <!-- Truck icon -->
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="h-5 w-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 7.5h9.75v6.75H2.25zM12 10.5h4.628a2.25 2.25 0 0 1 1.8.9l1.697 2.265a2.25 2.25 0 0 1 .425 1.312V14.25a1.5 1.5 0 0 0-1.5-1.5H12V10.5z"/>
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 18.75a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm10.5 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                  </svg>
+                </span>
+                <div>
+                  <p class="text-lg font-extrabold leading-tight text-slate-900">1k+</p>
+                  <p class="text-xs text-slate-600">Moves Completed</p>
+                </div>
+              </li>
+              <!-- Average Rating -->
+              <li class="flex items-center gap-4 p-4 sm:p-5">
+                <span class="inline-grid h-10 w-10 place-items-center rounded-full bg-yellow-50 text-yellow-700 ring-1 ring-yellow-100">
+                  <!-- Star icon -->
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="h-5 w-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 17.25l-4.33 2.277.828-4.827-3.5-3.41 4.84-.703L12 6l2.162 4.587 4.84.703-3.5 3.41.828 4.827z"/>
+                  </svg>
+                </span>
+                <div>
+                  <p class="text-lg font-extrabold leading-tight text-slate-900">4.9★</p>
+                  <p class="text-xs text-slate-600">Average Rating</p>
+                </div>
+              </li>
+              <!-- Reliable Scheduling -->
+              <li class="flex items-center gap-4 p-4 sm:p-5">
+                <span class="inline-grid h-10 w-10 place-items-center rounded-full bg-sky-50 text-sky-700 ring-1 ring-sky-100">
+                  <!-- Clock icon -->
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="h-5 w-5">
+                    <circle cx="12" cy="12" r="9"/>
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 7.5v5l3 1.5"/>
+                  </svg>
+                </span>
+                <div>
+                  <p class="text-lg font-extrabold leading-tight text-slate-900">On-time</p>
+                  <p class="text-xs text-slate-600">Reliable Scheduling</p>
+                </div>
+              </li>
+              <!-- Licensed & Covered -->
+              <li class="flex items-center gap-4 p-4 sm:p-5">
+                <span class="inline-grid h-10 w-10 place-items-center rounded-full bg-indigo-50 text-indigo-700 ring-1 ring-indigo-100">
+                  <!-- Shield icon -->
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="h-5 w-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 3l7.5 3v5.25c0 4.97-3.41 9.48-7.5 10.5-4.09-1.02-7.5-5.53-7.5-10.5V6L12 3z"/>
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 12l1.5 1.5 3-3"/>
+                  </svg>
+                </span>
+                <div>
+                  <p class="text-lg font-extrabold leading-tight text-slate-900">Insured</p>
+                  <p class="text-xs text-slate-600">Licensed & Covered</p>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
