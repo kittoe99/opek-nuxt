@@ -474,8 +474,6 @@
       const heroImg = document.getElementById('hero-img')
 
       function setHeaderSolid(solid) {
-        // On small screens, keep header fully transparent always
-        if (window.innerWidth < 768) solid = false
         // Toggle dark background when scrolled past hero; transparent over hero
         const solidClasses = ['bg-black/80', 'shadow-lg', 'ring-1', 'ring-black/10']
         const transparentClasses = ['bg-transparent', 'ring-0', 'shadow-none']
