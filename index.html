@@ -325,19 +325,75 @@
     </section>
 
     <section id="about" class="py-20 sm:py-24 bg-slate-50">
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid gap-10 lg:grid-cols-2 lg:items-center">
-        <div>
-          <h2 class="text-3xl font-extrabold tracking-tight sm:text-4xl">About Opek Moving</h2>
-          <p class="mt-4 text-slate-600">We started with a simple goal: make moving day something you can actually look forward to. Our trained team shows up prepared, communicates clearly, and treats your belongings like their own.</p>
-          <ul class="mt-6 grid gap-3 text-sm text-slate-700">
-            <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-emerald-500"></span> Transparent, up-front pricing</li>
-            <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-emerald-500"></span> Clean trucks and equipment</li>
-            <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-emerald-500"></span> Friendly, background-checked pros</li>
-          </ul>
-        </div>
-        <div class="relative">
-          <div class="relative aspect-[4/3] overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-elevated">
-            <img src="./assets/about.jpg" alt="Movers carrying boxes" class="h-full w-full object-cover" />
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="grid gap-12 lg:grid-cols-12 lg:items-center">
+          <!-- Left: Copy -->
+          <div class="lg:col-span-6">
+            <span class="inline-flex items-center gap-2 rounded-full bg-brand-50 px-3 py-1 text-xs font-semibold text-brand-700 ring-1 ring-brand-100">Trusted local movers</span>
+            <h2 class="mt-4 text-3xl font-extrabold tracking-tight sm:text-4xl">About Opek Moving</h2>
+            <p class="mt-4 text-slate-600">We believe moving day should feel calm and organized. Our trained team arrives on time with the right tools, protects your home, and communicates every step so you always know what’s next.</p>
+
+            <!-- Feature list -->
+            <ul class="mt-6 grid gap-3 text-sm text-slate-700">
+              <li class="flex items-start gap-3">
+                <span class="inline-grid h-6 w-6 place-items-center rounded-full bg-brand-50 text-brand-700 ring-1 ring-brand-100">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="h-4 w-4"><path stroke-linecap="round" stroke-linejoin="round" d="M5.25 12.75 9 16.5l9.75-9.75"/></svg>
+                </span>
+                Transparent, up‑front pricing with no surprises
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="inline-grid h-6 w-6 place-items-center rounded-full bg-brand-50 text-brand-700 ring-1 ring-brand-100">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="h-4 w-4"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 12l3 3 13.5-9"/></svg>
+                </span>
+                Clean trucks, pads, and equipment on every job
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="inline-grid h-6 w-6 place-items-center rounded-full bg-brand-50 text-brand-700 ring-1 ring-brand-100">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="h-4 w-4"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5zM10.5 9h3v8.25h-3V9z"/><circle cx="12" cy="12" r="9"/></svg>
+                </span>
+                Friendly, background‑checked pros who care
+              </li>
+            </ul>
+
+            <!-- Stats strip -->
+            <div class="mt-8 rounded-2xl bg-white ring-1 ring-slate-200 p-4">
+              <ul class="grid grid-cols-3 divide-x divide-slate-200 text-center">
+                <li>
+                  <p class="text-xl font-extrabold text-slate-900">1k+</p>
+                  <p class="text-xs text-slate-600">Moves</p>
+                </li>
+                <li>
+                  <p class="text-xl font-extrabold text-slate-900">4.9★</p>
+                  <p class="text-xs text-slate-600">Average</p>
+                </li>
+                <li>
+                  <p class="text-xl font-extrabold text-slate-900">On‑time</p>
+                  <p class="text-xs text-slate-600">Scheduling</p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="mt-6 flex items-center gap-3">
+              <a href="#quote" class="inline-flex items-center gap-2 rounded-xl bg-brand-600 px-5 py-2.5 text-sm font-semibold text-white shadow-elevated hover:bg-brand-700">Get A Quote</a>
+              <a href="#reviews" class="text-sm font-semibold text-slate-700 hover:text-slate-900">Read reviews →</a>
+            </div>
+          </div>
+
+          <!-- Right: Collage -->
+          <div class="lg:col-span-6">
+            <div class="relative">
+              <!-- Main image -->
+              <div class="relative aspect-[4/3] overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-elevated">
+                <img src="./assets/about.jpg" alt="Movers carrying boxes" class="h-full w-full object-cover" />
+              </div>
+              <!-- Floating secondary -->
+              <div class="absolute -bottom-6 -right-4 w-40 sm:w-48 rounded-2xl border border-slate-200 bg-white p-2 shadow-elevated">
+                <img src="./assets/Opek.png?v=3" alt="Opek truck" class="h-28 w-full object-cover rounded-xl" />
+                <div class="mt-2 text-center">
+                  <p class="text-xs font-semibold text-slate-700">Our crew, ready to go</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
