@@ -87,6 +87,12 @@
           animation: shimmer 3s ease-in-out infinite;
         }
       }
+
+      /* Mobile-specific adjustments */
+      @media (max-width: 640px) {
+        /* Reduce hero height on small screens */
+        #home { min-height: 70vh; }
+      }
     </style>
   </head>
   <body class="min-h-full bg-white text-slate-800 selection:bg-brand-200/60">
