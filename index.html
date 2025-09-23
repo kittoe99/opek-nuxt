@@ -267,7 +267,7 @@
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="reveal relative rounded-3xl border border-slate-200 bg-white/90 backdrop-blur p-4 sm:p-6 lg:p-8 shadow-elevated max-w-xl sm:max-w-2xl mx-auto">
           <div class="mb-3 sm:mb-4 text-center">
-            <h3 class="text-lg sm:text-xl font-extrabold tracking-tight text-slate-900">Instant pricing by text</h3>
+            <h3 class="text-lg sm:text-xl font-extrabold tracking-tight text-slate-900">Get Instant Pricing</h3>
             <p class="mt-1 text-sm text-slate-600">Enter your mobile number and we’ll send a quick estimate link.</p>
           </div>
           <form id="sms-quote-form" class="grid gap-3 sm:grid-cols-[1fr_auto] items-center" novalidate>
@@ -336,7 +336,12 @@
                 <li class="inline-flex items-center rounded-full bg-brand-50 text-brand-700 ring-1 ring-brand-100 px-3 py-1 text-sm hover:bg-brand-100 transition">Longmont</li>
               </ul>
               <div class="mt-6">
-                <a href="#quote" class="inline-flex items-center gap-2 rounded-xl bg-brand-600 px-5 py-2.5 text-sm font-semibold text-white shadow-elevated hover:bg-brand-700">Check availability</a>
+                <a href="#quote" class="inline-flex items-center gap-2 rounded-xl bg-brand-600 px-5 py-2.5 text-sm font-semibold text-white shadow-elevated hover:bg-brand-700">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-4 w-4" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75 9 17.25 19.5 6.75" />
+                  </svg>
+                  <span>Check availability</span>
+                </a>
               </div>
             </div>
           </div>
@@ -375,45 +380,38 @@
           <p class="mt-3 text-slate-600">Local moves, long-distance, packing and unpacking, labor-only, office relocations, and more.</p>
         </div>
         <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          <!-- Card -->
-          <article class="group reveal rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:shadow-elevated">
-            <div class="flex items-center gap-3">
-              <span class="inline-grid h-11 w-11 place-items-center rounded-xl bg-brand-50 text-brand-700 ring-1 ring-brand-100">
-                <!-- Home icon -->
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="h-6 w-6">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 10.5 12 3l9 7.5M4.5 9.75V21h6v-6h3v6h6V9.75"/>
-                </svg>
-              </span>
-              <h3 class="text-lg font-bold">Residential Moving</h3>
+          <!-- Card 1: Residential -->
+          <article class="group reveal relative overflow-hidden rounded-2xl p-6 shadow-elevated transition bg-center bg-cover" style="background-image: url('./assets/Opek.png'); background-position: 50% 35%;">
+            <div class="absolute inset-0 bg-black/50 group-hover:bg-black/60 transition"></div>
+            <div class="relative">
+              <h3 class="text-lg font-extrabold text-white">Residential Moving</h3>
+              <p class="mt-3 text-sm text-white/90 max-w-[38ch]">Careful handling, clean pads, and efficient loading—from studios to family homes.</p>
+              <a href="#quote" class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-white hover:text-brand-100">
+                Get a quote →
+              </a>
             </div>
-            <p class="mt-3 text-sm text-slate-600">Careful handling, clean pads, and efficient loading—from studios to family homes.</p>
-            <a href="#quote" class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-brand-700 hover:text-brand-800">Get a quote →</a>
           </article>
-          <article class="group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:shadow-elevated">
-            <div class="flex items-center gap-3">
-              <span class="inline-grid h-11 w-11 place-items-center rounded-xl bg-brand-50 text-brand-700 ring-1 ring-brand-100">
-                <!-- Office building icon -->
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="h-6 w-6">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M6 21V3.75h9V21M9 6.75h3m-3 4.5h3m-3 4.5h3M15 9h3v12"/>
-                </svg>
-              </span>
-              <h3 class="text-lg font-bold">Commercial Moving</h3>
+          <!-- Card 2: Commercial -->
+          <article class="group relative overflow-hidden rounded-2xl p-6 shadow-elevated transition bg-center bg-cover" style="background-image: url('./assets/Opek.png'); background-position: center;">
+            <div class="absolute inset-0 bg-black/50 group-hover:bg-black/60 transition"></div>
+            <div class="relative">
+              <h3 class="text-lg font-extrabold text-white">Commercial Moving</h3>
+              <p class="mt-3 text-sm text-white/90 max-w-[38ch]">Minimal downtime, organized labeling, and protective materials for equipment.</p>
+              <a href="#quote" class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-white hover:text-brand-100">
+                Plan a move →
+              </a>
             </div>
-            <p class="mt-3 text-sm text-slate-600">Minimal downtime, organized labeling, and protective materials for equipment.</p>
-            <a href="#quote" class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-brand-700 hover:text-brand-800">Plan a move →</a>
           </article>
-          <article class="group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:shadow-elevated">
-            <div class="flex items-center gap-3">
-              <span class="inline-grid h-11 w-11 place-items-center rounded-xl bg-brand-50 text-brand-700 ring-1 ring-brand-100">
-                <!-- Box icon -->
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="h-6 w-6">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.375 7.5 12 12l8.625-4.5M3.375 7.5 12 3l8.625 4.5M3.375 7.5V16.5L12 21l8.625-4.5V7.5"/>
-                </svg>
-              </span>
-              <h3 class="text-lg font-bold">Packing Services</h3>
+          <!-- Card 3: Packing -->
+          <article class="group relative overflow-hidden rounded-2xl p-6 shadow-elevated transition bg-center bg-cover" style="background-image: url('./assets/Opek.png'); background-position: 50% 65%;">
+            <div class="absolute inset-0 bg-black/50 group-hover:bg-black/60 transition"></div>
+            <div class="relative">
+              <h3 class="text-lg font-extrabold text-white">Packing Services</h3>
+              <p class="mt-3 text-sm text-white/90 max-w-[38ch]">Full and partial packing with sturdy boxes and eco-friendly materials.</p>
+              <a href="#quote" class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-white hover:text-brand-100">
+                Add packing →
+              </a>
             </div>
-            <p class="mt-3 text-sm text-slate-600">Full and partial packing with sturdy boxes and eco-friendly materials.</p>
-            <a href="#quote" class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-brand-700 hover:text-brand-800">Add packing →</a>
           </article>
         </div>
       </div>
