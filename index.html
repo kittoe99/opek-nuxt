@@ -92,6 +92,9 @@
       @media (max-width: 640px) {
         /* Reduce hero height on small screens */
         #home { min-height: 70vh; }
+
+        /* Shorten footer on small screens */
+        footer#contact > div { padding-top: 1.25rem; padding-bottom: 1.25rem; }
       }
     </style>
   </head>
@@ -257,6 +260,42 @@
 
       <!-- Intersection sentinel to switch nav bg after hero -->
       <div id="hero-sentinel" class="absolute bottom-0 left-0 right-0 h-1"></div>
+    </section>
+
+    <!-- SMS Instant Pricing Form -->
+    <section id="sms-quote" class="relative mt-6 md:mt-8">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="reveal relative rounded-3xl border border-slate-200 bg-white/90 backdrop-blur p-4 sm:p-6 lg:p-8 shadow-elevated max-w-xl sm:max-w-2xl mx-auto">
+          <div class="mb-3 sm:mb-4 text-center">
+            <h3 class="text-lg sm:text-xl font-extrabold tracking-tight text-slate-900">Instant pricing by text</h3>
+            <p class="mt-1 text-sm text-slate-600">Enter your mobile number and we’ll send a quick estimate link.</p>
+          </div>
+          <form id="sms-quote-form" class="grid gap-3 sm:grid-cols-[1fr_auto] items-center" novalidate>
+            <label for="phone" class="sr-only">Phone number</label>
+            <input
+              id="phone"
+              name="phone"
+              type="tel"
+              inputmode="tel"
+              autocomplete="tel"
+              placeholder="Enter your mobile number"
+              class="w-full rounded-2xl border-slate-300 px-4 py-3 text-base shadow-sm focus:border-brand-500 focus:ring-brand-500"
+              pattern="^[0-9()+\\-\\s]{7,}$"
+              aria-describedby="sms-help"
+              required
+            />
+            <button type="submit" class="inline-flex items-center justify-center gap-2 rounded-2xl bg-brand-600 px-5 py-3 text-sm font-semibold text-white shadow-elevated hover:bg-brand-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-400 focus-visible:ring-offset-2 focus-visible:ring-offset-white">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-4 w-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M22 12a10 10 0 1 1-4.22-8.2"/>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M22 12A6 6 0 0 1 9.27 15.27L7 17l1.73-2.27A6 6 0 0 1 22 12z"/>
+              </svg>
+              Text me pricing
+            </button>
+          </form>
+          <p id="sms-help" class="mt-2 text-xs text-slate-500">By submitting, you agree to receive a one-time SMS with pricing. No spam.</p>
+          <p id="sms-feedback" class="mt-2 hidden text-sm font-semibold" role="status" aria-live="polite"></p>
+        </div>
+      </div>
     </section>
 
     <!-- Service Areas -->
@@ -681,6 +720,42 @@
           reveals.forEach((el) => revealObserver.observe(el))
         }
       } catch (_) { /* no-op */ }
+
+      // SMS instant pricing form
+      const smsForm = document.getElementById('sms-quote-form')
+      if (smsForm) {
+        const phoneInput = document.getElementById('phone')
+        const feedback = document.getElementById('sms-feedback')
+        smsForm.addEventListener('submit', (e) => {
+          e.preventDefault()
+          const raw = phoneInput.value.trim()
+          const digits = raw.replace(/[^0-9]/g, '')
+          // Basic validation: at least 10 digits
+          if (digits.length < 10) {
+            feedback.classList.remove('hidden')
+            feedback.classList.remove('text-brand-700')
+            feedback.classList.add('text-red-600')
+            feedback.textContent = 'Please enter a valid mobile number.'
+            phoneInput.focus()
+            return
+          }
+
+          const submitBtn = smsForm.querySelector('button[type="submit"]')
+          submitBtn.disabled = true
+          submitBtn.classList.add('opacity-70', 'cursor-not-allowed')
+
+          // Simulate async request
+          setTimeout(() => {
+            feedback.classList.remove('hidden')
+            feedback.classList.remove('text-red-600')
+            feedback.classList.add('text-brand-700')
+            feedback.textContent = "Thanks! We'll text you pricing shortly."
+            submitBtn.disabled = false
+            submitBtn.classList.remove('opacity-70', 'cursor-not-allowed')
+            smsForm.reset()
+          }, 800)
+        })
+      }
 
       // Current year
       document.getElementById('year').textContent = new Date().getFullYear()
