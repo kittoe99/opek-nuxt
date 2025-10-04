@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Packing Services | Opek Moving</title>
   <meta name="description" content="Packing services in Denver: full-service or partial packing, fragile care, and unpacking options. Sturdy boxes, wardrobe cartons, and debris removal." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -18,11 +21,45 @@
   }
   </script>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#e9fbf1',
+              100: '#c9f5de',
+              200: '#95eac0',
+              300: '#5adf9f',
+              400: '#25d07f',
+              500: '#0ea05a',
+              600: '#0a8a4c',
+              700: '#066f3e',
+              800: '#055832',
+              900: '#034428'
+            }
+          },
+          fontFamily: {
+            sans: ['Manrope', 'system-ui', 'sans-serif'],
+            display: ['Poppins', 'Manrope', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
   <style>
-    html { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
-    .bg-brand-600 { background-color: #2563eb; }
-    .bg-brand-700 { background-color: #1d4ed8; }
-    . { box-shadow: 0 10px 20px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    html { 
+      -webkit-font-smoothing: antialiased; 
+      -moz-osx-font-smoothing: grayscale;
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Manrope', system-ui, -apple-system, sans-serif;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Poppins', 'Manrope', system-ui, sans-serif;
+      letter-spacing: -0.02em;
+    }
   </style>
 </head>
 <body class="bg-white text-slate-900">
@@ -63,173 +100,277 @@
     </div>
   </header>
 
-  <!-- Hero -->
-  <section class="relative min-h-[60vh] grid place-items-center overflow-hidden bg-black">
-    <img src="./assets/Opek.png" alt="Packing services" class="absolute inset-0 h-full w-full object-cover opacity-70" />
-    <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/70"></div>
-    <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 w-full">
-      <nav aria-label="Breadcrumb" class="text-white/80 text-xs sm:text-sm">
+  <!-- Page Hero -->
+  <section class="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 py-16 sm:py-20">
+    <img src="./assets/Opek.png" alt="Packing services with Opek" class="absolute inset-0 h-full w-full object-cover opacity-30" />
+    <div class="absolute inset-0 bg-gradient-to-b from-black/50 to-black/60"></div>
+    <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <!-- Breadcrumbs -->
+      <nav aria-label="Breadcrumb" class="text-white/70 text-sm mb-6">
         <ol class="flex items-center gap-2">
-          <li><a href="./index.html#home" class="hover:text-white">Home</a></li><li>/</li>
-          <li><a href="./index.html#services" class="hover:text-white">Services</a></li><li>/</li>
-          <li class="text-white">Packing Services</li>
+          <li><a href="./index.html#home" class="hover:text-white transition">Home</a></li>
+          <li><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></li>
+          <li><a href="./index.html#services" class="hover:text-white transition">Services</a></li>
+          <li><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></li>
+          <li class="text-white font-medium">Packing Services</li>
         </ol>
       </nav>
-      <div class="mt-6 sm:mt-8 max-w-2xl">
-        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white">Packing Services</h1>
-        <p class="mt-4 text-white/90 text-base sm:text-lg max-w-prose">Full and partial packing with quality materials. We protect fragile items, label boxes clearly, and can unpack so you’re settled quickly.</p>
+
+      <div class="max-w-3xl">
+        <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-white leading-tight font-display">
+          Packing Services
+        </h1>
+        <p class="mt-4 text-lg text-white/90">
+          Professional packing services with quality materials for homes and offices across Denver.
+        </p>
         <div class="mt-8 flex flex-col sm:flex-row gap-3">
-          <a href="./index.html#sms-quote" class="inline-flex items-center justify-center gap-2 rounded-xl bg-brand-600 px-6 py-3 text-sm font-semibold text-white hover:bg-brand-700 transition">Get Instant Pricing</a>
-          <a href="./index.html#quote" class="inline-flex items-center justify-center gap-2 rounded-xl bg-white/10 px-6 py-3 text-sm font-semibold text-white border border-white/40 hover:bg-white/20 transition">Request full quote</a>
+          <a href="./index.html#sms-quote" class="inline-flex items-center justify-center gap-2 rounded-xl bg-brand-600 px-6 py-3 text-sm font-bold text-white hover:bg-brand-700 transition">
+            Get Instant Pricing
+          </a>
+          <a href="./index.html#quote" class="inline-flex items-center justify-center gap-2 rounded-xl bg-white/10 backdrop-blur-sm px-6 py-3 text-sm font-bold text-white border border-white/30 hover:bg-white/20 transition">
+            Request Quote
+          </a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Offerings (moved up to mirror Residential highlights) -->
-  <section class="py-16 sm:py-20">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        <article class="relative group">
-          <div class="absolute -inset-0.5 bg-gradient-to-br from-brand-600 to-brand-500 rounded-2xl opacity-0 group-hover:opacity-100 transition duration-300"></div>
-          <div class="relative rounded-2xl border border-slate-200 bg-white p-6">
-            <h3 class="text-lg font-extrabold">Full-service packing</h3>
-            <p class="mt-2 text-sm text-slate-600">We bring boxes and materials, pack everything safely, and label clearly for fast setup.</p>
+  
+  <!-- Services spectrum -->
+  <section class="py-16 bg-white">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-10 items-center">
+        <!-- Left: Image -->
+        <div class="relative">
+          <div class="aspect-[4/5] rounded-xl overflow-hidden">
+            <img src="./assets/Opek.png" alt="Professional packing services" class="w-full h-full object-cover" />
           </div>
-        </article>
-        <article class="relative group">
-          <div class="absolute -inset-0.5 bg-gradient-to-br from-brand-600 to-brand-500 rounded-2xl opacity-0 group-hover:opacity-100 transition duration-300"></div>
-          <div class="relative rounded-2xl border border-slate-200 bg-white p-6">
-            <h3 class="text-lg font-extrabold">Fragile-only</h3>
-            <p class="mt-2 text-sm text-slate-600">Glassware, dishes, and art packed with extra care and cushioning.</p>
+          <div class="absolute -bottom-4 -right-4 bg-brand-600 text-white rounded-xl p-4 shadow-lg">
+            <div class="text-2xl font-bold">4.9★</div>
+            <div class="text-xs font-medium">Rating</div>
           </div>
-        </article>
-        <article class="relative group">
-          <div class="absolute -inset-0.5 bg-gradient-to-br from-brand-600 to-brand-500 rounded-2xl opacity-0 group-hover:opacity-100 transition duration-300"></div>
-          <div class="relative rounded-2xl border border-slate-200 bg-white p-6">
-            <h3 class="text-lg font-extrabold">Unpacking & placement</h3>
-            <p class="mt-2 text-sm text-slate-600">We unpack, remove debris, and place items where you want them.</p>
+        </div>
+
+        <!-- Right: Services -->
+        <div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900 font-display">Our Packing Services</h2>
+          <div class="mt-3 h-1 w-16 rounded-full bg-gradient-to-r from-brand-500 to-brand-600"></div>
+          <p class="mt-4 text-base text-slate-600">From full-home packing to fragile-only care—we handle it all.</p>
+
+          <div class="mt-8 space-y-3">
+            <!-- Full Service -->
+            <div class="group relative bg-gradient-to-r from-brand-50 to-white rounded-lg p-4 border-l-4 border-brand-600 hover:shadow-md transition-all duration-300">
+              <div class="flex items-start gap-3">
+                <div class="flex-shrink-0 w-10 h-10 rounded-lg bg-brand-600 text-white flex items-center justify-center">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/>
+                  </svg>
+                </div>
+                <div class="flex-1">
+                  <h3 class="text-base font-bold text-slate-900 mb-1 font-display">Full-Service Packing</h3>
+                  <p class="text-sm text-slate-600">Complete packing with quality materials and clear labeling.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Fragile Only -->
+            <div class="group relative bg-white rounded-lg p-4 border border-slate-200 hover:border-brand-300 hover:shadow-md transition-all duration-300">
+              <div class="flex items-start gap-3">
+                <div class="flex-shrink-0 w-10 h-10 rounded-lg bg-slate-100 text-slate-700 flex items-center justify-center group-hover:bg-brand-600 group-hover:text-white transition-colors">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                  </svg>
+                </div>
+                <div class="flex-1">
+                  <h3 class="text-base font-bold text-slate-900 mb-1 font-display">Fragile Items Only</h3>
+                  <p class="text-sm text-slate-600">Glassware, dishes, and art packed with extra care.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Unpacking -->
+            <div class="group relative bg-white rounded-lg p-4 border border-slate-200 hover:border-brand-300 hover:shadow-md transition-all duration-300">
+              <div class="flex items-start gap-3">
+                <div class="flex-shrink-0 w-10 h-10 rounded-lg bg-slate-100 text-slate-700 flex items-center justify-center group-hover:bg-brand-600 group-hover:text-white transition-colors">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"/>
+                  </svg>
+                </div>
+                <div class="flex-1">
+                  <h3 class="text-base font-bold text-slate-900 mb-1 font-display">Unpacking & Placement</h3>
+                  <p class="text-sm text-slate-600">Unpack, place items, and remove debris.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Materials -->
+            <div class="group relative bg-white rounded-lg p-4 border border-slate-200 hover:border-brand-300 hover:shadow-md transition-all duration-300">
+              <div class="flex items-start gap-3">
+                <div class="flex-shrink-0 w-10 h-10 rounded-lg bg-slate-100 text-slate-700 flex items-center justify-center group-hover:bg-brand-600 group-hover:text-white transition-colors">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
+                  </svg>
+                </div>
+                <div class="flex-1">
+                  <h3 class="text-base font-bold text-slate-900 mb-1 font-display">Quality Materials</h3>
+                  <p class="text-sm text-slate-600">Sturdy boxes, wardrobe cartons, and protective wrap.</p>
+                </div>
+              </div>
+            </div>
           </div>
-        </article>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- What's included (SEO-rich) -->
-  <section class="py-16 sm:py-20">
+  <!-- What's included (SEO-rich content) -->
+  <section class="py-20 bg-slate-50">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <div class="mx-auto max-w-3xl">
-        <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">What’s included with our packing services</h2>
-        <div class="mt-2 h-1 w-16 rounded bg-brand-600"></div>
-        <p class="mt-4 text-slate-700">Whether you need full‑home packing or help with fragile items, we use quality materials and clear labeling to keep everything organized.</p>
-        <ul class="mt-6 grid gap-2 text-sm text-slate-700">
-          <li>• Sturdy cartons, dish packs, and wardrobe boxes available</li>
-          <li>• Fragile wrapping: glassware, plates, art, and electronics</li>
-          <li>• Room and contents labels for easy unpacking</li>
-          <li>• Optional unpacking and debris removal</li>
-        </ul>
-        <p class="mt-6 text-sm text-slate-600">Plan a combined move with <a href="./residential.html" class="font-semibold text-brand-700 hover:underline">Residential Moving</a> or get a fast estimate via <a href="./index.html#sms-quote" class="font-semibold text-brand-700 hover:underline">Instant Pricing</a>.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Pricing guidance (SEO-rich) -->
-  <section class="py-16 sm:py-20 bg-slate-50">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <div class="mx-auto max-w-3xl">
-        <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Packing service prices in Denver</h2>
-        <div class="mt-2 h-1 w-16 rounded bg-brand-600"></div>
-        <p class="mt-4 text-slate-700">Packing is typically billed hourly based on the number of packers and the quantity of materials. For larger homes, we can quote a flat price after a quick assessment.</p>
-        <ul class="mt-6 grid gap-2 text-sm text-slate-700">
-          <li>• Hourly: packers + materials as needed</li>
-          <li>• Flat‑rate: recommended for full‑home packing</li>
-          <li>• Add‑on: combine with moving day for efficiency</li>
-        </ul>
-        <p class="mt-6 text-sm text-slate-600">Use <a href="./index.html#sms-quote" class="font-semibold text-brand-700 hover:underline">Instant Pricing</a> to get started in minutes.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Areas we cover -->
-  <section class="py-16 sm:py-20">
-    <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
-      <div class="mx-auto max-w-3xl text-center">
-        <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Areas we cover</h2>
-        <div class="mx-auto mt-2 h-1 w-16 rounded bg-brand-600"></div>
-        <p class="mt-3 text-slate-600">We offer packing across the Denver metro and surrounding cities.</p>
-      </div>
-      <div class="mt-8 rounded-3xl border border-slate-200 bg-white p-6  max-w-3xl mx-auto">
-        <ul class="flex flex-wrap gap-2">
-          <li class="inline-flex items-center rounded-full bg-brand-50 text-brand-700 ring-1 ring-brand-100 px-3 py-1 text-sm">Denver</li>
-          <li class="inline-flex items-center rounded-full bg-brand-50 text-brand-700 ring-1 ring-brand-100 px-3 py-1 text-sm">Aurora</li>
-          <li class="inline-flex items-center rounded-full bg-brand-50 text-brand-700 ring-1 ring-brand-100 px-3 py-1 text-sm">Lakewood</li>
-          <li class="inline-flex items-center rounded-full bg-brand-50 text-brand-700 ring-1 ring-brand-100 px-3 py-1 text-sm">Littleton</li>
-          <li class="inline-flex items-center rounded-full bg-brand-50 text-brand-700 ring-1 ring-brand-100 px-3 py-1 text-sm">Arvada</li>
-          <li class="inline-flex items-center rounded-full bg-brand-50 text-brand-700 ring-1 ring-brand-100 px-3 py-1 text-sm">Westminster</li>
-          <li class="inline-flex items-center rounded-full bg-brand-50 text-brand-700 ring-1 ring-brand-100 px-3 py-1 text-sm">Thornton</li>
-          <li class="inline-flex items-center rounded-full bg-brand-50 text-brand-700 ring-1 ring-brand-100 px-3 py-1 text-sm">Centennial</li>
-          <li class="inline-flex items-center rounded-full bg-brand-50 text-brand-700 ring-1 ring-brand-100 px-3 py-1 text-sm">Boulder</li>
-          <li class="inline-flex items-center rounded-full bg-brand-50 text-brand-700 ring-1 ring-brand-100 px-3 py-1 text-sm">Broomfield</li>
-          <li class="inline-flex items-center rounded-full bg-brand-50 text-brand-700 ring-1 ring-brand-100 px-3 py-1 text-sm">Parker</li>
-          <li class="inline-flex items-center rounded-full bg-brand-50 text-brand-700 ring-1 ring-brand-100 px-3 py-1 text-sm">Golden</li>
-          <li class="inline-flex items-center rounded-full bg-brand-50 text-brand-700 ring-1 ring-brand-100 px-3 py-1 text-sm">Englewood</li>
-          <li class="inline-flex items-center rounded-full bg-brand-50 text-brand-700 ring-1 ring-brand-100 px-3 py-1 text-sm">Highlands Ranch</li>
-          <li class="inline-flex items-center rounded-full bg-brand-50 text-brand-700 ring-1 ring-brand-100 px-3 py-1 text-sm">Wheat Ridge</li>
-          <li class="inline-flex items-center rounded-full bg-brand-50 text-brand-700 ring-1 ring-brand-100 px-3 py-1 text-sm">Northglenn</li>
-          <li class="inline-flex items-center rounded-full bg-brand-50 text-brand-700 ring-1 ring-brand-100 px-3 py-1 text-sm">Commerce City</li>
-          <li class="inline-flex items-center rounded-full bg-brand-50 text-brand-700 ring-1 ring-brand-100 px-3 py-1 text-sm">Lone Tree</li>
-          <li class="inline-flex items-center rounded-full bg-brand-50 text-brand-700 ring-1 ring-brand-100 px-3 py-1 text-sm">Lafayette</li>
-          <li class="inline-flex items-center rounded-full bg-brand-50 text-brand-700 ring-1 ring-brand-100 px-3 py-1 text-sm">Longmont</li>
-          <li class="inline-flex items-center rounded-full bg-brand-50 text-brand-700 ring-1 ring-brand-100 px-3 py-1 text-sm">Castle Rock</li>
-          <li class="inline-flex items-center rounded-full bg-brand-50 text-brand-700 ring-1 ring-brand-100 px-3 py-1 text-sm">Brighton</li>
-          <li class="inline-flex items-center rounded-full bg-brand-50 text-brand-700 ring-1 ring-brand-100 px-3 py-1 text-sm">Superior</li>
-          <li class="inline-flex items-center rounded-full bg-brand-50 text-brand-700 ring-1 ring-brand-100 px-3 py-1 text-sm">Erie</li>
-        </ul>
-        <div class="mt-6 flex flex-col sm:flex-row gap-3">
-          <a href="./index.html#sms-quote" class="inline-flex items-center justify-center gap-2 rounded-xl bg-brand-600 px-5 py-3 text-sm font-semibold text-white hover:bg-brand-700 transition">Text me pricing</a>
-          <a href="./index.html#quote" class="inline-flex items-center justify-center gap-2 rounded-xl bg-black px-5 py-3 text-sm font-semibold text-white hover:bg-slate-900 transition">Get a quote</a>
+      <div class="mx-auto max-w-4xl">
+        <div class="text-center mb-12">
+          <h2 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-slate-900 font-display">What's Included</h2>
+          <div class="mx-auto mt-4 h-1 w-20 rounded-full bg-gradient-to-r from-brand-500 to-brand-600"></div>
+          <p class="mt-6 text-lg text-slate-600">Every packing service includes quality materials and careful handling</p>
+        </div>
+        
+        <!-- Image Banner -->
+        <div class="mb-12 relative rounded-2xl overflow-hidden">
+          <div class="aspect-[16/7] relative">
+            <img src="./assets/Opek.png" alt="Quality packing materials and supplies" class="w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-gradient-to-r from-brand-900/80 via-brand-800/60 to-transparent"></div>
+            <div class="absolute inset-0 flex items-center">
+              <div class="px-8 sm:px-12 text-white max-w-xl">
+                <h3 class="text-2xl sm:text-3xl font-bold mb-3">Professional Care</h3>
+                <p class="text-white/90">Quality materials and expert packing for complete protection</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="bg-white rounded-2xl p-8 sm:p-10 border border-slate-200">
+          <ul class="grid gap-5 sm:grid-cols-2">
+            <li class="flex items-start gap-4">
+              <div class="flex-shrink-0 w-10 h-10 rounded-lg bg-brand-100 flex items-center justify-center">
+                <svg class="w-5 h-5 text-brand-600" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-bold text-slate-900 mb-1">Sturdy Boxes</h3>
+                <p class="text-sm text-slate-600">Cartons, dish packs, and wardrobe boxes</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-4">
+              <div class="flex-shrink-0 w-10 h-10 rounded-lg bg-brand-100 flex items-center justify-center">
+                <svg class="w-5 h-5 text-brand-600" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-bold text-slate-900 mb-1">Fragile Wrapping</h3>
+                <p class="text-sm text-slate-600">Glassware, plates, art, and electronics</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-4">
+              <div class="flex-shrink-0 w-10 h-10 rounded-lg bg-brand-100 flex items-center justify-center">
+                <svg class="w-5 h-5 text-brand-600" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-bold text-slate-900 mb-1">Clear Labeling</h3>
+                <p class="text-sm text-slate-600">Room and contents labels for easy unpacking</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-4">
+              <div class="flex-shrink-0 w-10 h-10 rounded-lg bg-brand-100 flex items-center justify-center">
+                <svg class="w-5 h-5 text-brand-600" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-bold text-slate-900 mb-1">Unpacking Service</h3>
+                <p class="text-sm text-slate-600">Optional unpacking and debris removal</p>
+              </div>
+            </li>
+          </ul>
+          
+          <div class="mt-8 pt-8 border-t border-slate-200 text-center">
+            <p class="text-slate-600">Combine with <a href="./residential.html" class="font-semibold text-brand-600 hover:text-brand-700 transition">Residential Moving</a> for a complete solution.</p>
+            <div class="mt-6 flex flex-col sm:flex-row gap-3 justify-center">
+              <a href="./index.html#sms-quote" class="inline-flex items-center justify-center gap-2 rounded-xl bg-brand-600 px-6 py-3 text-sm font-bold text-white hover:bg-brand-700 transition">Get Instant Pricing</a>
+              <a href="./index.html#quote" class="inline-flex items-center justify-center gap-2 rounded-xl border-2 border-slate-300 px-6 py-3 text-sm font-bold text-slate-700 hover:border-slate-400 hover:bg-slate-50 transition">Request Full Quote</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- FAQ -->
-  <section class="py-16 sm:py-20 bg-slate-50">
+  <section class="py-20 bg-slate-50">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <div class="mx-auto max-w-3xl text-center">
-        <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Packing Services FAQ</h2>
-        <div class="mx-auto mt-2 h-1 w-16 rounded bg-brand-600"></div>
-        <p class="mt-3 text-slate-600">Details about materials, fragile items, and how we label for easy unpacking.</p>
-      </div>
-      <div class="mx-auto mt-8 max-w-3xl divide-y divide-slate-200 rounded-3xl border border-slate-200 bg-white">
-        <details class="group p-5">
-          <summary class="flex cursor-pointer list-none items-center justify-between gap-4"><h3 class="text-sm sm:text-base font-extrabold text-slate-900">Do you provide boxes and materials?</h3><span class="shrink-0 rounded-full bg-slate-100 p-2 text-slate-600 group-open:rotate-45 transition">+</span></summary>
-          <p class="mt-3 text-sm text-slate-600">Yes. We bring sturdy cartons, dish and glass packs, wardrobe boxes, tape, and wrap as needed.</p>
-        </details>
-        <details class="group p-5">
-          <summary class="flex cursor-pointer list-none items-center justify-between gap-4"><h3 class="text-sm sm:text-base font-extrabold text-slate-900">Can you pack just the fragile items?</h3><span class="shrink-0 rounded-full bg-slate-100 p-2 text-slate-600 group-open:rotate-45 transition">+</span></summary>
-          <p class="mt-3 text-sm text-slate-600">Absolutely. Fragile‑only service focuses on kitchens, decor, artwork, and electronics.</p>
-        </details>
-        <details class="group p-5">
-          <summary class="flex cursor-pointer list-none items-center justify-between gap-4"><h3 class="text-sm sm:text-base font-extrabold text-slate-900">Do you unpack and remove debris?</h3><span class="shrink-0 rounded-full bg-slate-100 p-2 text-slate-600 group-open:rotate-45 transition">+</span></summary>
-          <p class="mt-3 text-sm text-slate-600">Yes—we can unpack boxes, place items by room, and haul away packing materials.</p>
-        </details>
-      </div>
-    </div>
-  </section>
-  
-
-  <!-- CTA strip -->
-  <section class="py-12 bg-slate-50">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <div class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-8 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-        <div>
-          <h2 class="text-xl sm:text-2xl font-extrabold tracking-tight">Need packing help?</h2>
-          <p class="mt-1 text-sm text-slate-600">Text for instant pricing or send details for a full quote.</p>
+      <div class="mx-auto max-w-3xl">
+        <div class="text-center mb-12">
+          <h2 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-slate-900 font-display">Frequently Asked Questions</h2>
+          <div class="mx-auto mt-4 h-1 w-20 rounded-full bg-gradient-to-r from-brand-500 to-brand-600"></div>
+          <p class="mt-6 text-lg text-slate-600">Everything you need to know about our packing services</p>
         </div>
-        <div class="flex flex-col sm:flex-row gap-3">
-          <a href="./index.html#sms-quote" class="inline-flex items-center justify-center gap-2 rounded-xl bg-brand-600 px-5 py-3 text-sm font-semibold text-white hover:bg-brand-700 transition">Text me pricing</a>
-          <a href="./index.html#quote" class="inline-flex items-center justify-center gap-2 rounded-xl bg-black px-5 py-3 text-sm font-semibold text-white hover:bg-slate-900 transition">Get a quote</a>
+        
+        <!-- FAQ Image -->
+        <div class="mb-12 relative rounded-2xl overflow-hidden">
+          <div class="aspect-[21/9] relative">
+            <img src="./assets/Opek.png" alt="Customer service and support" class="w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-900/70 via-slate-900/40 to-transparent"></div>
+            <div class="absolute bottom-6 left-6 right-6 text-white">
+              <p class="text-xl font-bold">Have questions? We're here to help!</p>
+              <p class="text-sm text-white/90 mt-2">Our team is available to answer all your packing questions</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="space-y-4">
+          <details class="group bg-white rounded-2xl border border-slate-200 hover:border-brand-300 transition-colors">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 p-6">
+              <h3 class="text-base sm:text-lg font-bold text-slate-900">Do you provide boxes and materials?</h3>
+              <span class="flex-shrink-0 w-8 h-8 rounded-full bg-slate-100 border-2 border-slate-300 flex items-center justify-center text-slate-600 group-open:rotate-45 group-open:bg-brand-600 group-open:border-brand-600 group-open:text-white transition-all duration-300">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
+                </svg>
+              </span>
+            </summary>
+            <div class="px-6 pb-6">
+              <p class="text-slate-600 leading-relaxed">Yes. We bring sturdy cartons, dish and glass packs, wardrobe boxes, tape, and wrap as needed for your move.</p>
+            </div>
+          </details>
+          
+          <details class="group bg-white rounded-2xl border border-slate-200 hover:border-brand-300 transition-colors">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 p-6">
+              <h3 class="text-base sm:text-lg font-bold text-slate-900">Can you pack just the fragile items?</h3>
+              <span class="flex-shrink-0 w-8 h-8 rounded-full bg-slate-100 border-2 border-slate-300 flex items-center justify-center text-slate-600 group-open:rotate-45 group-open:bg-brand-600 group-open:border-brand-600 group-open:text-white transition-all duration-300">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
+                </svg>
+              </span>
+            </summary>
+            <div class="px-6 pb-6">
+              <p class="text-slate-600 leading-relaxed">Absolutely. Our fragile-only service focuses on kitchens, decor, artwork, and electronics with extra care and cushioning.</p>
+            </div>
+          </details>
+          
+          <details class="group bg-white rounded-2xl border border-slate-200 hover:border-brand-300 transition-colors">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 p-6">
+              <h3 class="text-base sm:text-lg font-bold text-slate-900">Do you unpack and remove debris?</h3>
+              <span class="flex-shrink-0 w-8 h-8 rounded-full bg-slate-100 border-2 border-slate-300 flex items-center justify-center text-slate-600 group-open:rotate-45 group-open:bg-brand-600 group-open:border-brand-600 group-open:text-white transition-all duration-300">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
+                </svg>
+              </span>
+            </summary>
+            <div class="px-6 pb-6">
+              <p class="text-slate-600 leading-relaxed">Yes—we can unpack boxes, place items by room, and haul away all packing materials and debris.</p>
+            </div>
+          </details>
         </div>
       </div>
     </div>
