@@ -22,12 +22,12 @@
     html { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
     .bg-brand-600 { background-color: #2563eb; }
     .bg-brand-700 { background-color: #1d4ed8; }
-    .shadow-elevated { box-shadow: 0 10px 20px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    . { box-shadow: 0 10px 20px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
   </style>
 </head>
 <body class="bg-white text-slate-900">
   <!-- Header -->
-  <header class="sticky top-0 z-40 bg-black/80 text-white backdrop-blur ring-1 ring-black/10">
+  <header class="sticky top-0 z-40 bg-black/80 text-white  ring-1 ring-black/10">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
       <a href="./index.html#home" class="inline-flex items-center gap-3">
         <img src="./assets/opek-logo.png" alt="Opek Moving LLC" class="h-10 w-auto object-contain" />
@@ -38,7 +38,7 @@
           <li><a href="./index.html#services" class="hover:text-brand-100">Services</a></li>
           <li><a href="./index.html#process" class="hover:text-brand-100">Process</a></li>
           <li><a href="./index.html#reviews" class="hover:text-brand-100">Reviews</a></li>
-          <li><a href="./index.html#quote" class="inline-flex items-center gap-2 rounded-xl bg-brand-600 px-4 py-2 text-white shadow-elevated hover:bg-brand-700">Get a quote</a></li>
+          <li><a href="./index.html#quote" class="inline-flex items-center gap-2 rounded-xl bg-brand-600 px-4 py-2 text-white hover:bg-brand-700 transition">Get a quote</a></li>
         </ul>
       </nav>
       <button id="menu-btn-pack" class="md:hidden inline-flex h-10 w-10 items-center justify-center rounded-xl bg-white/10 text-white ring-1 ring-white/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-400" aria-expanded="false" aria-controls="mobile-nav-pack">
@@ -48,15 +48,15 @@
       </button>
     </div>
     <div id="mobile-nav-pack" class="md:hidden hidden invisible opacity-0 pointer-events-none transition-all duration-300">
-      <div class="bg-black/90 backdrop-blur">
+      <div class="bg-black/90 ">
         <nav class="px-4 py-4" aria-label="Mobile">
           <ul class="grid gap-1">
-            <li><a class="block rounded-xl px-4 py-3 text-sm font-semibold text-white/90 hover:bg-white/10" href="./index.html#home">Home</a></li>
-            <li><a class="block rounded-xl px-4 py-3 text-sm font-semibold text-white/90 hover:bg-white/10" href="./index.html#services">Services</a></li>
-            <li><a class="block rounded-xl px-4 py-3 text-sm font-semibold text-white/90 hover:bg-white/10" href="./index.html#process">Process</a></li>
-            <li><a class="block rounded-xl px-4 py-3 text-sm font-semibold text-white/90 hover:bg-white/10" href="./index.html#reviews">Reviews</a></li>
-            <li class="pt-2 border-t border-white/10"><a class="block rounded-xl px-4 py-3 text-sm font-semibold text-white/90 hover:bg-white/10" href="./index.html#contact">Contact</a></li>
-            <li><a class="block rounded-xl bg-brand-600 px-4 py-3 text-center text-sm font-semibold text-white shadow-elevated hover:bg-brand-700" href="./index.html#quote">Get a Quote</a></li>
+            <li><a class="block rounded-xl px-3 py-2.5 text-sm font-semibold text-slate-200 hover:bg-slate-800 hover:text-white transition" href="./index.html#home">Home</a></li>
+            <li><a class="block rounded-xl px-3 py-2.5 text-sm font-semibold text-slate-200 hover:bg-slate-800 hover:text-white transition" href="./index.html#services">Services</a></li>
+            <li><a class="block rounded-xl px-3 py-2.5 text-sm font-semibold text-slate-200 hover:bg-slate-800 hover:text-white transition" href="./index.html#process">Process</a></li>
+            <li><a class="block rounded-xl px-3 py-2.5 text-sm font-semibold text-slate-200 hover:bg-slate-800 hover:text-white transition" href="./index.html#reviews">Reviews</a></li>
+            <li class="pt-2 border-t border-white/10"><a class="block rounded-xl px-3 py-2.5 text-sm font-semibold text-slate-200 hover:bg-slate-800 hover:text-white transition" href="./index.html#contact">Contact</a></li>
+            <li><a class="block rounded-xl bg-brand-600 px-3 py-2.5 text-center text-sm font-semibold text-white hover:bg-brand-700 transition" href="./index.html#quote">Get a Quote</a></li>
           </ul>
         </nav>
       </div>
@@ -79,8 +79,8 @@
         <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white">Packing Services</h1>
         <p class="mt-4 text-white/90 text-base sm:text-lg max-w-prose">Full and partial packing with quality materials. We protect fragile items, label boxes clearly, and can unpack so you’re settled quickly.</p>
         <div class="mt-8 flex flex-col sm:flex-row gap-3">
-          <a href="./index.html#sms-quote" class="inline-flex items-center justify-center gap-2 rounded-2xl bg-brand-600 px-6 py-3 text-sm font-semibold text-white shadow-elevated hover:bg-brand-700">Get Instant Pricing</a>
-          <a href="./index.html#quote" class="inline-flex items-center justify-center gap-2 rounded-2xl bg-white/10 px-6 py-3 text-sm font-semibold text-white ring-1 ring-white/40 hover:bg-white/20">Request full quote</a>
+          <a href="./index.html#sms-quote" class="inline-flex items-center justify-center gap-2 rounded-xl bg-brand-600 px-6 py-3 text-sm font-semibold text-white hover:bg-brand-700 transition">Get Instant Pricing</a>
+          <a href="./index.html#quote" class="inline-flex items-center justify-center gap-2 rounded-xl bg-white/10 px-6 py-3 text-sm font-semibold text-white border border-white/40 hover:bg-white/20 transition">Request full quote</a>
         </div>
       </div>
     </div>
@@ -90,17 +90,26 @@
   <section class="py-16 sm:py-20">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-          <h3 class="text-lg font-extrabold">Full-service packing</h3>
-          <p class="mt-2 text-sm text-slate-600">We bring boxes and materials, pack everything safely, and label clearly for fast setup.</p>
+        <article class="relative group">
+          <div class="absolute -inset-0.5 bg-gradient-to-br from-brand-600 to-brand-500 rounded-2xl opacity-0 group-hover:opacity-100 transition duration-300"></div>
+          <div class="relative rounded-2xl border border-slate-200 bg-white p-6">
+            <h3 class="text-lg font-extrabold">Full-service packing</h3>
+            <p class="mt-2 text-sm text-slate-600">We bring boxes and materials, pack everything safely, and label clearly for fast setup.</p>
+          </div>
         </article>
-        <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-          <h3 class="text-lg font-extrabold">Fragile-only</h3>
-          <p class="mt-2 text-sm text-slate-600">Glassware, dishes, and art packed with extra care and cushioning.</p>
+        <article class="relative group">
+          <div class="absolute -inset-0.5 bg-gradient-to-br from-brand-600 to-brand-500 rounded-2xl opacity-0 group-hover:opacity-100 transition duration-300"></div>
+          <div class="relative rounded-2xl border border-slate-200 bg-white p-6">
+            <h3 class="text-lg font-extrabold">Fragile-only</h3>
+            <p class="mt-2 text-sm text-slate-600">Glassware, dishes, and art packed with extra care and cushioning.</p>
+          </div>
         </article>
-        <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-          <h3 class="text-lg font-extrabold">Unpacking & placement</h3>
-          <p class="mt-2 text-sm text-slate-600">We unpack, remove debris, and place items where you want them.</p>
+        <article class="relative group">
+          <div class="absolute -inset-0.5 bg-gradient-to-br from-brand-600 to-brand-500 rounded-2xl opacity-0 group-hover:opacity-100 transition duration-300"></div>
+          <div class="relative rounded-2xl border border-slate-200 bg-white p-6">
+            <h3 class="text-lg font-extrabold">Unpacking & placement</h3>
+            <p class="mt-2 text-sm text-slate-600">We unpack, remove debris, and place items where you want them.</p>
+          </div>
         </article>
       </div>
     </div>
@@ -149,7 +158,7 @@
         <div class="mx-auto mt-2 h-1 w-16 rounded bg-brand-600"></div>
         <p class="mt-3 text-slate-600">We offer packing across the Denver metro and surrounding cities.</p>
       </div>
-      <div class="mt-8 rounded-3xl border border-slate-200 bg-white p-6 shadow-sm max-w-3xl mx-auto">
+      <div class="mt-8 rounded-3xl border border-slate-200 bg-white p-6  max-w-3xl mx-auto">
         <ul class="flex flex-wrap gap-2">
           <li class="inline-flex items-center rounded-full bg-brand-50 text-brand-700 ring-1 ring-brand-100 px-3 py-1 text-sm">Denver</li>
           <li class="inline-flex items-center rounded-full bg-brand-50 text-brand-700 ring-1 ring-brand-100 px-3 py-1 text-sm">Aurora</li>
@@ -177,8 +186,8 @@
           <li class="inline-flex items-center rounded-full bg-brand-50 text-brand-700 ring-1 ring-brand-100 px-3 py-1 text-sm">Erie</li>
         </ul>
         <div class="mt-6 flex flex-col sm:flex-row gap-3">
-          <a href="./index.html#sms-quote" class="inline-flex items-center justify-center gap-2 rounded-2xl bg-brand-600 px-5 py-3 text-sm font-semibold text-white shadow-elevated hover:bg-brand-700">Text me pricing</a>
-          <a href="./index.html#quote" class="inline-flex items-center justify-center gap-2 rounded-2xl bg-black px-5 py-3 text-sm font-semibold text-white shadow-elevated hover:bg-slate-900">Get a quote</a>
+          <a href="./index.html#sms-quote" class="inline-flex items-center justify-center gap-2 rounded-xl bg-brand-600 px-5 py-3 text-sm font-semibold text-white hover:bg-brand-700 transition">Text me pricing</a>
+          <a href="./index.html#quote" class="inline-flex items-center justify-center gap-2 rounded-xl bg-black px-5 py-3 text-sm font-semibold text-white hover:bg-slate-900 transition">Get a quote</a>
         </div>
       </div>
     </div>
@@ -192,7 +201,7 @@
         <div class="mx-auto mt-2 h-1 w-16 rounded bg-brand-600"></div>
         <p class="mt-3 text-slate-600">Details about materials, fragile items, and how we label for easy unpacking.</p>
       </div>
-      <div class="mx-auto mt-8 max-w-3xl divide-y divide-slate-200 rounded-3xl border border-slate-200 bg-white shadow-sm">
+      <div class="mx-auto mt-8 max-w-3xl divide-y divide-slate-200 rounded-3xl border border-slate-200 bg-white">
         <details class="group p-5">
           <summary class="flex cursor-pointer list-none items-center justify-between gap-4"><h3 class="text-sm sm:text-base font-extrabold text-slate-900">Do you provide boxes and materials?</h3><span class="shrink-0 rounded-full bg-slate-100 p-2 text-slate-600 group-open:rotate-45 transition">+</span></summary>
           <p class="mt-3 text-sm text-slate-600">Yes. We bring sturdy cartons, dish and glass packs, wardrobe boxes, tape, and wrap as needed.</p>
@@ -213,21 +222,21 @@
   <!-- CTA strip -->
   <section class="py-12 bg-slate-50">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <div class="rounded-3xl bg-white/90 backdrop-blur p-6 sm:p-8 shadow-elevated ring-1 ring-slate-200 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+      <div class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-8 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <div>
           <h2 class="text-xl sm:text-2xl font-extrabold tracking-tight">Need packing help?</h2>
           <p class="mt-1 text-sm text-slate-600">Text for instant pricing or send details for a full quote.</p>
         </div>
         <div class="flex flex-col sm:flex-row gap-3">
-          <a href="./index.html#sms-quote" class="inline-flex items-center justify-center gap-2 rounded-2xl bg-brand-600 px-5 py-3 text-sm font-semibold text-white shadow-elevated hover:bg-brand-700">Text me pricing</a>
-          <a href="./index.html#quote" class="inline-flex items-center justify-center gap-2 rounded-2xl bg-black px-5 py-3 text-sm font-semibold text-white shadow-elevated hover:bg-slate-900">Get a quote</a>
+          <a href="./index.html#sms-quote" class="inline-flex items-center justify-center gap-2 rounded-xl bg-brand-600 px-5 py-3 text-sm font-semibold text-white hover:bg-brand-700 transition">Text me pricing</a>
+          <a href="./index.html#quote" class="inline-flex items-center justify-center gap-2 rounded-xl bg-black px-5 py-3 text-sm font-semibold text-white hover:bg-slate-900 transition">Get a quote</a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Footer consistent -->
-  <footer class="mt-20 bg-black text-white">
+  <footer class="bg-slate-900 text-white">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
       <div class="flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
         <a href="./index.html#home" class="inline-flex items-center gap-3">

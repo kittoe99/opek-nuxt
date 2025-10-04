@@ -219,9 +219,9 @@
 
       <!-- Mobile Nav Panel -->
       <div id="mobile-nav" class="lg:hidden hidden invisible opacity-0 pointer-events-none transition-all duration-300 absolute left-0 right-0 top-full z-40">
-        <div class="mx-0 w-full rounded-none bg-black/90 backdrop-blur">
-          <nav class="px-4 py-4" aria-label="Mobile">
-            <ul class="grid gap-1">
+        <div class="mx-4 mt-2 rounded-2xl bg-slate-900 border border-slate-700">
+          <nav class="p-2" aria-label="Mobile">
+            <ul class="space-y-1">
               <li>
                 <a class="mobile-link" href="#home">
                   <span class="inline-flex items-center gap-3">
@@ -341,21 +341,21 @@
             </a>
           </div>
           
-          <div class="mt-12 flex flex-wrap items-center gap-8 text-white/80 text-sm">
+          <div class="mt-12 grid grid-cols-1 sm:flex sm:flex-wrap sm:items-center gap-4 sm:gap-8 text-white/80 text-sm">
             <div class="flex items-center gap-2">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 text-brand-300">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 text-brand-300 flex-shrink-0">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
               </svg>
               <span>Licensed & insured</span>
             </div>
             <div class="flex items-center gap-2">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 text-brand-300">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 text-brand-300 flex-shrink-0">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
               </svg>
               <span>Same-day available</span>
             </div>
             <div class="flex items-center gap-2">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 text-brand-300">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 text-brand-300 flex-shrink-0">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
               </svg>
               <span>No hidden fees</span>
@@ -1153,10 +1153,10 @@
         el.classList.add('text-[15px]', 'font-semibold', 'transition', 'text-white', 'hover:text-brand-100')
       })
       document.querySelectorAll('#mobile-nav .mobile-link').forEach((el) => {
-        el.classList.add('block', 'rounded-xl', 'px-4', 'py-3', 'text-[15px]', 'font-semibold', 'text-white/90', 'hover:bg-white/10')
+        el.classList.add('block', 'rounded-xl', 'px-3', 'py-2.5', 'text-[15px]', 'font-semibold', 'text-slate-200', 'hover:bg-slate-800', 'hover:text-white', 'transition')
       })
       document.querySelectorAll('#mobile-nav .mobile-cta').forEach((el) => {
-        el.classList.add('block', 'rounded-xl', 'bg-brand-600', 'px-4', 'py-3', 'text-center', 'text-sm', 'font-semibold', 'text-white', 'shadow-elevated', 'hover:bg-brand-700')
+        el.classList.add('block', 'rounded-xl', 'bg-brand-600', 'px-3', 'py-2.5', 'text-center', 'text-[15px]', 'font-semibold', 'text-white', 'hover:bg-brand-700', 'transition')
       })
 
       // Reveal-on-scroll animations (respects reduced motion via CSS)

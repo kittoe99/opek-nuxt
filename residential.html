@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Residential Moving | Opek Moving</title>
   <meta name="description" content="Residential moving in Denver by Opek Moving. From labor-only help to full-service moves for apartments, condos, and family homes. Floor and door protection, trained crews, and fast quotes." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -25,22 +28,51 @@
   </script>
   <!-- Tailwind via CDN for this standalone page -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#e9fbf1',
+              100: '#c9f5de',
+              200: '#95eac0',
+              300: '#5adf9f',
+              400: '#25d07f',
+              500: '#0ea05a',
+              600: '#0a8a4c',
+              700: '#066f3e',
+              800: '#055832',
+              900: '#034428'
+            }
+          },
+          fontFamily: {
+            sans: ['Manrope', 'system-ui', 'sans-serif'],
+            display: ['Poppins', 'Manrope', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
   <style>
     /* Smooth font rendering */
-    html { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
-    /* Simple brand fallbacks if custom tokens are absent */
-    .bg-brand-600 { background-color: #2563eb; } /* indigo-600 */
-    .bg-brand-700 { background-color: #1d4ed8; }
-    .text-brand-700 { color: #1d4ed8; }
-    .ring-brand-400 { --tw-ring-color: #60a5fa; }
-    .shadow-elevated { box-shadow: 0 10px 20px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
-    /* Remove all shadows site-wide */
-    *, *::before, *::after { box-shadow: none !important; text-shadow: none !important; }
+    html { 
+      -webkit-font-smoothing: antialiased; 
+      -moz-osx-font-smoothing: grayscale;
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Manrope', system-ui, -apple-system, sans-serif;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Poppins', 'Manrope', system-ui, sans-serif;
+      letter-spacing: -0.02em;
+    }
   </style>
 </head>
 <body class="bg-white text-slate-900">
   <!-- Simple top bar -->
-  <header class="sticky top-0 z-40 bg-black/80 text-white backdrop-blur ring-1 ring-black/10">
+  <header class="sticky top-0 z-40 bg-black/80 text-white  ring-1 ring-black/10">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
       <a href="./index.html#home" class="inline-flex items-center gap-3">
         <img src="./assets/opek-logo.png" alt="Opek Moving LLC" class="h-10 w-auto object-contain" />
@@ -51,7 +83,7 @@
           <li><a href="./index.html#services" class="hover:text-brand-100">Services</a></li>
           <li><a href="./index.html#process" class="hover:text-brand-100">Process</a></li>
           <li><a href="./index.html#reviews" class="hover:text-brand-100">Reviews</a></li>
-          <li><a href="./index.html#quote" class="inline-flex items-center gap-2 rounded-xl bg-brand-600 px-4 py-2 text-white shadow-elevated hover:bg-brand-700">Get a quote</a></li>
+          <li><a href="./index.html#quote" class="inline-flex items-center gap-2 rounded-xl bg-brand-600 px-4 py-2 text-white hover:bg-brand-700 transition">Get a quote</a></li>
         </ul>
       </nav>
       <!-- Mobile menu button -->
@@ -67,16 +99,16 @@
     </div>
     <!-- Mobile Nav Panel -->
     <div id="mobile-nav-res" class="md:hidden hidden invisible opacity-0 pointer-events-none transition-all duration-300">
-      <div class="bg-black/90 backdrop-blur">
-        <nav class="px-4 py-4" aria-label="Mobile">
-          <ul class="grid gap-1">
-            <li><a class="block rounded-xl px-4 py-3 text-sm font-semibold text-white/90 hover:bg-white/10" href="./index.html#home">Home</a></li>
-            <li><a class="block rounded-xl px-4 py-3 text-sm font-semibold text-white/90 hover:bg-white/10" href="./index.html#services">Services</a></li>
-            <li><a class="block rounded-xl px-4 py-3 text-sm font-semibold text-white/90 hover:bg-white/10" href="./index.html#process">Process</a></li>
-            <li><a class="block rounded-xl px-4 py-3 text-sm font-semibold text-white/90 hover:bg-white/10" href="./index.html#reviews">Reviews</a></li>
-            <li><a class="block rounded-xl px-4 py-3 text-sm font-semibold text-white/90 hover:bg-white/10" href="./index.html#about">About</a></li>
-            <li class="pt-2 border-t border-white/10"><a class="block rounded-xl px-4 py-3 text-sm font-semibold text-white/90 hover:bg-white/10" href="./index.html#contact">Contact</a></li>
-            <li><a class="block rounded-xl bg-brand-600 px-4 py-3 text-center text-sm font-semibold text-white shadow-elevated hover:bg-brand-700" href="./index.html#quote">Get a Quote</a></li>
+      <div class="mx-4 mt-2 rounded-2xl bg-slate-900 border border-slate-700">
+        <nav class="p-2" aria-label="Mobile">
+          <ul class="space-y-1">
+            <li><a class="block rounded-xl px-3 py-2.5 text-sm font-semibold text-slate-200 hover:bg-slate-800 hover:text-white transition" href="./index.html#home">Home</a></li>
+            <li><a class="block rounded-xl px-3 py-2.5 text-sm font-semibold text-slate-200 hover:bg-slate-800 hover:text-white transition" href="./index.html#services">Services</a></li>
+            <li><a class="block rounded-xl px-3 py-2.5 text-sm font-semibold text-slate-200 hover:bg-slate-800 hover:text-white transition" href="./index.html#process">Process</a></li>
+            <li><a class="block rounded-xl px-3 py-2.5 text-sm font-semibold text-slate-200 hover:bg-slate-800 hover:text-white transition" href="./index.html#reviews">Reviews</a></li>
+            <li><a class="block rounded-xl px-3 py-2.5 text-sm font-semibold text-slate-200 hover:bg-slate-800 hover:text-white transition" href="./index.html#about">About</a></li>
+            <li class="pt-2 border-t border-white/10"><a class="block rounded-xl px-3 py-2.5 text-sm font-semibold text-slate-200 hover:bg-slate-800 hover:text-white transition" href="./index.html#contact">Contact</a></li>
+            <li><a class="block rounded-xl bg-brand-600 px-3 py-2.5 text-center text-sm font-semibold text-white hover:bg-brand-700 transition" href="./index.html#quote">Get a Quote</a></li>
           </ul>
         </nav>
       </div>
@@ -84,124 +116,305 @@
   </header>
 
   <!-- Page Hero -->
-  <section class="relative min-h-[70vh] grid place-items-center overflow-hidden bg-black">
-    <img src="./assets/Opek.png" alt="Residential moving with Opek" class="absolute inset-0 h-full w-full object-cover opacity-70" />
-    <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/70"></div>
-    <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 w-full">
+  <section class="relative min-h-[75vh] flex items-center overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
+    <img src="./assets/Opek.png" alt="Residential moving with Opek" class="absolute inset-0 h-full w-full object-cover opacity-40" />
+    <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70"></div>
+    <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 w-full py-20">
       <!-- Breadcrumbs -->
-      <nav aria-label="Breadcrumb" class="text-white/80 text-xs sm:text-sm">
+      <nav aria-label="Breadcrumb" class="text-white/70 text-sm mb-8">
         <ol class="flex items-center gap-2">
-          <li><a href="./index.html#home" class="hover:text-white">Home</a></li>
-          <li>/</li>
-          <li><a href="./index.html#services" class="hover:text-white">Services</a></li>
-          <li>/</li>
-          <li class="text-white">Residential Moving</li>
+          <li><a href="./index.html#home" class="hover:text-white transition">Home</a></li>
+          <li><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></li>
+          <li><a href="./index.html#services" class="hover:text-white transition">Services</a></li>
+          <li><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></li>
+          <li class="text-white font-medium">Residential Moving</li>
         </ol>
       </nav>
 
-      <div class="mt-6 sm:mt-8 max-w-2xl">
-        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white">Residential Moving</h1>
-        <p class="mt-4 text-white/90 text-base sm:text-lg max-w-prose">From studios to family homes, our trained crew pads, wraps, and carefully places every item. On-time arrivals, protected floors, and clear communication throughout your move.</p>
-        <div class="mt-8 flex flex-col sm:flex-row gap-3">
-          <a href="./index.html#sms-quote" class="inline-flex items-center justify-center gap-2 rounded-2xl bg-brand-600 px-6 py-3 text-sm font-semibold text-white shadow-elevated hover:bg-brand-700">
+      <div class="max-w-3xl">
+        <div class="inline-flex items-center gap-2 rounded-full bg-brand-500/20 border border-brand-400/30 px-4 py-2 mb-6 backdrop-blur-sm">
+          <svg class="w-5 h-5 text-brand-400" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"/>
+          </svg>
+          <span class="text-sm font-semibold text-white">Professional Home Moving Services</span>
+        </div>
+        
+        <h1 class="text-5xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white leading-tight font-display">
+          Residential Moving Made Simple
+        </h1>
+        <p class="mt-6 text-lg sm:text-xl text-white/90 leading-relaxed">
+          From studios to family homes, our trained crew handles every item with care. Experience stress-free moving with on-time arrivals, protected floors, and clear communication throughout your move.
+        </p>
+        <div class="mt-10 flex flex-col sm:flex-row gap-4">
+          <a href="./index.html#sms-quote" class="group inline-flex items-center justify-center gap-2 rounded-xl bg-brand-600 px-8 py-4 text-base font-bold text-white hover:bg-brand-700 transition-all duration-200 shadow-lg hover:shadow-xl">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+            </svg>
             Get Instant Pricing
+            <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+            </svg>
           </a>
-          <a href="./index.html#quote" class="inline-flex items-center justify-center gap-2 rounded-2xl bg-white/10 px-6 py-3 text-sm font-semibold text-white ring-1 ring-white/40 hover:bg-white/20">
-            Request full quote
+          <a href="./index.html#quote" class="inline-flex items-center justify-center gap-2 rounded-xl bg-white/10 backdrop-blur-sm px-8 py-4 text-base font-bold text-white border-2 border-white/30 hover:bg-white/20 hover:border-white/50 transition-all duration-200">
+            Request Full Quote
           </a>
+        </div>
+        
+        <!-- Trust badges -->
+        <div class="mt-12 flex flex-wrap items-center gap-6 text-white/80 text-sm">
+          <div class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-brand-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+            <span class="font-medium">Licensed & Insured</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-brand-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+            <span class="font-medium">On-Time Guarantee</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-brand-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/>
+            </svg>
+            <span class="font-medium">4.9★ Rated</span>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Highlights -->
-  <section class="py-16 sm:py-20">
+  <section class="py-20 bg-slate-50">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
-          <h3 class="mt-3 text-lg font-extrabold">Careful packing & protection</h3>
-          <p class="mt-2 text-sm text-slate-600">Clean pads, shrink wrap, and sturdy boxes keep your belongings safe door to door.</p>
+        <article class="group relative bg-white rounded-2xl p-8 border border-slate-200 hover:border-brand-300 transition-all duration-300 hover:shadow-lg">
+          <div class="flex items-center justify-center w-14 h-14 rounded-xl bg-brand-50 text-brand-600 mb-5 group-hover:bg-brand-600 group-hover:text-white transition-colors duration-300">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-3 font-display">Careful Protection</h3>
+          <p class="text-slate-600 leading-relaxed">Clean pads, shrink wrap, and sturdy boxes keep your belongings safe door to door.</p>
         </article>
-        <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
-          <h3 class="mt-3 text-lg font-extrabold">Trained, friendly crews</h3>
-          <p class="mt-2 text-sm text-slate-600">Background‑checked pros who communicate and treat your home with respect.</p>
+        
+        <article class="group relative bg-white rounded-2xl p-8 border border-slate-200 hover:border-brand-300 transition-all duration-300 hover:shadow-lg">
+          <div class="flex items-center justify-center w-14 h-14 rounded-xl bg-brand-50 text-brand-600 mb-5 group-hover:bg-brand-600 group-hover:text-white transition-colors duration-300">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-3 font-display">Trained Crews</h3>
+          <p class="text-slate-600 leading-relaxed">Background-checked professionals who communicate clearly and treat your home with respect.</p>
         </article>
-        <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
-          <h3 class="mt-3 text-lg font-extrabold">Flexible options</h3>
-          <p class="mt-2 text-sm text-slate-600">Full service or labor‑only—plus packing, assembly, and placement where you want.</p>
+        
+        <article class="group relative bg-white rounded-2xl p-8 border border-slate-200 hover:border-brand-300 transition-all duration-300 hover:shadow-lg">
+          <div class="flex items-center justify-center w-14 h-14 rounded-xl bg-brand-50 text-brand-600 mb-5 group-hover:bg-brand-600 group-hover:text-white transition-colors duration-300">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-3 font-display">Flexible Options</h3>
+          <p class="text-slate-600 leading-relaxed">Full service or labor-only—plus packing, assembly, and placement exactly where you want.</p>
         </article>
       </div>
     </div>
   </section>
   
   <!-- Services spectrum -->
-  <section class="py-16 sm:py-20 bg-slate-50">
+  <section class="py-20 bg-white">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <div class="mx-auto max-w-3xl text-center">
-        <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">From labor-only to full-service homes</h2>
-        <div class="mx-auto mt-2 h-1 w-16 rounded bg-brand-600"></div>
-        <p class="mt-3 text-slate-600">Pick the level of help you need. We scale the crew and truck to your home size and timeline.</p>
+      <div class="mx-auto max-w-3xl text-center mb-16">
+        <h2 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-slate-900 font-display">Our Moving Services</h2>
+        <div class="mx-auto mt-4 h-1 w-20 rounded-full bg-gradient-to-r from-brand-500 to-brand-600"></div>
+        <p class="mt-6 text-lg text-slate-600">Pick the level of help you need. We scale the crew and truck to your home size and timeline.</p>
       </div>
 
-      <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
         <!-- Labor-only -->
-        <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
-          <h3 class="mt-3 text-lg font-extrabold">Labor-only moves</h3>
-          <p class="mt-2 text-sm text-slate-600">Need a hand loading a pod, truck, or rearranging at home? We provide the muscle and tools—no truck.</p>
-          <ul class="mt-4 grid gap-2 text-sm text-slate-700">
-            <li>• Two to four movers</li>
-            <li>• Dollies and basic tools</li>
-            <li>• Assembly/disassembly</li>
+        <article class="group relative bg-gradient-to-br from-brand-50 to-white rounded-2xl p-8 border-2 border-brand-200 hover:border-brand-400 transition-all duration-300 hover:shadow-xl">
+          <div class="flex h-14 w-14 items-center justify-center rounded-xl bg-brand-600 text-white mb-6 group-hover:scale-110 transition-transform duration-300">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-3 font-display">Labor-Only Moves</h3>
+          <p class="text-slate-600 mb-6 leading-relaxed">Need a hand loading a pod, truck, or rearranging at home? We provide the muscle and tools—no truck.</p>
+          <ul class="space-y-3">
+            <li class="flex items-center gap-3 text-slate-700">
+              <svg class="w-5 h-5 text-brand-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+              <span>Two to four movers</span>
+            </li>
+            <li class="flex items-center gap-3 text-slate-700">
+              <svg class="w-5 h-5 text-brand-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+              <span>Dollies and basic tools</span>
+            </li>
+            <li class="flex items-center gap-3 text-slate-700">
+              <svg class="w-5 h-5 text-brand-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+              <span>Assembly/disassembly</span>
+            </li>
           </ul>
         </article>
+        
         <!-- Studios / 1BR -->
-        <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
-          <h3 class="mt-3 text-lg font-extrabold">Studios & 1–2 bedroom</h3>
-          <p class="mt-2 text-sm text-slate-600">Efficient, carefully padded moves with floor and door protection for apartments and small homes.</p>
-          <ul class="mt-4 grid gap-2 text-sm text-slate-700">
-            <li>• 2–3 movers + truck</li>
-            <li>• Pads, wrap, and straps</li>
-            <li>• Basic packing help</li>
+        <article class="group relative bg-white rounded-2xl p-8 border border-slate-200 hover:border-brand-300 transition-all duration-300 hover:shadow-lg">
+          <div class="flex h-14 w-14 items-center justify-center rounded-xl bg-slate-100 text-slate-700 mb-6 group-hover:bg-brand-600 group-hover:text-white transition-colors duration-300">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-3 font-display">Studios & 1–2 Bedroom</h3>
+          <p class="text-slate-600 mb-6 leading-relaxed">Efficient, carefully padded moves with floor and door protection for apartments and small homes.</p>
+          <ul class="space-y-3">
+            <li class="flex items-center gap-3 text-slate-700">
+              <svg class="w-5 h-5 text-brand-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+              <span>2–3 movers + truck</span>
+            </li>
+            <li class="flex items-center gap-3 text-slate-700">
+              <svg class="w-5 h-5 text-brand-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+              <span>Pads, wrap, and straps</span>
+            </li>
+            <li class="flex items-center gap-3 text-slate-700">
+              <svg class="w-5 h-5 text-brand-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+              <span>Basic packing help</span>
+            </li>
           </ul>
         </article>
+        
         <!-- 3BR+ homes -->
-        <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
-          <h3 class="mt-3 text-lg font-extrabold">3–4+ bedroom homes</h3>
-          <p class="mt-2 text-sm text-slate-600">Larger crews and detailed labeling keep the day organized with minimal disruption.</p>
-          <ul class="mt-4 grid gap-2 text-sm text-slate-700">
-            <li>• 3–5 movers + large truck</li>
-            <li>• Placement by room</li>
-            <li>• Optional unpack & setup</li>
+        <article class="group relative bg-white rounded-2xl p-8 border border-slate-200 hover:border-brand-300 transition-all duration-300 hover:shadow-lg">
+          <div class="flex h-14 w-14 items-center justify-center rounded-xl bg-slate-100 text-slate-700 mb-6 group-hover:bg-brand-600 group-hover:text-white transition-colors duration-300">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-3 font-display">3–4+ Bedroom Homes</h3>
+          <p class="text-slate-600 mb-6 leading-relaxed">Larger crews and detailed labeling keep the day organized with minimal disruption.</p>
+          <ul class="space-y-3">
+            <li class="flex items-center gap-3 text-slate-700">
+              <svg class="w-5 h-5 text-brand-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+              <span>3–5 movers + large truck</span>
+            </li>
+            <li class="flex items-center gap-3 text-slate-700">
+              <svg class="w-5 h-5 text-brand-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+              <span>Placement by room</span>
+            </li>
+            <li class="flex items-center gap-3 text-slate-700">
+              <svg class="w-5 h-5 text-brand-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+              <span>Optional unpack & setup</span>
+            </li>
           </ul>
         </article>
+        
         <!-- Packing services -->
-        <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
-          <h3 class="mt-3 text-lg font-extrabold">Packing & unpacking</h3>
-          <p class="mt-2 text-sm text-slate-600">Full or partial packing with sturdy boxes and eco-friendly materials to protect your items.</p>
-          <ul class="mt-4 grid gap-2 text-sm text-slate-700">
-            <li>• Kitchen and fragile items</li>
-            <li>• Wardrobe boxes provided</li>
-            <li>• Debris removal options</li>
+        <article class="group relative bg-white rounded-2xl p-8 border border-slate-200 hover:border-brand-300 transition-all duration-300 hover:shadow-lg">
+          <div class="flex h-14 w-14 items-center justify-center rounded-xl bg-slate-100 text-slate-700 mb-6 group-hover:bg-brand-600 group-hover:text-white transition-colors duration-300">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-3 font-display">Packing & Unpacking</h3>
+          <p class="text-slate-600 mb-6 leading-relaxed">Full or partial packing with sturdy boxes and eco-friendly materials to protect your items.</p>
+          <ul class="space-y-3">
+            <li class="flex items-center gap-3 text-slate-700">
+              <svg class="w-5 h-5 text-brand-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+              <span>Kitchen and fragile items</span>
+            </li>
+            <li class="flex items-center gap-3 text-slate-700">
+              <svg class="w-5 h-5 text-brand-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+              <span>Wardrobe boxes provided</span>
+            </li>
+            <li class="flex items-center gap-3 text-slate-700">
+              <svg class="w-5 h-5 text-brand-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+              <span>Debris removal options</span>
+            </li>
           </ul>
         </article>
+        
         <!-- Specialty items -->
-        <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
-          <h3 class="mt-3 text-lg font-extrabold">Specialty items</h3>
-          <p class="mt-2 text-sm text-slate-600">Pianos, safes, large artwork, and gym equipment handled with the right gear and planning.</p>
-          <ul class="mt-4 grid gap-2 text-sm text-slate-700">
-            <li>• Protection and crating options</li>
-            <li>• Proper equipment & team size</li>
-            <li>• Clear paths & coverings</li>
+        <article class="group relative bg-white rounded-2xl p-8 border border-slate-200 hover:border-brand-300 transition-all duration-300 hover:shadow-lg">
+          <div class="flex h-14 w-14 items-center justify-center rounded-xl bg-slate-100 text-slate-700 mb-6 group-hover:bg-brand-600 group-hover:text-white transition-colors duration-300">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-3 font-display">Specialty Items</h3>
+          <p class="text-slate-600 mb-6 leading-relaxed">Pianos, safes, large artwork, and gym equipment handled with the right gear and planning.</p>
+          <ul class="space-y-3">
+            <li class="flex items-center gap-3 text-slate-700">
+              <svg class="w-5 h-5 text-brand-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+              <span>Protection and crating options</span>
+            </li>
+            <li class="flex items-center gap-3 text-slate-700">
+              <svg class="w-5 h-5 text-brand-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+              <span>Proper equipment & team size</span>
+            </li>
+            <li class="flex items-center gap-3 text-slate-700">
+              <svg class="w-5 h-5 text-brand-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+              <span>Clear paths & coverings</span>
+            </li>
           </ul>
         </article>
+        
         <!-- Long distance -->
-        <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
-          <h3 class="mt-3 text-lg font-extrabold">Local & long-distance</h3>
-          <p class="mt-2 text-sm text-slate-600">Across town or across the state—we’ll provide an efficient plan and clear timing.</p>
-          <ul class="mt-4 grid gap-2 text-sm text-slate-700">
-            <li>• Flat-rate or hourly</li>
-            <li>• Dedicated coordination</li>
-            <li>• Reliable ETAs</li>
+        <article class="group relative bg-white rounded-2xl p-8 border border-slate-200 hover:border-brand-300 transition-all duration-300 hover:shadow-lg">
+          <div class="flex h-14 w-14 items-center justify-center rounded-xl bg-slate-100 text-slate-700 mb-6 group-hover:bg-brand-600 group-hover:text-white transition-colors duration-300">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-3 font-display">Local & Long-Distance</h3>
+          <p class="text-slate-600 mb-6 leading-relaxed">Across town or across the state—we'll provide an efficient plan and clear timing.</p>
+          <ul class="space-y-3">
+            <li class="flex items-center gap-3 text-slate-700">
+              <svg class="w-5 h-5 text-brand-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+              <span>Flat-rate or hourly</span>
+            </li>
+            <li class="flex items-center gap-3 text-slate-700">
+              <svg class="w-5 h-5 text-brand-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+              <span>Dedicated coordination</span>
+            </li>
+            <li class="flex items-center gap-3 text-slate-700">
+              <svg class="w-5 h-5 text-brand-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+              <span>Reliable ETAs</span>
+            </li>
           </ul>
         </article>
       </div>
@@ -209,139 +422,314 @@
   </section>
 
   <!-- What's included (SEO-rich content) -->
-  <section class="py-16 sm:py-20">
+  <section class="py-20 bg-slate-50">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <div class="mx-auto max-w-3xl">
-        <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">What’s included with our residential moves</h2>
-        <div class="mt-2 h-1 w-16 rounded bg-brand-600"></div>
-        <p class="mt-4 text-slate-700">Every home move with Opek includes careful item protection and clear coordination, so moving day feels organized from start to finish.</p>
-        <ul class="mt-6 grid gap-2 text-sm text-slate-700">
-          <li>• Floor runners and door jamb protection at pickup and destination</li>
-          <li>• Clean moving pads, plastic wrap, and secure straps for furniture</li>
-          <li>• Basic disassembly and reassembly for beds and tables</li>
-          <li>• Room-by-room placement at your new home</li>
-          <li>• Friendly, background‑checked movers and clear communication</li>
-        </ul>
-        <p class="mt-6 text-sm text-slate-600">Need packing help? We offer <a href="./index.html#services" class="font-semibold text-brand-700 hover:underline">full and partial packing services</a>. For quick estimates, try <a href="./index.html#sms-quote" class="font-semibold text-brand-700 hover:underline">Get Instant Pricing</a> or <a href="./index.html#quote" class="font-semibold text-brand-700 hover:underline">request a full quote</a>.</p>
+      <div class="mx-auto max-w-4xl">
+        <div class="text-center mb-12">
+          <h2 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-slate-900 font-display">What's Included</h2>
+          <div class="mx-auto mt-4 h-1 w-20 rounded-full bg-gradient-to-r from-brand-500 to-brand-600"></div>
+          <p class="mt-6 text-lg text-slate-600">Every home move with Opek includes careful item protection and clear coordination</p>
+        </div>
+        
+        <div class="bg-white rounded-2xl p-8 sm:p-10 border border-slate-200">
+          <ul class="grid gap-5 sm:grid-cols-2">
+            <li class="flex items-start gap-4">
+              <div class="flex-shrink-0 w-10 h-10 rounded-lg bg-brand-100 flex items-center justify-center">
+                <svg class="w-5 h-5 text-brand-600" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-bold text-slate-900 mb-1">Floor & Door Protection</h3>
+                <p class="text-sm text-slate-600">Runners and jamb protection at pickup and destination</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-4">
+              <div class="flex-shrink-0 w-10 h-10 rounded-lg bg-brand-100 flex items-center justify-center">
+                <svg class="w-5 h-5 text-brand-600" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-bold text-slate-900 mb-1">Furniture Protection</h3>
+                <p class="text-sm text-slate-600">Clean pads, plastic wrap, and secure straps</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-4">
+              <div class="flex-shrink-0 w-10 h-10 rounded-lg bg-brand-100 flex items-center justify-center">
+                <svg class="w-5 h-5 text-brand-600" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-bold text-slate-900 mb-1">Assembly Services</h3>
+                <p class="text-sm text-slate-600">Basic disassembly and reassembly for beds and tables</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-4">
+              <div class="flex-shrink-0 w-10 h-10 rounded-lg bg-brand-100 flex items-center justify-center">
+                <svg class="w-5 h-5 text-brand-600" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-bold text-slate-900 mb-1">Room-by-Room Placement</h3>
+                <p class="text-sm text-slate-600">Items placed exactly where you want them</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-4">
+              <div class="flex-shrink-0 w-10 h-10 rounded-lg bg-brand-100 flex items-center justify-center">
+                <svg class="w-5 h-5 text-brand-600" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-bold text-slate-900 mb-1">Professional Crew</h3>
+                <p class="text-sm text-slate-600">Friendly, background-checked movers with clear communication</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-4">
+              <div class="flex-shrink-0 w-10 h-10 rounded-lg bg-brand-100 flex items-center justify-center">
+                <svg class="w-5 h-5 text-brand-600" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-bold text-slate-900 mb-1">Transparent Pricing</h3>
+                <p class="text-sm text-slate-600">No hidden fees or surprise charges</p>
+              </div>
+            </li>
+          </ul>
+          
+          <div class="mt-8 pt-8 border-t border-slate-200 text-center">
+            <p class="text-slate-600">Need packing help? We offer <a href="./index.html#services" class="font-semibold text-brand-600 hover:text-brand-700 transition">full and partial packing services</a>.</p>
+            <div class="mt-6 flex flex-col sm:flex-row gap-3 justify-center">
+              <a href="./index.html#sms-quote" class="inline-flex items-center justify-center gap-2 rounded-xl bg-brand-600 px-6 py-3 text-sm font-bold text-white hover:bg-brand-700 transition">Get Instant Pricing</a>
+              <a href="./index.html#quote" class="inline-flex items-center justify-center gap-2 rounded-xl border-2 border-slate-300 px-6 py-3 text-sm font-bold text-slate-700 hover:border-slate-400 hover:bg-slate-50 transition">Request Full Quote</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Pricing guidance (SEO-rich content) -->
-  <section class="py-16 sm:py-20 bg-slate-50">
+  <section class="py-20 bg-white">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <div class="mx-auto max-w-3xl">
-        <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Residential moving prices in Denver</h2>
-        <div class="mt-2 h-1 w-16 rounded bg-brand-600"></div>
-        <p class="mt-4 text-slate-700">Local residential moves in the Denver area are typically billed hourly based on the size of the crew. Larger or long-distance moves may be quoted at a flat rate after we review details.</p>
-        <ul class="mt-6 grid gap-2 text-sm text-slate-700">
-          <li>• Hourly moves: crew size matched to home size and access (stairs, elevator)</li>
-          <li>• Flat-rate quotes: recommended for bigger homes or longer distances</li>
-          <li>• Optional packing: added as hourly or included in a flat-rate plan</li>
-        </ul>
-        <p class="mt-6 text-sm text-slate-600">For a quick estimate, use <a href="./index.html#sms-quote" class="font-semibold text-brand-700 hover:underline">Get Instant Pricing</a>. We’ll confirm availability and the best plan for your move.</p>
+      <div class="mx-auto max-w-4xl">
+        <div class="text-center mb-12">
+          <h2 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-slate-900 font-display">Transparent Pricing</h2>
+          <div class="mx-auto mt-4 h-1 w-20 rounded-full bg-gradient-to-r from-brand-500 to-brand-600"></div>
+          <p class="mt-6 text-lg text-slate-600">Clear, honest pricing for residential moves in Denver</p>
+        </div>
+        
+        <div class="bg-gradient-to-br from-slate-50 to-white rounded-2xl p-8 sm:p-10 border border-slate-200">
+          <p class="text-slate-700 leading-relaxed mb-8">Local residential moves in the Denver area are typically billed hourly based on the size of the crew. Larger or long-distance moves may be quoted at a flat rate after we review details.</p>
+          
+          <div class="grid gap-6 sm:grid-cols-3">
+            <div class="bg-white rounded-xl p-6 border border-slate-200">
+              <div class="flex items-center justify-center w-12 h-12 rounded-lg bg-brand-100 text-brand-600 mb-4">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+              </div>
+              <h3 class="font-bold text-slate-900 mb-2">Hourly Moves</h3>
+              <p class="text-sm text-slate-600">Crew size matched to home size and access (stairs, elevator)</p>
+            </div>
+            
+            <div class="bg-white rounded-xl p-6 border border-slate-200">
+              <div class="flex items-center justify-center w-12 h-12 rounded-lg bg-brand-100 text-brand-600 mb-4">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                </svg>
+              </div>
+              <h3 class="font-bold text-slate-900 mb-2">Flat-Rate Quotes</h3>
+              <p class="text-sm text-slate-600">Recommended for bigger homes or longer distances</p>
+            </div>
+            
+            <div class="bg-white rounded-xl p-6 border border-slate-200">
+              <div class="flex items-center justify-center w-12 h-12 rounded-lg bg-brand-100 text-brand-600 mb-4">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/>
+                </svg>
+              </div>
+              <h3 class="font-bold text-slate-900 mb-2">Optional Packing</h3>
+              <p class="text-sm text-slate-600">Added as hourly or included in flat-rate plan</p>
+            </div>
+          </div>
+          
+          <div class="mt-8 text-center">
+            <p class="text-slate-600 mb-6">For a quick estimate, use our instant pricing tool. We'll confirm availability and the best plan for your move.</p>
+            <a href="./index.html#sms-quote" class="inline-flex items-center justify-center gap-2 rounded-xl bg-brand-600 px-8 py-4 text-base font-bold text-white hover:bg-brand-700 transition shadow-lg hover:shadow-xl">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+              </svg>
+              Get Instant Pricing
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Areas we cover -->
-  <section class="py-16 sm:py-20">
+  <section class="py-20 bg-slate-50">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <div class="mx-auto max-w-3xl text-center">
-        <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Areas we cover</h2>
-        <div class="mx-auto mt-2 h-1 w-16 rounded bg-brand-600"></div>
-        <p class="mt-3 text-slate-600">We serve homes within a 50‑mile radius of Denver, CO. Not sure? Share your ZIP below.</p>
-      </div>
-      <div class="mt-8 rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
-        <ul class="flex flex-wrap gap-2">
-          <li class="inline-flex items-center rounded-full bg-brand-50 text-brand-700 ring-1 ring-brand-100 px-3 py-1 text-sm">Denver</li>
-          <li class="inline-flex items-center rounded-full bg-brand-50 text-brand-700 ring-1 ring-brand-100 px-3 py-1 text-sm">Aurora</li>
-          <li class="inline-flex items-center rounded-full bg-brand-50 text-brand-700 ring-1 ring-brand-100 px-3 py-1 text-sm">Lakewood</li>
-          <li class="inline-flex items-center rounded-full bg-brand-50 text-brand-700 ring-1 ring-brand-100 px-3 py-1 text-sm">Littleton</li>
-          <li class="inline-flex items-center rounded-full bg-brand-50 text-brand-700 ring-1 ring-brand-100 px-3 py-1 text-sm">Arvada</li>
-          <li class="inline-flex items-center rounded-full bg-brand-50 text-brand-700 ring-1 ring-brand-100 px-3 py-1 text-sm">Westminster</li>
-          <li class="inline-flex items-center rounded-full bg-brand-50 text-brand-700 ring-1 ring-brand-100 px-3 py-1 text-sm">Thornton</li>
-          <li class="inline-flex items-center rounded-full bg-brand-50 text-brand-700 ring-1 ring-brand-100 px-3 py-1 text-sm">Centennial</li>
-          <li class="inline-flex items-center rounded-full bg-brand-50 text-brand-700 ring-1 ring-brand-100 px-3 py-1 text-sm">Boulder</li>
-          <li class="inline-flex items-center rounded-full bg-brand-50 text-brand-700 ring-1 ring-brand-100 px-3 py-1 text-sm">Broomfield</li>
-          <li class="inline-flex items-center rounded-full bg-brand-50 text-brand-700 ring-1 ring-brand-100 px-3 py-1 text-sm">Parker</li>
-          <li class="inline-flex items-center rounded-full bg-brand-50 text-brand-700 ring-1 ring-brand-100 px-3 py-1 text-sm">Golden</li>
-          <li class="inline-flex items-center rounded-full bg-brand-50 text-brand-700 ring-1 ring-brand-100 px-3 py-1 text-sm">Highlands Ranch</li>
-          <li class="inline-flex items-center rounded-full bg-brand-50 text-brand-700 ring-1 ring-brand-100 px-3 py-1 text-sm">Englewood</li>
-          <li class="inline-flex items-center rounded-full bg-brand-50 text-brand-700 ring-1 ring-brand-100 px-3 py-1 text-sm">Wheat Ridge</li>
-          <li class="inline-flex items-center rounded-full bg-brand-50 text-brand-700 ring-1 ring-brand-100 px-3 py-1 text-sm">Northglenn</li>
-          <li class="inline-flex items-center rounded-full bg-brand-50 text-brand-700 ring-1 ring-brand-100 px-3 py-1 text-sm">Commerce City</li>
-          <li class="inline-flex items-center rounded-full bg-brand-50 text-brand-700 ring-1 ring-brand-100 px-3 py-1 text-sm">Lone Tree</li>
-          <li class="inline-flex items-center rounded-full bg-brand-50 text-brand-700 ring-1 ring-brand-100 px-3 py-1 text-sm">Lafayette</li>
-          <li class="inline-flex items-center rounded-full bg-brand-50 text-brand-700 ring-1 ring-brand-100 px-3 py-1 text-sm">Longmont</li>
-        </ul>
-        <div class="mt-6 flex flex-col sm:flex-row gap-3">
-          <a href="./index.html#sms-quote" class="inline-flex items-center justify-center gap-2 rounded-2xl bg-brand-600 px-5 py-3 text-sm font-semibold text-white shadow-elevated hover:bg-brand-700">Text me pricing</a>
-          <a href="./index.html#quote" class="inline-flex items-center justify-center gap-2 rounded-2xl bg-black px-5 py-3 text-sm font-semibold text-white shadow-elevated hover:bg-slate-900">Get a quote</a>
+      <div class="mx-auto max-w-4xl">
+        <div class="text-center mb-12">
+          <h2 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-slate-900 font-display">Service Areas</h2>
+          <div class="mx-auto mt-4 h-1 w-20 rounded-full bg-gradient-to-r from-brand-500 to-brand-600"></div>
+          <p class="mt-6 text-lg text-slate-600">Serving homes within a 50-mile radius of Denver, CO</p>
+        </div>
+        
+        <div class="bg-white rounded-2xl p-8 sm:p-10 border border-slate-200">
+          <div class="flex items-center gap-3 mb-6">
+            <div class="flex-shrink-0 w-12 h-12 rounded-lg bg-brand-100 flex items-center justify-center">
+              <svg class="w-6 h-6 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-slate-900">Denver Metro & Surrounding Areas</h3>
+              <p class="text-sm text-slate-600">Professional moving services across the region</p>
+            </div>
+          </div>
+          
+          <ul class="flex flex-wrap gap-2 mb-8">
+            <li class="inline-flex items-center rounded-full bg-brand-50 text-brand-700 border border-brand-200 px-4 py-2 text-sm font-medium">Denver</li>
+            <li class="inline-flex items-center rounded-full bg-brand-50 text-brand-700 border border-brand-200 px-4 py-2 text-sm font-medium">Aurora</li>
+            <li class="inline-flex items-center rounded-full bg-brand-50 text-brand-700 border border-brand-200 px-4 py-2 text-sm font-medium">Lakewood</li>
+            <li class="inline-flex items-center rounded-full bg-brand-50 text-brand-700 border border-brand-200 px-4 py-2 text-sm font-medium">Littleton</li>
+            <li class="inline-flex items-center rounded-full bg-brand-50 text-brand-700 border border-brand-200 px-4 py-2 text-sm font-medium">Arvada</li>
+            <li class="inline-flex items-center rounded-full bg-brand-50 text-brand-700 border border-brand-200 px-4 py-2 text-sm font-medium">Westminster</li>
+            <li class="inline-flex items-center rounded-full bg-brand-50 text-brand-700 border border-brand-200 px-4 py-2 text-sm font-medium">Thornton</li>
+            <li class="inline-flex items-center rounded-full bg-brand-50 text-brand-700 border border-brand-200 px-4 py-2 text-sm font-medium">Centennial</li>
+            <li class="inline-flex items-center rounded-full bg-brand-50 text-brand-700 border border-brand-200 px-4 py-2 text-sm font-medium">Boulder</li>
+            <li class="inline-flex items-center rounded-full bg-brand-50 text-brand-700 border border-brand-200 px-4 py-2 text-sm font-medium">Broomfield</li>
+            <li class="inline-flex items-center rounded-full bg-brand-50 text-brand-700 border border-brand-200 px-4 py-2 text-sm font-medium">Parker</li>
+            <li class="inline-flex items-center rounded-full bg-brand-50 text-brand-700 border border-brand-200 px-4 py-2 text-sm font-medium">Golden</li>
+            <li class="inline-flex items-center rounded-full bg-brand-50 text-brand-700 border border-brand-200 px-4 py-2 text-sm font-medium">Highlands Ranch</li>
+            <li class="inline-flex items-center rounded-full bg-brand-50 text-brand-700 border border-brand-200 px-4 py-2 text-sm font-medium">Englewood</li>
+            <li class="inline-flex items-center rounded-full bg-brand-50 text-brand-700 border border-brand-200 px-4 py-2 text-sm font-medium">Wheat Ridge</li>
+            <li class="inline-flex items-center rounded-full bg-brand-50 text-brand-700 border border-brand-200 px-4 py-2 text-sm font-medium">Northglenn</li>
+            <li class="inline-flex items-center rounded-full bg-brand-50 text-brand-700 border border-brand-200 px-4 py-2 text-sm font-medium">Commerce City</li>
+            <li class="inline-flex items-center rounded-full bg-brand-50 text-brand-700 border border-brand-200 px-4 py-2 text-sm font-medium">Lone Tree</li>
+            <li class="inline-flex items-center rounded-full bg-brand-50 text-brand-700 border border-brand-200 px-4 py-2 text-sm font-medium">Lafayette</li>
+            <li class="inline-flex items-center rounded-full bg-brand-50 text-brand-700 border border-brand-200 px-4 py-2 text-sm font-medium">Longmont</li>
+          </ul>
+          
+          <div class="pt-6 border-t border-slate-200">
+            <p class="text-center text-slate-600 mb-6">Not sure if we serve your area? Get in touch for instant pricing.</p>
+            <div class="flex flex-col sm:flex-row gap-3 justify-center">
+              <a href="./index.html#sms-quote" class="inline-flex items-center justify-center gap-2 rounded-xl bg-brand-600 px-6 py-3 text-sm font-bold text-white hover:bg-brand-700 transition">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"/>
+                </svg>
+                Text Me Pricing
+              </a>
+              <a href="./index.html#quote" class="inline-flex items-center justify-center gap-2 rounded-xl border-2 border-slate-300 px-6 py-3 text-sm font-bold text-slate-700 hover:border-slate-400 hover:bg-slate-50 transition">Get Full Quote</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- FAQ -->
-  <section class="py-16 sm:py-20 bg-slate-50">
+  <section class="py-20 bg-white">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <div class="mx-auto max-w-3xl text-center">
-        <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Residential Moving FAQ</h2>
-        <div class="mx-auto mt-2 h-1 w-16 rounded bg-brand-600"></div>
-        <p class="mt-3 text-slate-600">Answers to common questions about booking, timing, and what’s included.</p>
-      </div>
-      <div class="mx-auto mt-8 max-w-3xl divide-y divide-slate-200 rounded-3xl border border-slate-200 bg-white shadow-sm">
-        <details class="group p-5">
-          <summary class="flex cursor-pointer list-none items-center justify-between gap-4">
-            <h3 class="text-sm sm:text-base font-extrabold text-slate-900">How far in advance should I book?</h3>
-            <span class="shrink-0 rounded-full bg-slate-100 p-2 text-slate-600 group-open:rotate-45 transition">+</span>
-          </summary>
-          <p class="mt-3 text-sm text-slate-600">We recommend 2–3 weeks for best availability. If you have a last‑minute move, we’ll do our best to fit you in.</p>
-        </details>
-        <details class="group p-5">
-          <summary class="flex cursor-pointer list-none items-center justify-between gap-4">
-            <h3 class="text-sm sm:text-base font-extrabold text-slate-900">Do you protect floors and doorways?</h3>
-            <span class="shrink-0 rounded-full bg-slate-100 p-2 text-slate-600 group-open:rotate-45 transition">+</span>
-          </summary>
-          <p class="mt-3 text-sm text-slate-600">Yes. We use floor runners, door jamb protection, and clean pads to protect your home throughout the move.</p>
-        </details>
-        <details class="group p-5">
-          <summary class="flex cursor-pointer list-none items-center justify-between gap-4">
-            <h3 class="text-sm sm:text-base font-extrabold text-slate-900">Can you help with packing and unpacking?</h3>
-            <span class="shrink-0 rounded-full bg-slate-100 p-2 text-slate-600 group-open:rotate-45 transition">+</span>
-          </summary>
-          <p class="mt-3 text-sm text-slate-600">Absolutely. We offer full and partial packing, plus unpacking and placement where you want items to go.</p>
-        </details>
-        <details class="group p-5">
-          <summary class="flex cursor-pointer list-none items-center justify-between gap-4">
-            <h3 class="text-sm sm:text-base font-extrabold text-slate-900">What about heavy or specialty items?</h3>
-            <span class="shrink-0 rounded-full bg-slate-100 p-2 text-slate-600 group-open:rotate-45 transition">+</span>
-          </summary>
-          <p class="mt-3 text-sm text-slate-600">Tell us in advance about pianos, safes, or oversized items. We’ll bring the right equipment and team size.</p>
-        </details>
+      <div class="mx-auto max-w-3xl">
+        <div class="text-center mb-12">
+          <h2 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-slate-900 font-display">Frequently Asked Questions</h2>
+          <div class="mx-auto mt-4 h-1 w-20 rounded-full bg-gradient-to-r from-brand-500 to-brand-600"></div>
+          <p class="mt-6 text-lg text-slate-600">Everything you need to know about our residential moving services</p>
+        </div>
+        
+        <div class="space-y-4">
+          <details class="group bg-slate-50 rounded-2xl border border-slate-200 hover:border-brand-300 transition-colors">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 p-6">
+              <h3 class="text-base sm:text-lg font-bold text-slate-900">How far in advance should I book?</h3>
+              <span class="flex-shrink-0 w-8 h-8 rounded-full bg-white border-2 border-slate-300 flex items-center justify-center text-slate-600 group-open:rotate-45 group-open:bg-brand-600 group-open:border-brand-600 group-open:text-white transition-all duration-300">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
+                </svg>
+              </span>
+            </summary>
+            <div class="px-6 pb-6">
+              <p class="text-slate-600 leading-relaxed">We recommend booking 2–3 weeks in advance for best availability. However, if you have a last-minute move, we'll do our best to accommodate you. Contact us as soon as possible to check availability.</p>
+            </div>
+          </details>
+          
+          <details class="group bg-slate-50 rounded-2xl border border-slate-200 hover:border-brand-300 transition-colors">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 p-6">
+              <h3 class="text-base sm:text-lg font-bold text-slate-900">Do you protect floors and doorways?</h3>
+              <span class="flex-shrink-0 w-8 h-8 rounded-full bg-white border-2 border-slate-300 flex items-center justify-center text-slate-600 group-open:rotate-45 group-open:bg-brand-600 group-open:border-brand-600 group-open:text-white transition-all duration-300">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
+                </svg>
+              </span>
+            </summary>
+            <div class="px-6 pb-6">
+              <p class="text-slate-600 leading-relaxed">Absolutely. We use floor runners, door jamb protection, and clean moving pads to protect your home throughout the entire move. This is included in every residential move at no extra charge.</p>
+            </div>
+          </details>
+          
+          <details class="group bg-slate-50 rounded-2xl border border-slate-200 hover:border-brand-300 transition-colors">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 p-6">
+              <h3 class="text-base sm:text-lg font-bold text-slate-900">Can you help with packing and unpacking?</h3>
+              <span class="flex-shrink-0 w-8 h-8 rounded-full bg-white border-2 border-slate-300 flex items-center justify-center text-slate-600 group-open:rotate-45 group-open:bg-brand-600 group-open:border-brand-600 group-open:text-white transition-all duration-300">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
+                </svg>
+              </span>
+            </summary>
+            <div class="px-6 pb-6">
+              <p class="text-slate-600 leading-relaxed">Yes! We offer full and partial packing services, plus unpacking and placement where you want items to go. We provide all necessary packing materials including boxes, tape, and protective wrapping.</p>
+            </div>
+          </details>
+          
+          <details class="group bg-slate-50 rounded-2xl border border-slate-200 hover:border-brand-300 transition-colors">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 p-6">
+              <h3 class="text-base sm:text-lg font-bold text-slate-900">What about heavy or specialty items?</h3>
+              <span class="flex-shrink-0 w-8 h-8 rounded-full bg-white border-2 border-slate-300 flex items-center justify-center text-slate-600 group-open:rotate-45 group-open:bg-brand-600 group-open:border-brand-600 group-open:text-white transition-all duration-300">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
+                </svg>
+              </span>
+            </summary>
+            <div class="px-6 pb-6">
+              <p class="text-slate-600 leading-relaxed">Please let us know in advance about pianos, safes, large artwork, or other oversized items. We'll bring the appropriate equipment and adjust our team size to handle these items safely and professionally.</p>
+            </div>
+          </details>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- CTA strip -->
-  <section class="py-12 bg-slate-50">
+  <section class="py-16 bg-gradient-to-br from-brand-600 to-brand-700">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <div class="rounded-3xl bg-white/90 backdrop-blur p-6 sm:p-8 shadow-elevated ring-1 ring-slate-200 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-        <div>
-          <h2 class="text-xl sm:text-2xl font-extrabold tracking-tight">Ready to move?</h2>
-          <p class="mt-1 text-sm text-slate-600">Get instant pricing by text or send details for a full quote.</p>
-        </div>
-        <div class="flex flex-col sm:flex-row gap-3">
-          <a href="./index.html#sms-quote" class="inline-flex items-center justify-center gap-2 rounded-2xl bg-brand-600 px-5 py-3 text-sm font-semibold text-white shadow-elevated hover:bg-brand-700">Text me pricing</a>
-          <a href="./index.html#quote" class="inline-flex items-center justify-center gap-2 rounded-2xl bg-black px-5 py-3 text-sm font-semibold text-white shadow-elevated hover:bg-slate-900">Get a quote</a>
+      <div class="text-center">
+        <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white font-display">Ready to Get Started?</h2>
+        <p class="mt-4 text-lg text-white/90 max-w-2xl mx-auto">Get instant pricing by text or request a detailed quote. Our team is ready to make your move stress-free.</p>
+        <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="./index.html#sms-quote" class="inline-flex items-center justify-center gap-2 rounded-xl bg-white px-8 py-4 text-base font-bold text-brand-700 hover:bg-slate-50 transition shadow-lg hover:shadow-xl">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+            </svg>
+            Get Instant Pricing
+          </a>
+          <a href="./index.html#quote" class="inline-flex items-center justify-center gap-2 rounded-xl bg-white/10 backdrop-blur-sm border-2 border-white/30 px-8 py-4 text-base font-bold text-white hover:bg-white/20 hover:border-white/50 transition">
+            Request Full Quote
+          </a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Footer (consistent with homepage) -->
-  <footer class="mt-20 bg-black text-white">
+  <footer class="bg-slate-900 text-white">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
       <!-- Top row: Logo + Nav -->
       <div class="flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
