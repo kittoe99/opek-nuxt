@@ -4,7 +4,15 @@
     <MobileFAB />
 
     <!-- Hero -->
-    <section id="home" class="relative isolate min-h-[80vh] sm:min-h-[85vh] lg:min-h-[90vh] flex items-center overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
+    <section id="home" class="relative isolate min-h-[80vh] sm:min-h-[85vh] lg:min-h-[90vh] flex items-center overflow-hidden">
+      <!-- Background Image -->
+      <div class="absolute inset-0 -z-10">
+        <img src="/assets/Opek.png" alt="Opek Moving" class="h-full w-full object-cover" />
+      </div>
+
+      <!-- Gradient Overlay -->
+      <div class="absolute inset-0 bg-gradient-to-br from-slate-900/95 via-slate-800/90 to-slate-900/95 -z-10"></div>
+
       <!-- Background Pattern -->
       <div class="absolute inset-0 -z-10 opacity-10">
         <div class="absolute inset-0" style="background-image: radial-gradient(circle at 1px 1px, rgb(255 255 255 / 0.15) 1px, transparent 0); background-size: 40px 40px;"></div>

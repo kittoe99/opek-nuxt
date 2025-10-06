@@ -3,14 +3,22 @@
     <TheHeader />
 
     <!-- Page Hero -->
-    <section class="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 py-16 sm:py-20 lg:py-24 overflow-hidden">
+    <section class="relative py-16 sm:py-20 lg:py-24 overflow-hidden">
+      <!-- Background Image -->
+      <div class="absolute inset-0 -z-10">
+        <img src="/assets/Opek.png" alt="Residential Moving" class="h-full w-full object-cover" />
+      </div>
+      
+      <!-- Gradient Overlay -->
+      <div class="absolute inset-0 bg-gradient-to-br from-slate-900/95 via-slate-800/90 to-slate-900/95 -z-10"></div>
+      
       <!-- Background Pattern -->
-      <div class="absolute inset-0 opacity-10">
+      <div class="absolute inset-0 -z-10 opacity-10">
         <div class="absolute inset-0" style="background-image: radial-gradient(circle at 1px 1px, rgb(255 255 255 / 0.15) 1px, transparent 0); background-size: 40px 40px;"></div>
       </div>
       
       <!-- Gradient Orbs -->
-      <div class="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 w-96 h-96 bg-brand-600/20 rounded-full blur-3xl"></div>
+      <div class="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 w-96 h-96 bg-brand-600/20 rounded-full blur-3xl -z-10"></div>
       
       <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <nav aria-label="Breadcrumb" class="text-white/70 text-xs sm:text-sm mb-6">
