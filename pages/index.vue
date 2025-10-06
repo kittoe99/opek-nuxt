@@ -25,7 +25,7 @@
       <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 sm:py-16 w-full">
         <div class="grid lg:grid-cols-2 gap-12 items-center">
           <!-- Left: Content -->
-          <div class="text-white">
+          <div class="text-white text-center lg:text-left">
             <!-- Badge -->
             <div class="inline-flex items-center gap-2 rounded-full bg-brand-600/20 border border-brand-500/30 backdrop-blur-sm px-4 py-2 mb-6">
               <span class="relative flex h-2 w-2">
@@ -44,26 +44,26 @@
             </p>
 
             <!-- Features Grid -->
-            <div class="grid grid-cols-2 gap-3 mb-8">
-              <div class="flex items-center gap-2 text-sm text-slate-300">
+            <div class="grid grid-cols-2 gap-3 mb-8 max-w-md mx-auto lg:mx-0">
+              <div class="flex items-center justify-center lg:justify-start gap-2 text-sm text-slate-300">
                 <svg class="w-5 h-5 text-brand-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                 </svg>
                 <span>Licensed & Insured</span>
               </div>
-              <div class="flex items-center gap-2 text-sm text-slate-300">
+              <div class="flex items-center justify-center lg:justify-start gap-2 text-sm text-slate-300">
                 <svg class="w-5 h-5 text-brand-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                 </svg>
                 <span>Same-Day Available</span>
               </div>
-              <div class="flex items-center gap-2 text-sm text-slate-300">
+              <div class="flex items-center justify-center lg:justify-start gap-2 text-sm text-slate-300">
                 <svg class="w-5 h-5 text-brand-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                 </svg>
                 <span>No Hidden Fees</span>
               </div>
-              <div class="flex items-center gap-2 text-sm text-slate-300">
+              <div class="flex items-center justify-center lg:justify-start gap-2 text-sm text-slate-300">
                 <svg class="w-5 h-5 text-brand-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                 </svg>
@@ -72,7 +72,7 @@
             </div>
 
             <!-- CTAs -->
-            <div class="flex flex-row flex-wrap gap-2 sm:gap-3">
+            <div class="flex flex-row flex-wrap justify-center lg:justify-start gap-2 sm:gap-3">
               <a href="#sms-quote" class="group inline-flex items-center justify-center gap-2 rounded-xl bg-brand-600 px-5 sm:px-8 py-3.5 sm:py-4 text-sm sm:text-base font-bold text-white hover:bg-brand-700 transition-all shadow-lg shadow-brand-600/30 hover:shadow-xl hover:shadow-brand-600/40 hover:scale-105">
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
