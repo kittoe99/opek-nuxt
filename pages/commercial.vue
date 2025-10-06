@@ -2,24 +2,8 @@
   <div>
     <TheHeader />
 
-    <!-- Page Hero -->
-    <section class="relative py-16 sm:py-20 lg:py-24 overflow-hidden">
-      <!-- Background Image -->
-      <div class="absolute inset-0 -z-10">
-        <img src="/assets/Opek.png" alt="Commercial Moving" class="h-full w-full object-cover" />
-      </div>
-      
-      <!-- Gradient Overlay -->
-      <div class="absolute inset-0 bg-gradient-to-br from-slate-900/95 via-slate-800/90 to-slate-900/95"></div>
-      
-      <!-- Background Pattern -->
-      <div class="absolute inset-0 -z-10 opacity-10">
-        <div class="absolute inset-0" style="background-image: radial-gradient(circle at 1px 1px, rgb(255 255 255 / 0.15) 1px, transparent 0); background-size: 40px 40px;"></div>
-      </div>
-      
-      <!-- Gradient Orbs -->
-      <div class="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 w-96 h-96 bg-brand-600/20 rounded-full blur-3xl -z-10"></div>
-      
+    <!-- Page Hero - Mini Version -->
+    <section class="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 py-12 sm:py-16">
       <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <nav aria-label="Breadcrumb" class="text-white/70 text-xs sm:text-sm mb-6">
           <ol class="flex items-center gap-1.5 sm:gap-2">
@@ -31,47 +15,21 @@
           </ol>
         </nav>
 
-        <div class="max-w-4xl">
-          <!-- Icon Badge -->
-          <div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-brand-600/20 border-2 border-brand-500/30 backdrop-blur-sm mb-6">
-            <svg class="w-8 h-8 text-brand-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
-            </svg>
-          </div>
-          
-          <h1 class="text-3xl leading-tight sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight lg:text-6xl lg:leading-tight font-extrabold tracking-tight text-white font-display mb-5">
+        <div class="text-center max-w-4xl mx-auto">
+          <h1 class="text-3xl leading-tight sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight font-extrabold tracking-tight text-white font-display mb-4">
             Commercial Moving <span class="text-brand-300">With Minimal Downtime</span>
           </h1>
-          <p class="text-base sm:text-lg md:text-xl text-slate-300 leading-relaxed mb-8 max-w-2xl">
+          <p class="text-base sm:text-lg text-slate-300 leading-relaxed mb-8">
             Professional office moving services for businesses across Denver. Coordinated scheduling, equipment protection, and weekend moves available.
           </p>
-          <div class="flex flex-row flex-wrap gap-2 sm:gap-3">
-            <a href="/#sms-quote" class="group inline-flex items-center justify-center gap-1.5 sm:gap-2 rounded-xl bg-brand-600 px-4 sm:px-6 py-3 sm:py-3.5 text-xs sm:text-base font-bold text-white hover:bg-brand-700 transition-all shadow-lg shadow-brand-600/30 hover:shadow-xl hover:scale-105">
-              <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-              Get Pricing
-              <svg class="w-3 h-3 sm:w-4 sm:h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+          <div class="flex flex-row flex-wrap justify-center gap-3">
+            <a href="/#sms-quote" class="group inline-flex items-center justify-center gap-2 rounded-xl bg-brand-600 px-6 sm:px-8 py-3.5 sm:py-4 text-sm sm:text-base font-bold text-white hover:bg-brand-700 transition-all shadow-lg shadow-brand-600/30 hover:shadow-xl hover:scale-105">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+              Get Instant Pricing
             </a>
-            <a href="/#quote" class="group inline-flex items-center justify-center gap-1.5 sm:gap-2 rounded-xl bg-white/10 backdrop-blur-sm px-4 sm:px-6 py-3 sm:py-3.5 text-xs sm:text-base font-bold text-white border-2 border-white/20 hover:bg-white/20 hover:border-white/30 transition-all">
-              Full Quote
-              <svg class="w-3 h-3 sm:w-4 sm:h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+            <a href="/#quote" class="group inline-flex items-center justify-center gap-2 rounded-xl bg-white/10 backdrop-blur-sm px-6 sm:px-8 py-3.5 sm:py-4 text-sm sm:text-base font-bold text-white border-2 border-white/20 hover:bg-white/20 hover:border-white/30 transition-all">
+              Request Quote
             </a>
-          </div>
-          
-          <!-- Happy Moves Badge - Mobile Only -->
-          <div class="mt-6 sm:hidden flex justify-center">
-            <div class="bg-white rounded-2xl p-4 shadow-2xl inline-flex">
-              <div class="flex items-center gap-3">
-                <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-100">
-                  <svg class="w-6 h-6 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
-                  </svg>
-                </div>
-                <div>
-                  <div class="text-2xl font-bold text-slate-900">1,000+</div>
-                  <div class="text-xs font-medium text-slate-600">Happy Moves</div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
