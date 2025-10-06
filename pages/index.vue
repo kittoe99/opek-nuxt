@@ -11,7 +11,7 @@
       </div>
 
       <!-- Gradient Overlay -->
-      <div class="absolute inset-0 bg-gradient-to-br from-slate-900/95 via-slate-800/90 to-slate-900/95 -z-10"></div>
+      <div class="absolute inset-0 bg-gradient-to-br from-slate-900/98 via-slate-800/95 to-slate-900/98 sm:from-slate-900/95 sm:via-slate-800/90 sm:to-slate-900/95 -z-10"></div>
 
       <!-- Background Pattern -->
       <div class="absolute inset-0 -z-10 opacity-10">
