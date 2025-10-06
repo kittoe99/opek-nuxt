@@ -14,7 +14,7 @@
       <div class="mt-12 grid gap-6 md:grid-cols-3">
         <article v-for="review in reviews" :key="review.name" class="relative group">
           <div class="absolute -inset-0.5 bg-gradient-to-br from-brand-600 to-brand-500 rounded-3xl opacity-0 group-hover:opacity-100 transition duration-300"></div>
-          <figure class="relative rounded-3xl border border-slate-200 bg-white p-6">
+          <figure class="relative rounded-3xl border border-slate-200 bg-white p-6 shadow-lg">
             <div class="flex gap-1 mb-3">
               <span v-for="i in 5" :key="i" class="text-yellow-400 text-lg">★</span>
             </div>

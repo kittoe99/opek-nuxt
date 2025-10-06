@@ -17,7 +17,7 @@
         <!-- Left: Featured area card -->
         <div class="relative group">
           <div class="absolute -inset-0.5 bg-gradient-to-br from-brand-600 to-brand-500 rounded-3xl opacity-0 group-hover:opacity-100 transition duration-300"></div>
-          <div class="relative rounded-3xl border border-slate-200 bg-white p-8">
+          <div class="relative rounded-3xl border border-slate-200 bg-white p-8 shadow-lg">
             <div class="flex items-center gap-3 mb-6">
               <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-600 text-white">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
@@ -57,7 +57,7 @@
 
         <!-- Right: Image -->
         <div>
-          <div class="relative overflow-hidden rounded-3xl border border-slate-200 bg-white h-full min-h-[400px]">
+          <div class="relative overflow-hidden rounded-3xl border border-slate-200 bg-white h-full min-h-[400px] shadow-lg">
             <img src="/assets/Opek.png" alt="Denver metro area service coverage" class="h-full w-full object-cover" />
             <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent p-6">
               <div class="flex items-end justify-between">

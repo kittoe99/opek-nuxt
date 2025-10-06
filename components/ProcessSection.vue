@@ -15,7 +15,7 @@
       <div class="mt-12 grid gap-8 lg:grid-cols-2 lg:items-start">
         <!-- Left: Image -->
         <div class="order-last lg:order-first">
-          <div class="relative overflow-hidden rounded-3xl border border-slate-200 bg-white">
+          <div class="relative overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-lg">
             <img src="/assets/Opek.png" alt="Opek moving crew in action" class="h-80 w-full object-cover sm:h-96" />
             <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent p-4">
               <p class="text-white text-xs font-semibold">Professional crew • Protected floors • On-time arrivals</p>

@@ -30,7 +30,7 @@
 
         <div class="relative group">
           <div class="absolute -inset-0.5 bg-gradient-to-br from-brand-600 to-brand-500 rounded-3xl opacity-0 group-hover:opacity-100 transition duration-300"></div>
-          <form @submit.prevent="handleSubmit" class="relative rounded-3xl border border-slate-200 bg-white p-6 sm:p-8 grid gap-5 md:grid-cols-2">
+          <form @submit.prevent="handleSubmit" class="relative rounded-3xl border border-slate-200 bg-white p-6 sm:p-8 grid gap-5 md:grid-cols-2 shadow-xl">
             <div class="space-y-2">
               <label class="text-sm font-semibold text-slate-900" for="name">Name</label>
               <input v-model="form.name" id="name" type="text" class="w-full rounded-xl border border-slate-200 px-4 py-3 text-base hover:border-slate-300 focus:border-brand-600 focus:ring-0 transition" placeholder="Your name" />

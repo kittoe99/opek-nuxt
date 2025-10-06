@@ -25,7 +25,7 @@
       </div>
 
       <div class="mx-auto max-w-3xl">
-        <div class="rounded-3xl border border-slate-200 bg-white divide-y divide-slate-200 overflow-hidden">
+        <div class="rounded-3xl border border-slate-200 bg-white divide-y divide-slate-200 overflow-hidden shadow-lg">
           <details v-for="(faq, index) in faqs" :key="index" class="group">
             <summary class="flex cursor-pointer list-none items-center justify-between gap-4 p-6 hover:bg-slate-50 transition">
               <h3 class="text-base sm:text-lg font-bold text-slate-900">{{ faq.question }}</h3>

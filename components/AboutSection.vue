@@ -56,7 +56,7 @@
 
         <!-- Right: Image -->
         <div>
-          <div class="relative overflow-hidden rounded-3xl border border-slate-200 bg-white h-full min-h-[500px]">
+          <div class="relative overflow-hidden rounded-3xl border border-slate-200 bg-white h-full min-h-[500px] shadow-lg">
             <img src="/assets/Opek.png" alt="Professional moving crew" class="h-full w-full object-cover" />
             <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent p-6">
               <p class="text-white text-sm font-semibold">Professional team • Clean equipment • On-time service</p>

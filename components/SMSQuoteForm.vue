@@ -3,7 +3,7 @@
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="relative group max-w-xl sm:max-w-2xl mx-auto">
         <div class="absolute -inset-0.5 bg-gradient-to-br from-brand-600 to-brand-500 rounded-3xl opacity-0 group-hover:opacity-100 transition duration-300"></div>
-        <div class="relative rounded-3xl border border-slate-200 bg-white p-6 sm:p-8">
+        <div class="relative rounded-3xl border border-slate-200 bg-white p-6 sm:p-8 shadow-xl">
           <div class="flex items-center gap-3 mb-6">
             <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-600 text-white flex-shrink-0">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
