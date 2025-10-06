@@ -20,16 +20,21 @@ export default {
           600: '#0a8a4c',
           700: '#066f3e',
           800: '#055832',
-          900: '#034428'
-        }
-      },
-      boxShadow: {
-        elevated: '0 10px 30px -12px rgba(2, 6, 23, 0.25)'
+          900: '#034428',
+        },
       },
       fontFamily: {
-        sans: ['Manrope', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'Ubuntu', 'Helvetica Neue', 'Arial', 'sans-serif'],
-        display: ['Poppins', 'Manrope', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'Ubuntu', 'Helvetica Neue', 'Arial', 'sans-serif']
-      }
+        sans: ['Manrope', 'system-ui', '-apple-system', 'sans-serif'],
+        display: ['Poppins', 'Manrope', 'system-ui', 'sans-serif'],
+      },
+      borderWidth: {
+        'DEFAULT': '2px',
+        '0': '0',
+        '2': '2px',
+        '3': '3px',
+        '4': '4px',
+        '8': '8px',
+      },
     },
   },
   plugins: [],

@@ -3,12 +3,12 @@
     <TheHeader />
 
     <!-- Page Hero -->
-    <section class="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 py-16 sm:py-20">
+    <section class="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 py-12 sm:py-16 lg:py-20">
       <img src="/assets/Opek.png" alt="Residential moving with Opek" class="absolute inset-0 h-full w-full object-cover opacity-30" />
       <div class="absolute inset-0 bg-gradient-to-b from-black/50 to-black/60"></div>
       <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <nav aria-label="Breadcrumb" class="text-white/70 text-sm mb-6">
-          <ol class="flex items-center gap-2">
+        <nav aria-label="Breadcrumb" class="text-white/70 text-xs sm:text-sm mb-4 sm:mb-6">
+          <ol class="flex items-center gap-1.5 sm:gap-2">
             <li><NuxtLink to="/#home" class="hover:text-white transition">Home</NuxtLink></li>
             <li><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></li>
             <li><NuxtLink to="/#services" class="hover:text-white transition">Services</NuxtLink></li>
@@ -18,13 +18,13 @@
         </nav>
 
         <div class="max-w-3xl">
-          <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-white leading-tight font-display">
+          <h1 class="text-2xl leading-tight sm:text-3xl sm:leading-tight md:text-4xl md:leading-tight lg:text-5xl lg:leading-tight font-extrabold tracking-tight text-white font-display">
             Residential Moving
           </h1>
-          <p class="mt-3 text-sm sm:text-base md:text-lg text-white/90">
+          <p class="mt-2.5 sm:mt-3 text-sm sm:text-base md:text-lg text-white/90 leading-snug sm:leading-relaxed">
             Professional moving services for apartments, condos, and family homes across Denver.
           </p>
-          <div class="mt-6 flex flex-col sm:flex-row gap-2 sm:gap-3">
+          <div class="mt-4 sm:mt-6 flex flex-col sm:flex-row gap-2 sm:gap-3">
             <a href="/#sms-quote" class="inline-flex items-center justify-center gap-2 rounded-xl bg-brand-600 px-4 py-2 sm:px-6 sm:py-3 text-xs sm:text-sm font-bold text-white hover:bg-brand-700 transition">
               Get Instant Pricing
             </a>
