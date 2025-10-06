@@ -3,33 +3,49 @@
     <TheHeader />
 
     <!-- Page Hero -->
-    <section class="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 py-12 sm:py-16 lg:py-20">
-      <img src="/assets/Opek.png" alt="Packing services with Opek" class="absolute inset-0 h-full w-full object-cover opacity-30" />
-      <div class="absolute inset-0 bg-gradient-to-b from-black/50 to-black/60"></div>
+    <section class="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 py-16 sm:py-20 lg:py-24 overflow-hidden">
+      <!-- Background Pattern -->
+      <div class="absolute inset-0 opacity-10">
+        <div class="absolute inset-0" style="background-image: radial-gradient(circle at 1px 1px, rgb(255 255 255 / 0.15) 1px, transparent 0); background-size: 40px 40px;"></div>
+      </div>
+      
+      <!-- Gradient Orbs -->
+      <div class="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 w-96 h-96 bg-brand-600/20 rounded-full blur-3xl"></div>
+      
       <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <nav aria-label="Breadcrumb" class="text-white/70 text-xs sm:text-sm mb-4 sm:mb-6">
+        <nav aria-label="Breadcrumb" class="text-white/70 text-xs sm:text-sm mb-6">
           <ol class="flex items-center gap-1.5 sm:gap-2">
-            <li><NuxtLink to="/#home" class="hover:text-white transition">Home</NuxtLink></li>
+            <li><NuxtLink to="/#home" class="hover:text-brand-300 transition">Home</NuxtLink></li>
             <li><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></li>
-            <li><NuxtLink to="/#services" class="hover:text-white transition">Services</NuxtLink></li>
+            <li><NuxtLink to="/#services" class="hover:text-brand-300 transition">Services</NuxtLink></li>
             <li><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></li>
-            <li class="text-white font-medium">Packing Services</li>
+            <li class="text-brand-300 font-medium">Packing Services</li>
           </ol>
         </nav>
 
-        <div class="max-w-3xl">
-          <h1 class="text-2xl leading-tight sm:text-3xl sm:leading-tight md:text-4xl md:leading-tight lg:text-5xl lg:leading-tight font-extrabold tracking-tight text-white font-display">
-            Packing Services
+        <div class="max-w-4xl">
+          <!-- Icon Badge -->
+          <div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-brand-600/20 border-2 border-brand-500/30 backdrop-blur-sm mb-6">
+            <svg class="w-8 h-8 text-brand-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/>
+            </svg>
+          </div>
+          
+          <h1 class="text-3xl leading-tight sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight lg:text-6xl lg:leading-tight font-extrabold tracking-tight text-white font-display mb-5">
+            Professional Packing <span class="text-brand-300">Done Right</span>
           </h1>
-          <p class="mt-2.5 sm:mt-3 text-sm sm:text-base md:text-lg text-white/90 leading-snug sm:leading-relaxed">
-            Professional packing services with quality materials for homes and offices across Denver.
+          <p class="text-base sm:text-lg md:text-xl text-slate-300 leading-relaxed mb-8 max-w-2xl">
+            Full-service and partial packing with quality materials. From fragile items to entire homes, we handle everything with care.
           </p>
-          <div class="mt-4 sm:mt-6 flex flex-col sm:flex-row gap-2 sm:gap-3">
-            <a href="/#sms-quote" class="inline-flex items-center justify-center gap-2 rounded-xl bg-brand-600 px-4 py-2 sm:px-6 sm:py-3 text-xs sm:text-sm font-bold text-white hover:bg-brand-700 transition">
+          <div class="flex flex-col sm:flex-row gap-3">
+            <a href="/#sms-quote" class="group inline-flex items-center justify-center gap-2 rounded-xl bg-brand-600 px-6 py-3.5 text-sm sm:text-base font-bold text-white hover:bg-brand-700 transition-all shadow-lg shadow-brand-600/30 hover:shadow-xl hover:scale-105">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
               Get Instant Pricing
+              <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
             </a>
-            <a href="/#quote" class="inline-flex items-center justify-center gap-2 rounded-xl bg-white/10 backdrop-blur-sm px-4 py-2 sm:px-6 sm:py-3 text-xs sm:text-sm font-bold text-white border border-white/30 hover:bg-white/20 transition">
-              Request Quote
+            <a href="/#quote" class="group inline-flex items-center justify-center gap-2 rounded-xl bg-white/10 backdrop-blur-sm px-6 py-3.5 text-sm sm:text-base font-bold text-white border-2 border-white/20 hover:bg-white/20 hover:border-white/30 transition-all">
+              Request Full Quote
+              <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
             </a>
           </div>
         </div>
