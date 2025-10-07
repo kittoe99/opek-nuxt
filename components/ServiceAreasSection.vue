@@ -1,5 +1,5 @@
 <template>
-  <section id="areas" class="relative py-16 sm:py-20 bg-white">
+  <section id="areas" class="relative py-10 sm:py-12 bg-white">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="mx-auto max-w-3xl text-center">
         <div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-brand-100 text-brand-600 mb-4">
@@ -44,6 +44,13 @@
               </div>
             </div>
 
+            <!-- Mobile/smaller screens map inside the card -->
+            <ClientOnly>
+              <div id="denver-map-component-mobile" class="block lg:hidden relative left-1/2 -translate-x-1/2 w-[calc(100%+3rem)] rounded-3xl shadow-xl overflow-hidden border border-gray-200 mt-6">
+                <div id="map-container-mobile"></div>
+              </div>
+            </ClientOnly>
+
             <div class="mt-6 pt-6 border-t border-slate-200">
               <a href="#quote" class="inline-flex items-center gap-2 rounded-xl bg-brand-600 px-5 py-3 text-sm font-semibold text-white hover:bg-brand-700 transition">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-4 w-4">
@@ -57,7 +64,7 @@
 
         <!-- Right: Interactive Denver Map -->
         <ClientOnly>
-          <div id="denver-map-component" class="w-full rounded-3xl shadow-xl overflow-hidden border border-gray-200">
+          <div id="denver-map-component" class="hidden lg:block w-full rounded-3xl shadow-xl overflow-hidden border border-gray-200">
             <div id="map-container"></div>
           </div>
         </ClientOnly>
@@ -150,67 +157,69 @@ onMounted(async () => {
       return
     }
 
-    const mapContainer = document.querySelector('#denver-map-component #map-container')
-    if (!mapContainer) {
-      console.error('Denver map: container not found')
-      return
+    const desktopContainer = document.querySelector('#denver-map-component #map-container')
+    const mobileContainer = document.querySelector('#denver-map-component-mobile #map-container-mobile')
+
+    // Helper to init a map for a given container
+    const setupMap = (el) => {
+      if (!el || el._leaflet_id) return null
+
+      // Responsive initial zoom: zoom out on mobile/smaller screens
+      const isSmallScreen = typeof window.matchMedia === 'function' && window.matchMedia('(max-width: 640px)').matches
+      const initialZoom = isSmallScreen ? 10 : 11
+
+      let map
+      try {
+        map = window.L.map(el).setView([39.7392, -104.9903], initialZoom)
+      } catch (e) {
+        console.error('Denver map: failed to initialize Leaflet map', e)
+        return null
+      }
+
+      try {
+        window.L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+          maxZoom: 19
+        }).addTo(map)
+      } catch (e) {
+        console.error('Denver map: failed to add tile layer', e)
+        return null
+      }
+
+      const customGreenIconSVG = `
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="marker">
+          <path fill-opacity=".25" d="M16 32s1.427-9.585 3.761-12.025c4.595-4.805 8.685-.99 8.685-.99s4.044 3.964-.526 8.743C25.514 30.245 16 32 16 32z"/>
+          <path fill="#059669" d="M16 0C9.37 0 4 5.37 4 12c0 1.552.28 3.043.81 4.43l.09.24.01.03a11.95 11.95 0 0 0 3.23 4.41c2.25 2.2 4.88 3.78 5.7 6.48.23.78.23 1.62 0 2.4l-.01.06c-.23.77-1.13 1.46-2.02 1.45-1.12-.02-2.18-.7-2.6-1.7-.02-.05-.04-.1-.05-.15-.42-1-.96-1.92-1.58-2.77-.14-.19-.36-.3-.58-.3-.22 0-.44.11-.58.3-.62.85-1.16 1.77-1.58 2.77-.01.05-.03.1-.05.15-.42 1-1.48 1.68-2.6 1.7-.9.01-1.79-.68-2.02-1.45l-.01-.06c-.23-.78-.23-1.62 0-2.4.82-2.7 3.45-4.28 5.7-6.48A11.95 11.95 0 0 0 11.1 16.67l.01-.03.09-.24C11.72 15.043 12 13.552 12 12c0-2.21 1.79-4 4-4s4 1.79 4 4c0 1.552-.28 3.043-.81 4.43l-.09.24-.01.03a11.95 11.95 0 0 0-3.23 4.41c-2.25 2.2-4.88 3.78-5.7 6.48-.23.78-.23 1.62 0 2.4l.01.06c.23.77 1.13 1.46 2.02 1.45 1.12.02 2.18-.7 2.6-1.7.02-.05.04-.1.05-.15.42-1 .96-1.92 1.58-2.77.14-.19.36-.3.58-.3.22 0 .44.11.58.3.62.85 1.16 1.77 1.58 2.77.01.05.03.1.05.15.42 1 1.48 1.68 2.6 1.7.9.01 1.79-.68 2.02-1.45l.01-.06c.23-.78.23-1.62 0-2.4-.82-2.7-3.45-4.28-5.7-6.48a11.95 11.95 0 0 0-2.86-4.17l-.01-.03-.09-.24C20.28 15.043 20 13.552 20 12c0-6.63-5.37-12-12-12zm0 8c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4z"/>
+          <path fill="#fff" d="M16 12a4 4 0 1 1 0 8 4 4 0 0 1 0-8z"/>
+          <path fill="#10B981" d="M16 4.5c-4.14 0-7.5 3.36-7.5 7.5s3.36 7.5 7.5 7.5 7.5-3.36 7.5-7.5-3.36-7.5-7.5-7.5zm0 13c-3.03 0-5.5-2.47-5.5-5.5s2.47-5.5 5.5-5.5 5.5 2.47 5.5 5.5-2.47 5.5-5.5 5.5z"/>
+          <path fill="#fff" d="M16.5 10h-1v3h-3v1h3v3h1v-3h3v-1h-3z"/>
+        </svg>
+      `
+
+      const customIcon = window.L.divIcon({
+        html: customGreenIconSVG,
+        className: '',
+        iconSize: [40, 40],
+        iconAnchor: [20, 40],
+        popupAnchor: [0, -40]
+      })
+
+      mapCities.forEach(city => {
+        const marker = window.L.marker([city.lat, city.lng], { icon: customIcon }).addTo(map)
+        marker.bindPopup(`<b>${city.name}</b>`)
+      })
+
+      if ('ResizeObserver' in window) {
+        new ResizeObserver(() => {
+          map.invalidateSize()
+        }).observe(el)
+      }
+
+      return map
     }
-    
-    // Prevent re-initialization if the script is loaded multiple times
-    if (mapContainer && mapContainer._leaflet_id) {
-      return
-    }
 
-    // Initialize the map and set its view
-    let map
-    try {
-      map = window.L.map(mapContainer).setView([39.7392, -104.9903], 9)
-    } catch (e) {
-      console.error('Denver map: failed to initialize Leaflet map', e)
-      return
-    }
-
-    // Add tile layer
-    try {
-      window.L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
-        maxZoom: 19
-      }).addTo(map)
-    } catch (e) {
-      console.error('Denver map: failed to add tile layer', e)
-      return
-    }
-
-    // Custom green marker icon using an inline SVG
-    const customGreenIconSVG = `
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="marker">
-        <path fill-opacity=".25" d="M16 32s1.427-9.585 3.761-12.025c4.595-4.805 8.685-.99 8.685-.99s4.044 3.964-.526 8.743C25.514 30.245 16 32 16 32z"/>
-        <path fill="#059669" d="M16 0C9.37 0 4 5.37 4 12c0 1.552.28 3.043.81 4.43l.09.24.01.03a11.95 11.95 0 0 0 3.23 4.41c2.25 2.2 4.88 3.78 5.7 6.48.23.78.23 1.62 0 2.4l-.01.06c-.23.77-1.13 1.46-2.02 1.45-1.12-.02-2.18-.7-2.6-1.7-.02-.05-.04-.1-.05-.15-.42-1-.96-1.92-1.58-2.77-.14-.19-.36-.3-.58-.3-.22 0-.44.11-.58.3-.62.85-1.16 1.77-1.58 2.77-.01.05-.03.1-.05.15-.42 1-1.48 1.68-2.6 1.7-.9.01-1.79-.68-2.02-1.45l-.01-.06c-.23-.78-.23-1.62 0-2.4.82-2.7 3.45-4.28 5.7-6.48A11.95 11.95 0 0 0 11.1 16.67l.01-.03.09-.24C11.72 15.043 12 13.552 12 12c0-2.21 1.79-4 4-4s4 1.79 4 4c0 1.552-.28 3.043-.81 4.43l-.09.24-.01.03a11.95 11.95 0 0 0-3.23 4.41c-2.25 2.2-4.88 3.78-5.7 6.48-.23.78-.23 1.62 0 2.4l.01.06c.23.77 1.13 1.46 2.02 1.45 1.12.02 2.18-.7 2.6-1.7.02-.05.04-.1.05-.15.42-1 .96-1.92 1.58-2.77.14-.19.36-.3.58-.3.22 0 .44.11.58.3.62.85 1.16 1.77 1.58 2.77.01.05.03.1.05.15.42 1 1.48 1.68 2.6 1.7.9.01 1.79-.68 2.02-1.45l.01-.06c.23-.78.23-1.62 0-2.4-.82-2.7-3.45-4.28-5.7-6.48a11.95 11.95 0 0 0-2.86-4.17l-.01-.03-.09-.24C20.28 15.043 20 13.552 20 12c0-6.63-5.37-12-12-12zm0 8c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4z"/>
-        <path fill="#fff" d="M16 12a4 4 0 1 1 0 8 4 4 0 0 1 0-8z"/>
-        <path fill="#10B981" d="M16 4.5c-4.14 0-7.5 3.36-7.5 7.5s3.36 7.5 7.5 7.5 7.5-3.36 7.5-7.5-3.36-7.5-7.5-7.5zm0 13c-3.03 0-5.5-2.47-5.5-5.5s2.47-5.5 5.5-5.5 5.5 2.47 5.5 5.5-2.47 5.5-5.5 5.5z"/>
-        <path fill="#fff" d="M16.5 10h-1v3h-3v1h3v3h1v-3h3v-1h-3z"/>
-      </svg>
-    `
-
-    const customIcon = window.L.divIcon({
-      html: customGreenIconSVG,
-      className: '',
-      iconSize: [40, 40],
-      iconAnchor: [20, 40],
-      popupAnchor: [0, -40]
-    })
-
-    // Add markers to the map
-    mapCities.forEach(city => {
-      const marker = window.L.marker([city.lat, city.lng], { icon: customIcon }).addTo(map)
-      marker.bindPopup(`<b>${city.name}</b>`)
-    })
-
-    // Ensure map resizes correctly if the component's container resizes
-    if ('ResizeObserver' in window) {
-      new ResizeObserver(() => {
-        map.invalidateSize()
-      }).observe(mapContainer)
-    }
+    // Initialize maps for available containers
+    if (desktopContainer) setupMap(desktopContainer)
+    if (mobileContainer) setupMap(mobileContainer)
   }
 
   // slight delay to ensure layout is stable before initializing
@@ -226,10 +235,34 @@ onMounted(async () => {
 }
 
 #denver-map-component #map-container {
-  height: 550px; 
+  height: 180px; /* much shorter base height */
   width: 100%;
   z-index: 10;
   position: relative;
+}
+
+@media (min-width: 640px) { /* sm */
+  #denver-map-component #map-container {
+    height: 200px;
+  }
+}
+
+@media (min-width: 768px) { /* md */
+  #denver-map-component #map-container {
+    height: 220px;
+  }
+}
+
+@media (min-width: 1024px) { /* lg */
+  #denver-map-component #map-container {
+    height: 380px; /* keep large on desktop */
+  }
+}
+
+@media (min-width: 1280px) { /* xl */
+  #denver-map-component #map-container {
+    height: 420px; /* larger on wide desktops */
+  }
 }
 
 /* Filter to make the map greener */
@@ -258,11 +291,12 @@ onMounted(async () => {
 
 #denver-map-component .leaflet-control-zoom-in, 
 #denver-map-component .leaflet-control-zoom-out {
-  background-color: #10B981 !important;
+  background-color: #10B981 !important; /* Vibrant Green */
   color: white !important;
   border-radius: 8px !important;
   border: none !important;
-  font-size: 24px;
+  box-shadow: none !important;
+  font-size: 24px; /* Larger icon */
   width: 38px;
   height: 38px;
   line-height: 38px;
@@ -279,8 +313,150 @@ onMounted(async () => {
   color: #059669;
 }
 
+/* Remove gray container/background around the zoom control bar */
+#denver-map-component .leaflet-bar,
+#denver-map-component .leaflet-control-zoom {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Ensure individual zoom buttons have no default borders */
+#denver-map-component .leaflet-control-zoom a {
+  background-color: #10B981 !important;
+  color: #ffffff !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Make zoom controls smaller on mobile */
+@media (max-width: 640px) {
+  #denver-map-component .leaflet-control-zoom-in,
+  #denver-map-component .leaflet-control-zoom-out {
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    font-size: 14px;
+    border-radius: 5px !important;
+  }
+  /* Add more spacing between the + and - buttons */
+  #denver-map-component .leaflet-control-zoom a {
+    margin: 0; /* reset */
+  }
+  #denver-map-component .leaflet-control-zoom a + a {
+    margin-top: 8px;
+  }
+}
+
 /* Hide default Leaflet attribution control (backup, JS also disables it) */
 #denver-map-component .leaflet-control-attribution {
+  display: none !important;
+}
+
+/* ===================== */
+/* Mobile in-card map IDs*/
+/* ===================== */
+
+/* Typography for mobile map wrapper */
+#denver-map-component-mobile {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.5;
+}
+
+/* Mobile map container height (visible < lg) */
+#denver-map-component-mobile #map-container-mobile {
+  height: 180px;
+  width: 100%;
+  z-index: 10;
+  position: relative;
+}
+
+@media (min-width: 640px) { /* sm */
+  #denver-map-component-mobile #map-container-mobile { height: 200px; }
+}
+
+@media (min-width: 768px) { /* md */
+  #denver-map-component-mobile #map-container-mobile { height: 220px; }
+}
+
+/* Apply same visual styles to mobile map */
+#denver-map-component-mobile .leaflet-tile-pane {
+  filter: sepia(30%) saturate(120%) grayscale(10%) contrast(100%) brightness(95%) hue-rotate(80deg);
+}
+
+#denver-map-component-mobile .leaflet-popup-content-wrapper {
+  background-color: #ECFDF5;
+  color: #10B981;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  animation: fadeInPopup 0.3s ease-out;
+}
+
+#denver-map-component-mobile .leaflet-popup-content {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px 18px;
+  margin: 0;
+}
+
+#denver-map-component-mobile .leaflet-popup-tip {
+  background: #ECFDF5;
+}
+
+#denver-map-component-mobile .leaflet-control-zoom-in,
+#denver-map-component-mobile .leaflet-control-zoom-out {
+  background-color: #10B981 !important;
+  color: #ffffff !important;
+  border-radius: 8px !important;
+  border: none !important;
+  box-shadow: none !important;
+  font-size: 24px;
+  width: 38px;
+  height: 38px;
+  line-height: 38px;
+  text-align: center;
+  transition: background-color 0.2s ease;
+}
+
+#denver-map-component-mobile .leaflet-control-zoom-in:hover,
+#denver-map-component-mobile .leaflet-control-zoom-out:hover {
+  background-color: #059669 !important;
+}
+
+#denver-map-component-mobile .leaflet-container a { color: #059669; }
+
+/* Remove gray bar around zoom control on mobile card map */
+#denver-map-component-mobile .leaflet-bar,
+#denver-map-component-mobile .leaflet-control-zoom {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Ensure individual zoom buttons have no default borders */
+#denver-map-component-mobile .leaflet-control-zoom a {
+  background-color: #10B981 !important;
+  color: #ffffff !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Make zoom controls smaller on mobile screens */
+@media (max-width: 640px) {
+  #denver-map-component-mobile .leaflet-control-zoom-in,
+  #denver-map-component-mobile .leaflet-control-zoom-out {
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    font-size: 14px;
+    border-radius: 5px !important;
+  }
+  #denver-map-component-mobile .leaflet-control-zoom a { margin: 0; }
+  #denver-map-component-mobile .leaflet-control-zoom a + a { margin-top: 8px; }
+}
+
+/* Hide attribution on mobile map too */
+#denver-map-component-mobile .leaflet-control-attribution {
   display: none !important;
 }
 
