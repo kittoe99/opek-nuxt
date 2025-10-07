@@ -21,7 +21,7 @@
               <span class="text-xs sm:text-sm font-semibold">Denver's Trusted Movers</span>
             </div>
 
-            <h1 class="reveal text-3xl leading-tight sm:text-5xl sm:leading-tight lg:text-6xl lg:leading-tight font-extrabold tracking-tight font-display mb-4">
+            <h1 class="reveal text-4xl leading-tight sm:text-5xl sm:leading-tight lg:text-6xl lg:leading-tight font-extrabold tracking-tight font-display mb-4">
               Move without the stress. <span class="text-brand-300 underline decoration-brand-400 decoration-4 underline-offset-4">We handle the rest.</span>
             </h1>
             

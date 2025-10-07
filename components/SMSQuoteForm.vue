@@ -1,5 +1,5 @@
 <template>
-  <section id="sms-quote" class="relative z-20 -mt-20 sm:-mt-28 lg:-mt-16">
+  <section id="sms-quote" class="relative z-20 -mt-20 sm:-mt-32 lg:-mt-16">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <!-- Long horizontal bar -->
       <form @submit.prevent="handleSubmit" class="w-full lg:max-w-4xl xl:max-w-3xl 2xl:max-w-4xl mx-auto rounded-2xl border border-slate-200 bg-white shadow-xl px-4 sm:px-6 py-4 sm:py-5 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4" novalidate>
@@ -39,10 +39,10 @@
           <!-- Right: button -->
           <div class="w-auto">
             <button type="submit" :disabled="isSubmitting" aria-label="Text me pricing" class="inline-flex items-center justify-center rounded-xl bg-brand-600 px-3 sm:px-6 py-3 text-base font-semibold text-white hover:bg-brand-700 transition disabled:opacity-70 disabled:cursor-not-allowed shrink-0 whitespace-nowrap">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-5 w-5">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="hidden sm:inline h-5 w-5">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
               </svg>
-              <span class="ml-2 hidden sm:inline">Text me pricing</span>
+              <span class="ml-0 sm:ml-2">Text me pricing</span>
             </button>
           </div>
         </div>

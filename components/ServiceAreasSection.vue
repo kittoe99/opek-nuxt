@@ -55,23 +55,15 @@
           </div>
         </div>
 
-        <!-- Right: Image -->
+        <!-- Right: Interactive Map (Leaflet + OpenStreetMap) -->
         <div>
           <div class="relative overflow-hidden rounded-3xl border border-slate-200 bg-white h-full min-h-[400px] shadow-lg">
-            <img src="/assets/Opek.png" alt="Denver metro area service coverage" class="h-full w-full object-cover" />
-            <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent p-6">
-              <div class="flex items-end justify-between">
-                <div class="text-white">
-                  <p class="text-sm text-white/90 font-semibold">Coverage Area</p>
-                  <p class="text-2xl font-extrabold">50-mile radius from Denver</p>
-                </div>
-                <div class="inline-flex items-center gap-2 rounded-full bg-brand-600 px-3 py-1.5 text-xs font-semibold text-white">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                  </svg>
-                  Fast ETA
-                </div>
-              </div>
+            <div id="denver-map" class="w-full h-[400px] sm:h-[450px] lg:h-full min-h-[400px]"></div>
+            <div class="pointer-events-none absolute top-4 right-4 inline-flex items-center gap-2 rounded-full bg-brand-600 px-3 py-1.5 text-xs font-semibold text-white shadow-md">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+              </svg>
+              50-mile radius
             </div>
           </div>
         </div>
@@ -81,6 +73,8 @@
 </template>
 
 <script setup>
+import { onMounted } from 'vue'
+
 const cities = [
   'Denver',
   'Aurora',
@@ -91,4 +85,62 @@ const cities = [
   'Thornton',
   '+ 12 more cities'
 ]
+
+const denver = [39.7392, -104.9903]
+const radiusMeters = 80467 // ~50 miles
+
+function loadLeafletCss() {
+  return new Promise((resolve) => {
+    if (document.querySelector('link[href*="leaflet.css"]')) return resolve(true)
+    const link = document.createElement('link')
+    link.rel = 'stylesheet'
+    link.href = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css'
+    link.onload = () => resolve(true)
+    document.head.appendChild(link)
+  })
+}
+
+function loadLeafletJs() {
+  return new Promise((resolve) => {
+    if (window.L) return resolve(true)
+    const script = document.createElement('script')
+    script.src = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js'
+    script.async = true
+    script.onload = () => resolve(true)
+    document.body.appendChild(script)
+  })
+}
+
+async function ensureLeaflet() {
+  await loadLeafletCss()
+  await loadLeafletJs()
+}
+
+onMounted(async () => {
+  try {
+    await ensureLeaflet()
+    // eslint-disable-next-line no-undef
+    const map = L.map('denver-map', { scrollWheelZoom: false })
+    // eslint-disable-next-line no-undef
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map)
+    // eslint-disable-next-line no-undef
+    const circle = L.circle(denver, {
+      radius: radiusMeters,
+      color: '#0a8a4c',
+      weight: 2,
+      fillColor: '#0ea05a',
+      fillOpacity: 0.15
+    }).addTo(map)
+    // eslint-disable-next-line no-undef
+    L.marker(denver).addTo(map).bindPopup('Denver (center)')
+    map.fitBounds(circle.getBounds(), { padding: [20, 20] })
+    // Ensure correct sizing after render
+    setTimeout(() => map.invalidateSize(), 0)
+  } catch (e) {
+    // If loading fails, leave the container empty silently
+    console.error('Leaflet failed to load', e)
+  }
+})
 </script>
