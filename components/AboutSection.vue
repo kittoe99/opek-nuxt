@@ -1,5 +1,5 @@
 <template>
-  <section id="about" class="py-16 sm:py-20 bg-white">
+  <section id="about" v-if="false" class="py-16 sm:py-20 bg-white">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="grid gap-12 lg:grid-cols-2 lg:items-center">
         <!-- Left: Copy -->
