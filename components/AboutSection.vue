@@ -15,14 +15,31 @@
           <p class="mt-4 text-base text-slate-600">We believe moving day should feel calm and organized. Our trained team arrives on time with the right tools, protects your home, and communicates every step so you always know what's next.</p>
 
           <!-- Feature cards -->
-          <div class="mt-8 space-y-3">
-            <div v-for="feature in features" :key="feature.text" class="relative group">
-              <div class="absolute -inset-0.5 bg-gradient-to-br from-brand-600 to-brand-500 rounded-2xl opacity-0 group-hover:opacity-100 transition duration-300"></div>
-              <div class="relative flex items-center gap-3 rounded-2xl border border-slate-200 bg-white p-4">
-                <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-brand-600 text-white flex-shrink-0">
-                  <component :is="feature.icon" />
+          <div class="mt-8 grid gap-4 sm:grid-cols-1">
+            <div v-for="(feature, index) in features" :key="feature.title" class="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-slate-50 to-white border border-slate-200 p-6 hover:shadow-xl hover:shadow-brand-600/10 transition-all duration-300 hover:-translate-y-1">
+              <!-- Decorative gradient -->
+              <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-brand-500/10 to-transparent rounded-full blur-2xl -translate-y-12 translate-x-12 group-hover:scale-150 transition-transform duration-500"></div>
+              
+              <div class="relative flex items-start gap-4">
+                <!-- Icon -->
+                <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-brand-600 to-brand-700 text-white shadow-lg shadow-brand-600/30 flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                  <component :is="feature.icon" class="w-7 h-7" />
                 </div>
-                <p class="text-sm font-semibold text-slate-900">{{ feature.text }}</p>
+                
+                <!-- Content -->
+                <div class="flex-1 pt-1">
+                  <h3 class="text-base font-bold text-slate-900 mb-1 group-hover:text-brand-600 transition-colors">
+                    {{ feature.title }}
+                  </h3>
+                  <p class="text-sm text-slate-600 leading-relaxed">
+                    {{ feature.description }}
+                  </p>
+                </div>
+              </div>
+              
+              <!-- Number badge -->
+              <div class="absolute top-4 right-4 flex h-8 w-8 items-center justify-center rounded-full bg-white/80 backdrop-blur-sm text-xs font-bold text-brand-600 shadow-sm">
+                {{ index + 1 }}
               </div>
             </div>
           </div>
@@ -73,21 +90,24 @@ import { h } from 'vue'
 
 const features = [
   {
-    text: 'Transparent, up-front pricing with no surprises',
-    icon: () => h('svg', { xmlns: 'http://www.w3.org/2000/svg', fill: 'none', viewBox: '0 0 24 24', 'stroke-width': '2', stroke: 'currentColor', class: 'w-5 h-5' }, [
+    title: 'Transparent Pricing',
+    description: 'Up-front, honest pricing with no hidden fees or surprise charges. You know exactly what you\'re paying before we start.',
+    icon: () => h('svg', { xmlns: 'http://www.w3.org/2000/svg', fill: 'none', viewBox: '0 0 24 24', 'stroke-width': '2', stroke: 'currentColor' }, [
       h('path', { 'stroke-linecap': 'round', 'stroke-linejoin': 'round', d: 'M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z' })
     ])
   },
   {
-    text: 'Clean trucks, pads, and equipment on every job',
-    icon: () => h('svg', { xmlns: 'http://www.w3.org/2000/svg', fill: 'none', viewBox: '0 0 24 24', 'stroke-width': '2', stroke: 'currentColor', class: 'w-5 h-5' }, [
+    title: 'Professional Equipment',
+    description: 'Clean, well-maintained trucks and premium moving supplies. We protect your belongings with quality pads, straps, and tools.',
+    icon: () => h('svg', { xmlns: 'http://www.w3.org/2000/svg', fill: 'none', viewBox: '0 0 24 24', 'stroke-width': '2', stroke: 'currentColor' }, [
       h('path', { 'stroke-linecap': 'round', 'stroke-linejoin': 'round', d: 'M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z' })
     ])
   },
   {
-    text: 'Friendly, background-checked pros who care',
-    icon: () => h('svg', { xmlns: 'http://www.w3.org/2000/svg', fill: 'none', viewBox: '0 0 24 24', 'stroke-width': '2', stroke: 'currentColor', class: 'w-5 h-5' }, [
-      h('path', { 'stroke-linecap': 'round', 'stroke-linejoin': 'round', d: 'M15.182 15.182a4.5 4.5 0 0 1-6.364 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Z' })
+    title: 'Trusted Professionals',
+    description: 'Friendly, background-checked movers who treat your home with respect and your belongings with care.',
+    icon: () => h('svg', { xmlns: 'http://www.w3.org/2000/svg', fill: 'none', viewBox: '0 0 24 24', 'stroke-width': '2', stroke: 'currentColor' }, [
+      h('path', { 'stroke-linecap': 'round', 'stroke-linejoin': 'round', d: 'M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z' })
     ])
   }
 ]
