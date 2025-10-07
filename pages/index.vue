@@ -14,39 +14,48 @@
       <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 sm:py-16 w-full">
         <div class="grid lg:grid-cols-2 gap-12 items-center">
           <!-- Left: Content -->
-          <div class="text-white text-center lg:text-left">
+          <div class="text-white text-left">
             <!-- Badge -->
             <div class="inline-flex items-center gap-2 rounded-full bg-brand-600/20 px-4 py-2 mb-6 text-brand-200 border border-brand-500/30 backdrop-blur-sm shadow-sm">
               <span class="inline-block w-2 h-2 rounded-full bg-brand-400"></span>
-              <span class="text-xs sm:text-sm font-semibold">Moving Help Marketplace</span>
+              <span class="text-xs sm:text-sm font-semibold">Denver's Trusted Movers</span>
             </div>
 
             <h1 class="reveal text-3xl leading-tight sm:text-5xl sm:leading-tight lg:text-6xl lg:leading-tight font-extrabold tracking-tight font-display mb-4">
-              Book Moving Help From <span class="text-brand-300 underline decoration-brand-400 decoration-4 underline-offset-4">$69/Hour</span>
+              Move without the stress. <span class="text-brand-300 underline decoration-brand-400 decoration-4 underline-offset-4">We handle the rest.</span>
             </h1>
             
             <p class="reveal delay-1 text-base sm:text-lg text-slate-300 leading-relaxed mb-6">
-              Get matched with verified independent moving helpers in your area.
+              Professional local movers in Denver for homes and offices—on-time arrivals, careful protection, and friendly, background-checked pros.
             </p>
 
             <!-- CTA Card -->
             <div class="mb-6">
-              <div class="mx-auto lg:mx-0 max-w-xl rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm shadow-[0_10px_30px_-10px_rgba(0,0,0,0.4)] p-4 sm:p-5">
+              <div class="mx-0 max-w-xl rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm shadow-[0_10px_30px_-10px_rgba(0,0,0,0.4)] p-4 sm:p-5">
                 <div class="flex flex-wrap gap-3">
                   <a href="#sms-quote" class="inline-flex items-center justify-center gap-2 rounded-xl bg-brand-600 hover:bg-brand-700 text-white px-5 py-3 text-sm font-bold shadow-md">
-                    View Pricing
+                    Get a Quote
                   </a>
                   <a href="#process" class="inline-flex items-center justify-center gap-2 rounded-xl bg-white/10 text-white px-5 py-3 text-sm font-bold border border-white/20 shadow-sm hover:bg-white/15">
                     How It Works
                   </a>
                 </div>
-                <div class="mt-4 flex items-center justify-center lg:justify-start gap-2 text-slate-300 text-sm">
+                <div class="mt-4 flex items-center justify-start gap-2 text-slate-300 text-sm">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-yellow-400">
                     <path d="M10 15.27 16.18 18l-1.64-7.03L20 6.24l-7.19-.61L10 0 7.19 5.63 0 6.24l5.46 4.73L3.82 18 10 15.27z"/>
                   </svg>
                   <span class="font-semibold">4.9</span>
                   <span class="mx-1">|</span>
                   <span>1,200+ satisfied customers</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Mobile Image (bottom) -->
+            <div class="mt-6 lg:hidden">
+              <div class="relative">
+                <div class="rounded-2xl overflow-hidden w-full h-56 sm:h-64 shadow-2xl ring-4 ring-white/10">
+                  <img src="/assets/Opek.png" alt="Opek Moving team at work" class="w-full h-full object-cover" />
                 </div>
               </div>
             </div>
