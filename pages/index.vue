@@ -4,140 +4,63 @@
     <MobileFAB />
 
     <!-- Hero -->
-    <section id="home" class="relative isolate min-h-[80vh] sm:min-h-[85vh] lg:min-h-[90vh] flex items-center overflow-hidden">
-      <!-- Background Image -->
+    <section id="home" class="relative isolate min-h-[70vh] sm:min-h-[80vh] lg:min-h-[85vh] flex items-center overflow-hidden bg-slate-950">
+      <!-- Dark gradient overlay for texture -->
       <div class="absolute inset-0 -z-10">
-        <img src="/assets/Opek.png" alt="Opek Moving" class="h-full w-full object-cover" />
+        <div class="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800/90 to-slate-900"></div>
+        <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle at 1px 1px, rgb(255 255 255 / 0.15) 1px, transparent 0); background-size: 40px 40px;"></div>
       </div>
-
-      <!-- Gradient Overlay -->
-      <div class="absolute inset-0 bg-gradient-to-br from-slate-900/95 via-slate-800/90 to-slate-900/95"></div>
-
-      <!-- Background Pattern -->
-      <div class="absolute inset-0 -z-10 opacity-10">
-        <div class="absolute inset-0" style="background-image: radial-gradient(circle at 1px 1px, rgb(255 255 255 / 0.15) 1px, transparent 0); background-size: 40px 40px;"></div>
-      </div>
-
-      <!-- Gradient Orbs -->
-      <div class="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 w-96 h-96 bg-brand-600/20 rounded-full blur-3xl -z-10"></div>
-      <div class="absolute bottom-0 left-0 translate-y-1/2 -translate-x-1/2 w-96 h-96 bg-brand-500/10 rounded-full blur-3xl -z-10"></div>
 
       <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 sm:py-16 w-full">
         <div class="grid lg:grid-cols-2 gap-12 items-center">
           <!-- Left: Content -->
           <div class="text-white text-center lg:text-left">
             <!-- Badge -->
-            <div class="inline-flex items-center gap-2 rounded-full bg-brand-600/20 border border-brand-500/30 backdrop-blur-sm px-4 py-2 mb-6">
-              <span class="relative flex h-2 w-2">
-                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-400 opacity-75"></span>
-                <span class="relative inline-flex rounded-full h-2 w-2 bg-brand-500"></span>
-              </span>
-              <span class="text-xs sm:text-sm font-semibold text-brand-200">Denver's Trusted Movers</span>
+            <div class="inline-flex items-center gap-2 rounded-full bg-brand-600/20 px-4 py-2 mb-6 text-brand-200 border border-brand-500/30 backdrop-blur-sm shadow-sm">
+              <span class="inline-block w-2 h-2 rounded-full bg-brand-400"></span>
+              <span class="text-xs sm:text-sm font-semibold">Moving Help Marketplace</span>
             </div>
 
-            <h1 class="reveal text-3xl leading-tight sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight lg:text-6xl lg:leading-tight font-extrabold tracking-tight font-display text-white mb-4">
-              Move without the stress. <span class="text-brand-300">We handle the rest.</span>
+            <h1 class="reveal text-3xl leading-tight sm:text-5xl sm:leading-tight lg:text-6xl lg:leading-tight font-extrabold tracking-tight font-display mb-4">
+              Book Moving Help From <span class="text-brand-300 underline decoration-brand-400 decoration-4 underline-offset-4">$69/Hour</span>
             </h1>
             
             <p class="reveal delay-1 text-base sm:text-lg text-slate-300 leading-relaxed mb-6">
-              Professional moving services with careful packing, on-time arrivals, and friendly pros for every move.
+              Get matched with verified independent moving helpers in your area.
             </p>
 
-            <!-- Features Grid -->
-            <div class="grid grid-cols-2 gap-3 mb-8 max-w-md mx-auto lg:mx-0">
-              <div class="flex items-center justify-center lg:justify-start gap-2 text-sm text-slate-300">
-                <svg class="w-5 h-5 text-brand-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                </svg>
-                <span>Licensed & Insured</span>
-              </div>
-              <div class="flex items-center justify-center lg:justify-start gap-2 text-sm text-slate-300">
-                <svg class="w-5 h-5 text-brand-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                </svg>
-                <span>Same-Day Available</span>
-              </div>
-              <div class="flex items-center justify-center lg:justify-start gap-2 text-sm text-slate-300">
-                <svg class="w-5 h-5 text-brand-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                </svg>
-                <span>No Hidden Fees</span>
-              </div>
-              <div class="flex items-center justify-center lg:justify-start gap-2 text-sm text-slate-300">
-                <svg class="w-5 h-5 text-brand-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                </svg>
-                <span>4.9★ Rating</span>
+            <!-- CTA Card -->
+            <div class="mb-6">
+              <div class="mx-auto lg:mx-0 max-w-xl rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm shadow-[0_10px_30px_-10px_rgba(0,0,0,0.4)] p-4 sm:p-5">
+                <div class="flex flex-wrap gap-3">
+                  <a href="#sms-quote" class="inline-flex items-center justify-center gap-2 rounded-xl bg-brand-600 hover:bg-brand-700 text-white px-5 py-3 text-sm font-bold shadow-md">
+                    View Pricing
+                  </a>
+                  <a href="#process" class="inline-flex items-center justify-center gap-2 rounded-xl bg-white/10 text-white px-5 py-3 text-sm font-bold border border-white/20 shadow-sm hover:bg-white/15">
+                    How It Works
+                  </a>
+                </div>
+                <div class="mt-4 flex items-center justify-center lg:justify-start gap-2 text-slate-300 text-sm">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-yellow-400">
+                    <path d="M10 15.27 16.18 18l-1.64-7.03L20 6.24l-7.19-.61L10 0 7.19 5.63 0 6.24l5.46 4.73L3.82 18 10 15.27z"/>
+                  </svg>
+                  <span class="font-semibold">4.9</span>
+                  <span class="mx-1">|</span>
+                  <span>1,200+ satisfied customers</span>
+                </div>
               </div>
             </div>
 
-            <!-- CTAs -->
-            <div class="flex flex-row flex-wrap justify-center lg:justify-start gap-2 sm:gap-3">
-              <a href="#sms-quote" class="group inline-flex items-center justify-center gap-2 rounded-xl bg-brand-600 px-5 sm:px-8 py-3.5 sm:py-4 text-sm sm:text-base font-bold text-white hover:bg-brand-700 transition-all shadow-lg shadow-brand-600/30 hover:shadow-xl hover:shadow-brand-600/40 hover:scale-105">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
-                </svg>
-                Get Pricing
-                <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/>
-                </svg>
-              </a>
-              <a href="#process" class="group inline-flex items-center justify-center gap-2 rounded-xl bg-white/10 backdrop-blur-sm px-5 sm:px-8 py-3.5 sm:py-4 text-sm sm:text-base font-bold text-white border-2 border-white/20 hover:bg-white/20 hover:border-white/30 transition-all">
-                How It Works
-                <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/>
-                </svg>
-              </a>
-            </div>
-            
-            <!-- Happy Moves Badge - Mobile Only -->
-            <div class="mt-6 lg:hidden flex items-center justify-center gap-3">
-              <!-- Left Line -->
-              <div class="flex-1 h-px bg-gradient-to-r from-transparent to-white/30"></div>
-              
-              <!-- Badge -->
-              <div class="bg-white rounded-2xl p-4 shadow-2xl inline-flex">
-                <div class="flex items-center gap-3">
-                  <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-100">
-                    <svg class="w-6 h-6 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
-                    </svg>
-                  </div>
-                  <div>
-                    <div class="text-2xl font-bold text-slate-900">1,000+</div>
-                    <div class="text-xs font-medium text-slate-600">Happy Moves</div>
-                  </div>
-                </div>
-              </div>
-              
-              <!-- Right Line -->
-              <div class="flex-1 h-px bg-gradient-to-l from-transparent to-white/30"></div>
-            </div>
+            <!-- Removed old feature grid and mobile badge in new design -->
           </div>
 
-          <!-- Right: Image -->
-          <div class="hidden lg:block">
+          <!-- Right: Circular Image -->
+          <div class="hidden lg:flex items-center justify-center">
             <div class="relative">
-              <!-- Main Image -->
-              <div class="relative rounded-3xl overflow-hidden border-4 border-white/10 shadow-2xl">
-                <img src="/assets/Opek.png" alt="Opek Moving team with moving truck" class="w-full h-[500px] object-cover" />
-                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent"></div>
+              <div class="rounded-full overflow-hidden w-[520px] h-[520px] shadow-2xl ring-8 ring-white/10">
+                <img src="/assets/Opek.png" alt="Opek Moving team with moving truck" class="w-full h-full object-cover" />
               </div>
-              
-              <!-- Floating Badge -->
-              <div class="absolute -bottom-6 -left-6 bg-white rounded-2xl p-4 shadow-2xl">
-                <div class="flex items-center gap-3">
-                  <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-100">
-                    <svg class="w-6 h-6 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
-                    </svg>
-                  </div>
-                  <div>
-                    <div class="text-2xl font-bold text-slate-900">1,000+</div>
-                    <div class="text-xs font-medium text-slate-600">Happy Moves</div>
-                  </div>
-                </div>
-              </div>
+              <div class="absolute -top-3 -left-3 w-[540px] h-[540px] rounded-full border border-white/20"></div>
             </div>
           </div>
         </div>
