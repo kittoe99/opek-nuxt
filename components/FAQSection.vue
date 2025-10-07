@@ -13,7 +13,7 @@
       </div>
 
       <!-- FAQ Image -->
-      <div class="mx-auto max-w-3xl mt-12 mb-12 relative rounded-2xl overflow-hidden">
+      <div class="mx-auto max-w-3xl mt-12 mb-12 relative rounded-3xl overflow-hidden">
         <div class="aspect-[21/9] relative">
           <img src="/assets/Opek.png" alt="Customer service and support" class="w-full h-full object-cover" />
           <div class="absolute inset-0 bg-gradient-to-t from-slate-900/70 via-slate-900/40 to-transparent"></div>

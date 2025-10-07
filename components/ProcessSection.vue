@@ -16,7 +16,7 @@
         <!-- Left: Image -->
         <div class="order-last lg:order-first">
           <div class="relative overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-lg">
-            <img src="/assets/Opek.png" alt="Opek moving crew in action" class="h-80 w-full object-cover sm:h-96" />
+            <img src="/assets/packers-and-movers.png" alt="Professional packers and movers at work" class="h-80 w-full object-cover sm:h-96" />
             <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent p-4">
               <p class="text-white text-xs font-semibold">Professional crew • Protected floors • On-time arrivals</p>
             </div>
