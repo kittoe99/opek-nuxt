@@ -15,7 +15,7 @@
       <!-- FAQ Image -->
       <div class="mx-auto max-w-3xl mt-12 mb-12 relative rounded-3xl overflow-hidden">
         <div class="aspect-[21/9] relative">
-          <img src="/assets/Opek.png" alt="Customer service and support" class="w-full h-full object-cover" />
+          <img src="/assets/movers-in-denver-min.png" alt="Movers in Denver" class="w-full h-full object-cover" />
           <div class="absolute inset-0 bg-gradient-to-t from-slate-900/70 via-slate-900/40 to-transparent"></div>
           <div class="absolute bottom-6 left-6 right-6 text-white">
             <p class="text-xl font-bold">Have questions? We're here to help!</p>
