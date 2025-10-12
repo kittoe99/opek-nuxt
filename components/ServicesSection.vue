@@ -40,32 +40,35 @@
       </div>
       <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         <!-- Card 1: Residential -->
-        <article class="relative group overflow-hidden rounded-3xl bg-white border-2 border-emerald-100 hover:border-emerald-300 transition-all duration-300 shadow-lg hover:shadow-2xl">
-          <!-- Mountain Pattern Background -->
-          <div class="absolute inset-0 opacity-5">
-            <svg viewBox="0 0 400 300" class="w-full h-full" preserveAspectRatio="none">
-              <path fill="#059669" d="M0,300 L0,150 L100,80 L200,180 L300,60 L400,140 L400,300 Z"/>
-            </svg>
+        <article class="relative group overflow-hidden rounded-3xl h-[380px] shadow-xl hover:shadow-2xl transition-all duration-300">
+          <!-- Background Image -->
+          <div class="absolute inset-0">
+            <img src="/assets/Opek.png" alt="Residential Moving" class="h-full w-full object-cover group-hover:scale-110 transition-transform duration-500" />
           </div>
           
+          <!-- Gradient Overlay -->
+          <div class="absolute inset-0 bg-gradient-to-b from-emerald-900/60 via-emerald-900/80 to-emerald-950/95"></div>
+          
           <!-- Content -->
-          <div class="relative p-6 sm:p-8">
-            <!-- Icon with map pin -->
-            <div class="relative inline-flex mb-6">
-              <div class="absolute inset-0 bg-emerald-100 rounded-2xl blur-xl opacity-50"></div>
-              <div class="relative flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-600 text-white shadow-lg">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-8 h-8">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
-                </svg>
+          <div class="relative h-full p-8 flex flex-col justify-between">
+            <div>
+              <!-- Map Pin Icon -->
+              <div class="relative inline-flex mb-5">
+                <div class="absolute inset-0 bg-emerald-400/30 rounded-2xl blur-xl"></div>
+                <div class="relative flex h-16 w-16 items-center justify-center rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20 group-hover:bg-emerald-600 group-hover:border-emerald-500 transition-colors">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-9 h-9">
+                    <path fill="#10B981" d="M16 0C9.37 0 4 5.37 4 12c0 7.47 10.9 19.35 11.43 19.92a.75.75 0 0 0 1.14 0C17.1 31.35 28 19.47 28 12 28 5.37 22.63 0 16 0z"></path>
+                    <path fill="#ECFDF5" d="M16 4a8 8 0 1 0 0 16 8 8 0 0 0 0-16zm-3.5 7.5l2 3 2.5-4 2.5 4h-9l2.5-3z"></path>
+                  </svg>
+                </div>
               </div>
+              <h3 class="text-2xl font-extrabold text-white mb-3">Residential Moving</h3>
+              <p class="text-emerald-50 text-sm leading-relaxed">Careful handling, clean pads, and efficient loading—from studios to family homes.</p>
             </div>
             
-            <h3 class="text-2xl font-extrabold text-gray-900 mb-3">Residential Moving</h3>
-            <p class="text-gray-600 leading-relaxed mb-6">Careful handling, clean pads, and efficient loading—from studios to family homes.</p>
-            
-            <NuxtLink to="/residential" class="inline-flex items-center gap-2 text-sm font-bold text-emerald-700 hover:text-emerald-800 group/link">
+            <NuxtLink to="/residential" class="inline-flex items-center gap-2 text-sm font-bold text-white bg-emerald-600 hover:bg-emerald-700 px-5 py-3 rounded-xl transition-all group-hover:scale-105 shadow-lg shadow-emerald-600/30 w-fit">
               Learn more
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-4 h-4 group-hover/link:translate-x-1 transition-transform">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 group-hover:translate-x-1 transition-transform">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
               </svg>
             </NuxtLink>
@@ -73,32 +76,35 @@
         </article>
 
         <!-- Card 2: Commercial -->
-        <article class="relative group overflow-hidden rounded-3xl bg-white border-2 border-emerald-100 hover:border-emerald-300 transition-all duration-300 shadow-lg hover:shadow-2xl">
-          <!-- Mountain Pattern Background -->
-          <div class="absolute inset-0 opacity-5">
-            <svg viewBox="0 0 400 300" class="w-full h-full" preserveAspectRatio="none">
-              <path fill="#059669" d="M0,300 L0,120 L120,50 L240,150 L360,30 L400,100 L400,300 Z"/>
-            </svg>
+        <article class="relative group overflow-hidden rounded-3xl h-[380px] shadow-xl hover:shadow-2xl transition-all duration-300">
+          <!-- Background Image -->
+          <div class="absolute inset-0">
+            <img src="/assets/Opek.png" alt="Commercial Moving" class="h-full w-full object-cover group-hover:scale-110 transition-transform duration-500" />
           </div>
           
+          <!-- Gradient Overlay -->
+          <div class="absolute inset-0 bg-gradient-to-b from-emerald-900/60 via-emerald-900/80 to-emerald-950/95"></div>
+          
           <!-- Content -->
-          <div class="relative p-6 sm:p-8">
-            <!-- Icon with map pin -->
-            <div class="relative inline-flex mb-6">
-              <div class="absolute inset-0 bg-emerald-100 rounded-2xl blur-xl opacity-50"></div>
-              <div class="relative flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-600 text-white shadow-lg">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-8 h-8">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21" />
-                </svg>
+          <div class="relative h-full p-8 flex flex-col justify-between">
+            <div>
+              <!-- Map Pin Icon -->
+              <div class="relative inline-flex mb-5">
+                <div class="absolute inset-0 bg-emerald-400/30 rounded-2xl blur-xl"></div>
+                <div class="relative flex h-16 w-16 items-center justify-center rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20 group-hover:bg-emerald-600 group-hover:border-emerald-500 transition-colors">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-9 h-9">
+                    <path fill="#10B981" d="M16 0C9.37 0 4 5.37 4 12c0 7.47 10.9 19.35 11.43 19.92a.75.75 0 0 0 1.14 0C17.1 31.35 28 19.47 28 12 28 5.37 22.63 0 16 0z"></path>
+                    <path fill="#ECFDF5" d="M16 4a8 8 0 1 0 0 16 8 8 0 0 0 0-16zm-3.5 7.5l2 3 2.5-4 2.5 4h-9l2.5-3z"></path>
+                  </svg>
+                </div>
               </div>
+              <h3 class="text-2xl font-extrabold text-white mb-3">Commercial Moving</h3>
+              <p class="text-emerald-50 text-sm leading-relaxed">Minimal downtime, organized labeling, and protective materials for equipment.</p>
             </div>
             
-            <h3 class="text-2xl font-extrabold text-gray-900 mb-3">Commercial Moving</h3>
-            <p class="text-gray-600 leading-relaxed mb-6">Minimal downtime, organized labeling, and protective materials for equipment.</p>
-            
-            <NuxtLink to="/commercial" class="inline-flex items-center gap-2 text-sm font-bold text-emerald-700 hover:text-emerald-800 group/link">
+            <NuxtLink to="/commercial" class="inline-flex items-center gap-2 text-sm font-bold text-white bg-emerald-600 hover:bg-emerald-700 px-5 py-3 rounded-xl transition-all group-hover:scale-105 shadow-lg shadow-emerald-600/30 w-fit">
               Learn more
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-4 h-4 group-hover/link:translate-x-1 transition-transform">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 group-hover:translate-x-1 transition-transform">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
               </svg>
             </NuxtLink>
@@ -106,32 +112,35 @@
         </article>
 
         <!-- Card 3: Packing -->
-        <article class="relative group overflow-hidden rounded-3xl bg-white border-2 border-emerald-100 hover:border-emerald-300 transition-all duration-300 shadow-lg hover:shadow-2xl">
-          <!-- Mountain Pattern Background -->
-          <div class="absolute inset-0 opacity-5">
-            <svg viewBox="0 0 400 300" class="w-full h-full" preserveAspectRatio="none">
-              <path fill="#059669" d="M0,300 L0,160 L80,100 L160,190 L240,70 L320,140 L400,90 L400,300 Z"/>
-            </svg>
+        <article class="relative group overflow-hidden rounded-3xl h-[380px] shadow-xl hover:shadow-2xl transition-all duration-300">
+          <!-- Background Image -->
+          <div class="absolute inset-0">
+            <img src="/assets/Opek.png" alt="Packing Services" class="h-full w-full object-cover group-hover:scale-110 transition-transform duration-500" />
           </div>
           
+          <!-- Gradient Overlay -->
+          <div class="absolute inset-0 bg-gradient-to-b from-emerald-900/60 via-emerald-900/80 to-emerald-950/95"></div>
+          
           <!-- Content -->
-          <div class="relative p-6 sm:p-8">
-            <!-- Icon with map pin -->
-            <div class="relative inline-flex mb-6">
-              <div class="absolute inset-0 bg-emerald-100 rounded-2xl blur-xl opacity-50"></div>
-              <div class="relative flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-600 text-white shadow-lg">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-8 h-8">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="m20.25 7.5-.625 10.632a2.25 2.25 0 0 1-2.247 2.118H6.622a2.25 2.25 0 0 1-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z" />
-                </svg>
+          <div class="relative h-full p-8 flex flex-col justify-between">
+            <div>
+              <!-- Map Pin Icon -->
+              <div class="relative inline-flex mb-5">
+                <div class="absolute inset-0 bg-emerald-400/30 rounded-2xl blur-xl"></div>
+                <div class="relative flex h-16 w-16 items-center justify-center rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20 group-hover:bg-emerald-600 group-hover:border-emerald-500 transition-colors">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-9 h-9">
+                    <path fill="#10B981" d="M16 0C9.37 0 4 5.37 4 12c0 7.47 10.9 19.35 11.43 19.92a.75.75 0 0 0 1.14 0C17.1 31.35 28 19.47 28 12 28 5.37 22.63 0 16 0z"></path>
+                    <path fill="#ECFDF5" d="M16 4a8 8 0 1 0 0 16 8 8 0 0 0 0-16zm-3.5 7.5l2 3 2.5-4 2.5 4h-9l2.5-3z"></path>
+                  </svg>
+                </div>
               </div>
+              <h3 class="text-2xl font-extrabold text-white mb-3">Packing Services</h3>
+              <p class="text-emerald-50 text-sm leading-relaxed">Full and partial packing with sturdy boxes and eco-friendly materials.</p>
             </div>
             
-            <h3 class="text-2xl font-extrabold text-gray-900 mb-3">Packing Services</h3>
-            <p class="text-gray-600 leading-relaxed mb-6">Full and partial packing with sturdy boxes and eco-friendly materials.</p>
-            
-            <NuxtLink to="/packing" class="inline-flex items-center gap-2 text-sm font-bold text-emerald-700 hover:text-emerald-800 group/link">
+            <NuxtLink to="/packing" class="inline-flex items-center gap-2 text-sm font-bold text-white bg-emerald-600 hover:bg-emerald-700 px-5 py-3 rounded-xl transition-all group-hover:scale-105 shadow-lg shadow-emerald-600/30 w-fit">
               Learn more
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-4 h-4 group-hover/link:translate-x-1 transition-transform">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 group-hover:translate-x-1 transition-transform">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
               </svg>
             </NuxtLink>
