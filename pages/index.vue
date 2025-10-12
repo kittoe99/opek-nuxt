@@ -22,7 +22,7 @@
             </div>
 
             <h1 class="reveal text-5xl leading-tight sm:text-5xl sm:leading-tight lg:text-6xl lg:leading-tight font-extrabold tracking-tight font-display mb-4">
-              Move without the stress. <span class="text-brand-600 underline decoration-brand-500 decoration-4 underline-offset-4">We handle the rest.</span>
+              Move without the stress. <span class="text-brand-600">We handle the rest.</span>
             </h1>
             
             <p class="reveal delay-1 text-base sm:text-lg text-gray-600 leading-relaxed mb-6">

@@ -1,4 +1,15 @@
 <template>
+  <!-- Custom Scrollbar for Mobile/Tablet -->
+  <div id="custom-scrollbar-track-mobile" class="lg:hidden">
+    <div id="custom-scrollbar-fill-mobile"></div>
+    <div id="custom-scrollbar-thumb-mobile">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+        <path fill="#059669" d="M16 0C9.37 0 4 5.37 4 12c0 7.47 10.9 19.35 11.43 19.92a.75.75 0 0 0 1.14 0C17.1 31.35 28 19.47 28 12 28 5.37 22.63 0 16 0z"></path>
+        <path fill="#ECFDF5" d="M16 4a8 8 0 1 0 0 16 8 8 0 0 0 0-16zm-3.5 7.5l2 3 2.5-4 2.5 4h-9l2.5-3z"></path>
+      </svg>
+    </div>
+  </div>
+
   <section id="areas" class="relative py-10 sm:py-12 bg-white">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="mx-auto max-w-3xl text-center">
@@ -65,6 +76,17 @@
         <!-- Right: Interactive Denver Map -->
         <ClientOnly>
           <div id="denver-map-component" class="hidden lg:block w-full rounded-3xl shadow-xl overflow-hidden border border-gray-200">
+            <!-- Custom Scrollbar -->
+            <div id="custom-scrollbar-track">
+                <div id="custom-scrollbar-fill"></div>
+                <div id="custom-scrollbar-thumb">
+                    <!-- CLEANER SVG ICON -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                        <path fill="#059669" d="M16 0C9.37 0 4 5.37 4 12c0 7.47 10.9 19.35 11.43 19.92a.75.75 0 0 0 1.14 0C17.1 31.35 28 19.47 28 12 28 5.37 22.63 0 16 0z"></path>
+                        <path fill="#ECFDF5" d="M16 4a8 8 0 1 0 0 16 8 8 0 0 0 0-16zm-3.5 7.5l2 3 2.5-4 2.5 4h-9l2.5-3z"></path>
+                    </svg>
+                </div>
+            </div>
             <div id="map-container"></div>
           </div>
         </ClientOnly>
@@ -186,12 +208,9 @@ onMounted(async () => {
       }
 
       const customGreenIconSVG = `
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="marker">
-          <path fill-opacity=".25" d="M16 32s1.427-9.585 3.761-12.025c4.595-4.805 8.685-.99 8.685-.99s4.044 3.964-.526 8.743C25.514 30.245 16 32 16 32z"/>
-          <path fill="#059669" d="M16 0C9.37 0 4 5.37 4 12c0 1.552.28 3.043.81 4.43l.09.24.01.03a11.95 11.95 0 0 0 3.23 4.41c2.25 2.2 4.88 3.78 5.7 6.48.23.78.23 1.62 0 2.4l-.01.06c-.23.77-1.13 1.46-2.02 1.45-1.12-.02-2.18-.7-2.6-1.7-.02-.05-.04-.1-.05-.15-.42-1-.96-1.92-1.58-2.77-.14-.19-.36-.3-.58-.3-.22 0-.44.11-.58.3-.62.85-1.16 1.77-1.58 2.77-.01.05-.03.1-.05.15-.42 1-1.48 1.68-2.6 1.7-.9.01-1.79-.68-2.02-1.45l-.01-.06c-.23-.78-.23-1.62 0-2.4.82-2.7 3.45-4.28 5.7-6.48A11.95 11.95 0 0 0 11.1 16.67l.01-.03.09-.24C11.72 15.043 12 13.552 12 12c0-2.21 1.79-4 4-4s4 1.79 4 4c0 1.552-.28 3.043-.81 4.43l-.09.24-.01.03a11.95 11.95 0 0 0-3.23 4.41c-2.25 2.2-4.88 3.78-5.7 6.48-.23.78-.23 1.62 0 2.4l.01.06c.23.77 1.13 1.46 2.02 1.45 1.12.02 2.18-.7 2.6-1.7.02-.05.04-.1.05-.15.42-1 .96-1.92 1.58-2.77.14-.19.36-.3.58-.3.22 0 .44.11.58.3.62.85 1.16 1.77 1.58 2.77.01.05.03.1.05.15.42 1 1.48 1.68 2.6 1.7.9.01 1.79-.68 2.02-1.45l.01-.06c.23-.78.23-1.62 0-2.4-.82-2.7-3.45-4.28-5.7-6.48a11.95 11.95 0 0 0-2.86-4.17l-.01-.03-.09-.24C20.28 15.043 20 13.552 20 12c0-6.63-5.37-12-12-12zm0 8c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4z"/>
-          <path fill="#fff" d="M16 12a4 4 0 1 1 0 8 4 4 0 0 1 0-8z"/>
-          <path fill="#10B981" d="M16 4.5c-4.14 0-7.5 3.36-7.5 7.5s3.36 7.5 7.5 7.5 7.5-3.36 7.5-7.5-3.36-7.5-7.5-7.5zm0 13c-3.03 0-5.5-2.47-5.5-5.5s2.47-5.5 5.5-5.5 5.5 2.47 5.5 5.5-2.47 5.5-5.5 5.5z"/>
-          <path fill="#fff" d="M16.5 10h-1v3h-3v1h3v3h1v-3h3v-1h-3z"/>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+          <path fill="#059669" d="M16 0C9.37 0 4 5.37 4 12c0 7.47 10.9 19.35 11.43 19.92a.75.75 0 0 0 1.14 0C17.1 31.35 28 19.47 28 12 28 5.37 22.63 0 16 0z"></path>
+          <path fill="#ECFDF5" d="M16 4a8 8 0 1 0 0 16 8 8 0 0 0 0-16zm-3.5 7.5l2 3 2.5-4 2.5 4h-9l2.5-3z"></path>
         </svg>
       `
 
@@ -224,10 +243,167 @@ onMounted(async () => {
 
   // slight delay to ensure layout is stable before initializing
   setTimeout(initMap, 0)
+
+  // Scrollbar logic for both desktop and mobile with fill
+  const setupScrollbar = (trackId, thumbId, fillId) => {
+    const track = document.getElementById(trackId)
+    const thumb = document.getElementById(thumbId)
+    const fill = document.getElementById(fillId)
+
+    if (track && thumb && fill) {
+      const onScroll = () => {
+        const scrollableHeight = document.documentElement.scrollHeight - window.innerHeight
+
+        // Hide scrollbar if not needed
+        if (scrollableHeight <= 0) {
+          track.style.display = 'none'
+          return
+        }
+        track.style.display = 'block'
+        
+        const trackHeight = track.clientHeight
+        const thumbHeight = thumb.clientHeight
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop
+        const scrollPercent = scrollTop / scrollableHeight
+        const thumbTop = scrollPercent * (trackHeight - thumbHeight)
+        
+        // Calculate fill height based on scroll progress
+        const fillHeight = scrollPercent * 100
+        
+        // Use requestAnimationFrame for smoother updates
+        requestAnimationFrame(() => {
+          thumb.style.top = `${thumbTop}px`
+          fill.style.height = `${fillHeight}%`
+        })
+      }
+
+      window.addEventListener('scroll', onScroll, { passive: true })
+      // Trigger a scroll event on load to set the initial position
+      window.dispatchEvent(new Event('scroll'))
+    }
+  }
+
+  // Setup scrollbars for both desktop and mobile
+  setupScrollbar('custom-scrollbar-track', 'custom-scrollbar-thumb', 'custom-scrollbar-fill')
+  setupScrollbar('custom-scrollbar-track-mobile', 'custom-scrollbar-thumb-mobile', 'custom-scrollbar-fill-mobile')
 })
 </script>
 
 <style>
+/* Hide default scrollbar */
+html {
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none;  /* For IE and Edge */
+}
+html::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+
+/* Custom scrollbar styles */
+#custom-scrollbar-track {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 20px;
+  background-color: rgba(236, 253, 245, 0.7);
+  z-index: 10000;
+  backdrop-filter: blur(4px);
+  border-right: 1px solid rgba(0,0,0,0.05);
+}
+#custom-scrollbar-fill {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 0%;
+  background: linear-gradient(to bottom, #10B981, #059669);
+  transition: height 0.1s ease-out;
+  z-index: 1;
+}
+#custom-scrollbar-thumb {
+  position: absolute;
+  left: -10px; /* Nudge to center the icon on the track line */
+  top: 0;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  will-change: top;
+  z-index: 2;
+}
+#custom-scrollbar-thumb svg {
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+  transition: transform 0.2s ease-out;
+}
+#custom-scrollbar-thumb:hover svg {
+  transform: scale(1.1);
+}
+
+/* Custom scrollbar styles for mobile */
+#custom-scrollbar-track-mobile {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 12px;
+  background-color: rgba(236, 253, 245, 0.5);
+  z-index: 10000;
+  backdrop-filter: blur(2px);
+  border-right: 1px solid rgba(0,0,0,0.03);
+  display: block; /* Always visible on mobile/tablet */
+}
+#custom-scrollbar-fill-mobile {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 0%;
+  background: linear-gradient(to bottom, #10B981, #059669);
+  transition: height 0.1s ease-out;
+  z-index: 1;
+}
+#custom-scrollbar-thumb-mobile {
+  position: absolute;
+  left: -6px;
+  top: 0;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  will-change: top;
+  z-index: 2;
+}
+#custom-scrollbar-thumb-mobile svg {
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0 1px 2px rgba(0,0,0,0.2));
+  transition: transform 0.2s ease-out;
+}
+#custom-scrollbar-thumb-mobile:hover svg {
+  transform: scale(1.05);
+}
+
+/* Hide desktop scrollbar on mobile/tablet, show mobile scrollbar */
+@media (max-width: 1023px) {
+  #custom-scrollbar-track {
+    display: none !important;
+  }
+  #custom-scrollbar-track-mobile {
+    display: block;
+  }
+}
+
+/* Hide mobile scrollbar on desktop, show desktop scrollbar */
+@media (min-width: 1024px) {
+  #custom-scrollbar-track-mobile {
+    display: none !important;
+  }
+  #custom-scrollbar-track {
+    display: block;
+  }
+}
+
 /* Scoped styles for the map component */
 #denver-map-component {
   font-family: 'Inter', sans-serif;
@@ -255,13 +431,15 @@ onMounted(async () => {
 
 @media (min-width: 1024px) { /* lg */
   #denver-map-component #map-container {
-    height: 380px; /* keep large on desktop */
+    height: 100%; /* match the height of the Denver Metro Area card */
+    min-height: 500px; /* ensure minimum height */
   }
 }
 
 @media (min-width: 1280px) { /* xl */
   #denver-map-component #map-container {
-    height: 420px; /* larger on wide desktops */
+    height: 100%; /* match the height of the Denver Metro Area card */
+    min-height: 550px; /* ensure minimum height on larger screens */
   }
 }
 
