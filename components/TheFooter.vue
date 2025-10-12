@@ -1,11 +1,22 @@
 <template>
-  <footer id="contact" class="bg-slate-900 text-white">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+  <footer id="contact" class="relative bg-gradient-to-br from-emerald-950 via-emerald-900 to-emerald-950 text-white overflow-hidden">
+    <!-- Mountain Pattern Background -->
+    <div class="absolute inset-0 opacity-[0.03] pointer-events-none">
+      <svg viewBox="0 0 1200 400" class="w-full h-full" preserveAspectRatio="none">
+        <path fill="#10B981" d="M0,400 L0,200 L200,100 L400,250 L600,50 L800,200 L1000,150 L1200,300 L1200,400 Z"/>
+      </svg>
+    </div>
+    
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
       <!-- Main footer content -->
       <div class="py-16 grid gap-12 md:grid-cols-2 lg:grid-cols-4">
         <!-- Brand Column -->
         <div class="lg:col-span-2">
-          <a href="#home" class="inline-block mb-4">
+          <a href="#home" class="inline-flex items-center gap-3 mb-4 group">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-10 h-10 group-hover:scale-110 transition-transform">
+              <path fill="#10B981" d="M16 0C9.37 0 4 5.37 4 12c0 7.47 10.9 19.35 11.43 19.92a.75.75 0 0 0 1.14 0C17.1 31.35 28 19.47 28 12 28 5.37 22.63 0 16 0z"></path>
+              <path fill="#ECFDF5" d="M16 4a8 8 0 1 0 0 16 8 8 0 0 0 0-16zm-3.5 7.5l2 3 2.5-4 2.5 4h-9l2.5-3z"></path>
+            </svg>
             <img src="/assets/opek-logo.png" alt="Opek Moving LLC logo" class="h-16 w-auto object-contain" />
           </a>
           <p class="text-sm text-slate-400 mb-6 max-w-md">
@@ -26,12 +37,12 @@
           <h3 class="text-sm font-bold text-white uppercase tracking-wider mb-4">Quick Links</h3>
           <nav aria-label="Footer">
             <ul class="space-y-3">
-              <li><a href="#home" class="text-sm text-slate-400 hover:text-brand-300 transition">Home</a></li>
-              <li><a href="#services" class="text-sm text-slate-400 hover:text-brand-300 transition">Services</a></li>
-              <li><a href="#about" class="text-sm text-slate-400 hover:text-brand-300 transition">About</a></li>
-              <li><a href="#reviews" class="text-sm text-slate-400 hover:text-brand-300 transition">Reviews</a></li>
-              <li><a href="#process" class="text-sm text-slate-400 hover:text-brand-300 transition">How It Works</a></li>
-              <li><a href="#faq" class="text-sm text-slate-400 hover:text-brand-300 transition">FAQ</a></li>
+              <li><a href="#home" class="text-sm text-slate-400 hover:text-emerald-300 transition">Home</a></li>
+              <li><a href="#services" class="text-sm text-slate-400 hover:text-emerald-300 transition">Services</a></li>
+              <li><a href="#about" class="text-sm text-slate-400 hover:text-emerald-300 transition">About</a></li>
+              <li><a href="#reviews" class="text-sm text-slate-400 hover:text-emerald-300 transition">Reviews</a></li>
+              <li><a href="#process" class="text-sm text-slate-400 hover:text-emerald-300 transition">How It Works</a></li>
+              <li><a href="#faq" class="text-sm text-slate-400 hover:text-emerald-300 transition">FAQ</a></li>
             </ul>
           </nav>
         </div>
@@ -41,7 +52,7 @@
           <h3 class="text-sm font-bold text-white uppercase tracking-wider mb-4">Contact</h3>
           <ul class="space-y-3">
             <li>
-              <a href="tel:+1234567890" class="text-sm text-slate-400 hover:text-brand-300 transition flex items-center gap-2">
+              <a href="tel:+1234567890" class="text-sm text-slate-400 hover:text-emerald-300 transition flex items-center gap-2">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
                 </svg>
@@ -49,7 +60,7 @@
               </a>
             </li>
             <li>
-              <a href="mailto:info@opekmoving.com" class="text-sm text-slate-400 hover:text-brand-300 transition flex items-center gap-2">
+              <a href="mailto:info@opekmoving.com" class="text-sm text-slate-400 hover:text-emerald-300 transition flex items-center gap-2">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
                 </svg>

@@ -2,14 +2,18 @@
   <header
     id="site-header"
     :class="[
-      'fixed inset-x-0 top-0 z-50 transition-all duration-300',
-      isScrolled ? 'bg-black/80 shadow-lg ring-1 ring-black/10' : 'bg-gray-900/70 backdrop-blur-sm'
+      'fixed inset-x-0 top-0 z-50 transition-all duration-300 border-b',
+      isScrolled ? 'bg-emerald-900/95 shadow-lg border-emerald-800/50' : 'bg-emerald-800/80 backdrop-blur-sm border-emerald-700/30'
     ]"
   >
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="flex h-20 items-center justify-between">
-        <!-- Brand -->
-        <a href="#" class="group inline-flex items-center">
+        <!-- Brand with map pin -->
+        <a href="#" class="group inline-flex items-center gap-3">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-8 h-8 group-hover:scale-110 transition-transform">
+            <path fill="#10B981" d="M16 0C9.37 0 4 5.37 4 12c0 7.47 10.9 19.35 11.43 19.92a.75.75 0 0 0 1.14 0C17.1 31.35 28 19.47 28 12 28 5.37 22.63 0 16 0z"></path>
+            <path fill="#ECFDF5" d="M16 4a8 8 0 1 0 0 16 8 8 0 0 0 0-16zm-3.5 7.5l2 3 2.5-4 2.5 4h-9l2.5-3z"></path>
+          </svg>
           <img
             src="/assets/opek-logo.png"
             alt="Opek Moving LLC logo"
@@ -20,21 +24,21 @@
         <!-- Desktop Nav -->
         <nav class="hidden lg:block">
           <ul class="flex items-center gap-8">
-            <li><a href="#home" class="nav-link text-[15px] font-semibold transition text-white hover:text-brand-100">Home</a></li>
-            <li><a href="#services" class="nav-link text-[15px] font-semibold transition text-white hover:text-brand-100">Services</a></li>
-            <li><a href="#about" class="nav-link text-[15px] font-semibold transition text-white hover:text-brand-100">About</a></li>
-            <li><a href="#reviews" class="nav-link text-[15px] font-semibold transition text-white hover:text-brand-100">Reviews</a></li>
-            <li><a href="#process" class="nav-link text-[15px] font-semibold transition text-white hover:text-brand-100">Process</a></li>
-            <li><a href="#contact" class="nav-link text-[15px] font-semibold transition text-white hover:text-brand-100">Contact</a></li>
+            <li><a href="#home" class="nav-link text-[15px] font-semibold transition text-white hover:text-emerald-200">Home</a></li>
+            <li><a href="#services" class="nav-link text-[15px] font-semibold transition text-white hover:text-emerald-200">Services</a></li>
+            <li><a href="#about" class="nav-link text-[15px] font-semibold transition text-white hover:text-emerald-200">About</a></li>
+            <li><a href="#reviews" class="nav-link text-[15px] font-semibold transition text-white hover:text-emerald-200">Reviews</a></li>
+            <li><a href="#process" class="nav-link text-[15px] font-semibold transition text-white hover:text-emerald-200">Process</a></li>
+            <li><a href="#contact" class="nav-link text-[15px] font-semibold transition text-white hover:text-emerald-200">Contact</a></li>
           </ul>
         </nav>
 
         <!-- CTAs -->
         <div class="hidden lg:flex items-center gap-4">
-          <a href="#contact" class="inline-flex items-center gap-2 rounded-xl px-4 py-2 text-sm font-semibold text-white hover:text-brand-100 transition">
+          <a href="#contact" class="inline-flex items-center gap-2 rounded-xl px-4 py-2 text-sm font-semibold text-white hover:text-emerald-200 transition">
             <span>Call us</span>
           </a>
-          <a href="#quote" class="inline-flex items-center gap-2 rounded-xl bg-brand-600 px-5 py-2.5 text-sm font-semibold text-white hover:bg-brand-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-400 focus-visible:ring-offset-2 focus-visible:ring-offset-white transition">
+          <a href="#quote" class="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-emerald-600 to-emerald-500 px-5 py-2.5 text-sm font-semibold text-white hover:from-emerald-700 hover:to-emerald-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400 focus-visible:ring-offset-2 focus-visible:ring-offset-emerald-900 transition-all shadow-lg shadow-emerald-600/30">
             Get a Quote
           </a>
         </div>
@@ -42,7 +46,7 @@
         <!-- Mobile menu button -->
         <button
           @click="toggleMenu"
-          class="lg:hidden inline-flex h-11 w-11 items-center justify-center rounded-xl bg-white/10 text-white ring-1 ring-white/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-400"
+          class="lg:hidden inline-flex h-11 w-11 items-center justify-center rounded-xl bg-emerald-700/50 text-white ring-1 ring-emerald-600/50 hover:bg-emerald-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400 transition"
           :aria-expanded="mobileMenuOpen"
           aria-controls="mobile-nav"
         >
@@ -86,15 +90,27 @@
       <div
         v-if="mobileMenuOpen"
         id="mobile-nav"
-        class="lg:hidden fixed top-0 right-0 bottom-0 z-50 w-80 max-w-[85vw] bg-gradient-to-br from-slate-950 via-slate-900 to-slate-900 shadow-2xl overflow-hidden"
+        class="lg:hidden fixed top-0 right-0 bottom-0 z-50 w-80 max-w-[85vw] bg-gradient-to-br from-emerald-950 via-emerald-900 to-emerald-900 shadow-2xl overflow-hidden"
       >
+        <!-- Mountain Pattern Background -->
+        <div class="absolute inset-0 opacity-[0.03] pointer-events-none">
+          <svg viewBox="0 0 400 800" class="w-full h-full" preserveAspectRatio="none">
+            <path fill="#10B981" d="M0,800 L0,400 L100,300 L200,450 L300,250 L400,380 L400,800 Z"/>
+            <path fill="#10B981" d="M0,400 L0,200 L80,120 L160,240 L240,100 L320,190 L400,150 L400,400 Z"/>
+          </svg>
+        </div>
+        
         <!-- Decorative Background Elements -->
-        <div class="absolute top-0 right-0 w-64 h-64 bg-brand-600/10 rounded-full blur-3xl -translate-y-32 translate-x-32"></div>
-        <div class="absolute bottom-0 left-0 w-48 h-48 bg-brand-500/5 rounded-full blur-3xl translate-y-24 -translate-x-24"></div>
+        <div class="absolute top-0 right-0 w-64 h-64 bg-emerald-600/10 rounded-full blur-3xl -translate-y-32 translate-x-32"></div>
+        <div class="absolute bottom-0 left-0 w-48 h-48 bg-emerald-500/10 rounded-full blur-3xl translate-y-24 -translate-x-24"></div>
         
         <!-- Sidebar Header -->
-        <div class="relative flex items-center justify-between p-6 border-b border-white/10 bg-gradient-to-r from-white/5 to-transparent">
+        <div class="relative flex items-center justify-between p-6 border-b border-emerald-700/30 bg-gradient-to-r from-emerald-800/30 to-transparent">
           <div class="flex items-center gap-3">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-10 h-10">
+              <path fill="#10B981" d="M16 0C9.37 0 4 5.37 4 12c0 7.47 10.9 19.35 11.43 19.92a.75.75 0 0 0 1.14 0C17.1 31.35 28 19.47 28 12 28 5.37 22.63 0 16 0z"></path>
+              <path fill="#ECFDF5" d="M16 4a8 8 0 1 0 0 16 8 8 0 0 0 0-16zm-3.5 7.5l2 3 2.5-4 2.5 4h-9l2.5-3z"></path>
+            </svg>
             <img
               src="/assets/opek-logo.png"
               alt="Opek Moving LLC"
@@ -116,9 +132,9 @@
         <nav class="relative flex-1 overflow-y-auto p-6" aria-label="Mobile">
           <ul class="space-y-2">
             <li>
-              <a @click="closeMenu" class="group relative flex items-center gap-4 rounded-2xl px-4 py-4 text-[15px] font-semibold text-slate-200 hover:bg-gradient-to-r hover:from-brand-600/20 hover:to-brand-500/10 hover:text-white transition-all overflow-hidden" href="#home">
-                <div class="absolute inset-0 bg-gradient-to-r from-brand-600/0 to-brand-500/0 group-hover:from-brand-600/10 group-hover:to-brand-500/5 transition-all"></div>
-                <div class="relative h-11 w-11 rounded-xl bg-white/5 group-hover:bg-brand-600 group-hover:shadow-lg group-hover:shadow-brand-600/30 flex items-center justify-center transition-all group-hover:scale-110">
+              <a @click="closeMenu" class="group relative flex items-center gap-4 rounded-2xl px-4 py-4 text-[15px] font-semibold text-emerald-100 hover:bg-gradient-to-r hover:from-emerald-600/20 hover:to-emerald-500/10 hover:text-white transition-all overflow-hidden" href="#home">
+                <div class="absolute inset-0 bg-gradient-to-r from-emerald-600/0 to-emerald-500/0 group-hover:from-emerald-600/10 group-hover:to-emerald-500/5 transition-all"></div>
+                <div class="relative h-11 w-11 rounded-xl bg-emerald-800/30 group-hover:bg-emerald-600 group-hover:shadow-lg group-hover:shadow-emerald-600/30 flex items-center justify-center transition-all group-hover:scale-110">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-5 w-5">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M3 10.5 12 3l9 7.5M4.5 9.75V21h6v-6h3v6h6V9.75" />
                   </svg>
@@ -127,9 +143,9 @@
               </a>
             </li>
             <li>
-              <a @click="closeMenu" class="group relative flex items-center gap-4 rounded-2xl px-4 py-4 text-[15px] font-semibold text-slate-200 hover:bg-gradient-to-r hover:from-brand-600/20 hover:to-brand-500/10 hover:text-white transition-all overflow-hidden" href="#services">
+              <a @click="closeMenu" class="group relative flex items-center gap-4 rounded-2xl px-4 py-4 text-[15px] font-semibold text-emerald-100 hover:bg-gradient-to-r hover:from-emerald-600/20 hover:to-emerald-500/10 hover:text-white transition-all overflow-hidden" href="#services">
                 <div class="absolute inset-0 bg-gradient-to-r from-brand-600/0 to-brand-500/0 group-hover:from-brand-600/10 group-hover:to-brand-500/5 transition-all"></div>
-                <div class="relative h-11 w-11 rounded-xl bg-white/5 group-hover:bg-brand-600 group-hover:shadow-lg group-hover:shadow-brand-600/30 flex items-center justify-center transition-all group-hover:scale-110">
+                <div class="relative h-11 w-11 rounded-xl bg-emerald-800/30 group-hover:bg-emerald-600 group-hover:shadow-lg group-hover:shadow-emerald-600/30 flex items-center justify-center transition-all group-hover:scale-110">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-5 w-5">
                     <rect x="3" y="9" width="11" height="6" rx="1" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M14 11h3l2 2v2h-5v-4z" stroke-linecap="round" stroke-linejoin="round"/>
@@ -141,9 +157,9 @@
               </a>
             </li>
             <li>
-              <a @click="closeMenu" class="group relative flex items-center gap-4 rounded-2xl px-4 py-4 text-[15px] font-semibold text-slate-200 hover:bg-gradient-to-r hover:from-brand-600/20 hover:to-brand-500/10 hover:text-white transition-all overflow-hidden" href="#about">
+              <a @click="closeMenu" class="group relative flex items-center gap-4 rounded-2xl px-4 py-4 text-[15px] font-semibold text-emerald-100 hover:bg-gradient-to-r hover:from-emerald-600/20 hover:to-emerald-500/10 hover:text-white transition-all overflow-hidden" href="#about">
                 <div class="absolute inset-0 bg-gradient-to-r from-brand-600/0 to-brand-500/0 group-hover:from-brand-600/10 group-hover:to-brand-500/5 transition-all"></div>
-                <div class="relative h-11 w-11 rounded-xl bg-white/5 group-hover:bg-brand-600 group-hover:shadow-lg group-hover:shadow-brand-600/30 flex items-center justify-center transition-all group-hover:scale-110">
+                <div class="relative h-11 w-11 rounded-xl bg-emerald-800/30 group-hover:bg-emerald-600 group-hover:shadow-lg group-hover:shadow-emerald-600/30 flex items-center justify-center transition-all group-hover:scale-110">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-5 w-5">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5zM10.5 9h3v8.25h-3V9z" />
                     <circle cx="12" cy="12" r="9" />
@@ -153,9 +169,9 @@
               </a>
             </li>
             <li>
-              <a @click="closeMenu" class="group relative flex items-center gap-4 rounded-2xl px-4 py-4 text-[15px] font-semibold text-slate-200 hover:bg-gradient-to-r hover:from-brand-600/20 hover:to-brand-500/10 hover:text-white transition-all overflow-hidden" href="#reviews">
+              <a @click="closeMenu" class="group relative flex items-center gap-4 rounded-2xl px-4 py-4 text-[15px] font-semibold text-emerald-100 hover:bg-gradient-to-r hover:from-emerald-600/20 hover:to-emerald-500/10 hover:text-white transition-all overflow-hidden" href="#reviews">
                 <div class="absolute inset-0 bg-gradient-to-r from-brand-600/0 to-brand-500/0 group-hover:from-brand-600/10 group-hover:to-brand-500/5 transition-all"></div>
-                <div class="relative h-11 w-11 rounded-xl bg-white/5 group-hover:bg-brand-600 group-hover:shadow-lg group-hover:shadow-brand-600/30 flex items-center justify-center transition-all group-hover:scale-110">
+                <div class="relative h-11 w-11 rounded-xl bg-emerald-800/30 group-hover:bg-emerald-600 group-hover:shadow-lg group-hover:shadow-emerald-600/30 flex items-center justify-center transition-all group-hover:scale-110">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-5 w-5">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M12 17.25l-4.33 2.277.828-4.827-3.5-3.41 4.84-.703L12 6l2.162 4.587 4.84.703-3.5 3.41.828 4.827z" />
                   </svg>
@@ -164,9 +180,9 @@
               </a>
             </li>
             <li>
-              <a @click="closeMenu" class="group relative flex items-center gap-4 rounded-2xl px-4 py-4 text-[15px] font-semibold text-slate-200 hover:bg-gradient-to-r hover:from-brand-600/20 hover:to-brand-500/10 hover:text-white transition-all overflow-hidden" href="#process">
+              <a @click="closeMenu" class="group relative flex items-center gap-4 rounded-2xl px-4 py-4 text-[15px] font-semibold text-emerald-100 hover:bg-gradient-to-r hover:from-emerald-600/20 hover:to-emerald-500/10 hover:text-white transition-all overflow-hidden" href="#process">
                 <div class="absolute inset-0 bg-gradient-to-r from-brand-600/0 to-brand-500/0 group-hover:from-brand-600/10 group-hover:to-brand-500/5 transition-all"></div>
-                <div class="relative h-11 w-11 rounded-xl bg-white/5 group-hover:bg-brand-600 group-hover:shadow-lg group-hover:shadow-brand-600/30 flex items-center justify-center transition-all group-hover:scale-110">
+                <div class="relative h-11 w-11 rounded-xl bg-emerald-800/30 group-hover:bg-emerald-600 group-hover:shadow-lg group-hover:shadow-emerald-600/30 flex items-center justify-center transition-all group-hover:scale-110">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-5 w-5">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
                   </svg>
@@ -175,9 +191,9 @@
               </a>
             </li>
             <li class="pt-4 mt-4 border-t border-white/10">
-              <a @click="closeMenu" class="group relative flex items-center gap-4 rounded-2xl px-4 py-4 text-[15px] font-semibold text-slate-200 hover:bg-gradient-to-r hover:from-brand-600/20 hover:to-brand-500/10 hover:text-white transition-all overflow-hidden" href="#contact">
+              <a @click="closeMenu" class="group relative flex items-center gap-4 rounded-2xl px-4 py-4 text-[15px] font-semibold text-emerald-100 hover:bg-gradient-to-r hover:from-emerald-600/20 hover:to-emerald-500/10 hover:text-white transition-all overflow-hidden" href="#contact">
                 <div class="absolute inset-0 bg-gradient-to-r from-brand-600/0 to-brand-500/0 group-hover:from-brand-600/10 group-hover:to-brand-500/5 transition-all"></div>
-                <div class="relative h-11 w-11 rounded-xl bg-white/5 group-hover:bg-brand-600 group-hover:shadow-lg group-hover:shadow-brand-600/30 flex items-center justify-center transition-all group-hover:scale-110">
+                <div class="relative h-11 w-11 rounded-xl bg-emerald-800/30 group-hover:bg-emerald-600 group-hover:shadow-lg group-hover:shadow-emerald-600/30 flex items-center justify-center transition-all group-hover:scale-110">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-5 w-5">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75A2.25 2.25 0 0 1 4.5 4.5h3.133c.51 0 .985.287 1.22.74l1.2 2.4a1.35 1.35 0 0 1-.298 1.566l-1.38 1.38a12.04 12.04 0 0 0 5.837 5.837l1.38-1.38a1.35 1.35 0 0 1 1.566-.298l2.4 1.2c.453.235.74.71.74 1.22V19.5a2.25 2.25 0 0 1-2.25 2.25H18A15.75 15.75 0 0 1 2.25 6.75z" />
                   </svg>
