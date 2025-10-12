@@ -1,22 +1,48 @@
 <template>
-  <section id="quote" class="py-16 sm:py-20 bg-white">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+  <section id="quote" class="relative py-16 sm:py-20 bg-gradient-to-b from-white via-emerald-50/20 to-white overflow-hidden">
+    <!-- Mountain backdrop -->
+    <div class="absolute inset-0 overflow-hidden pointer-events-none">
+      <div class="absolute -bottom-20 left-0 right-0 h-80 opacity-[0.03]">
+        <svg viewBox="0 0 1200 300" class="w-full h-full" preserveAspectRatio="none">
+          <path fill="#059669" d="M0,300 L0,140 L200,70 L400,160 L600,30 L800,110 L1000,80 L1200,180 L1200,300 Z"/>
+        </svg>
+      </div>
+      <div class="absolute top-20 left-10 w-80 h-80 bg-emerald-100/20 rounded-full blur-3xl"></div>
+    </div>
+
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
       <div class="grid gap-12 lg:grid-cols-2 lg:items-center">
         <div>
-          <span class="inline-flex items-center gap-2 rounded-full bg-brand-50 px-3 py-1 text-xs font-semibold text-brand-700 border border-brand-100 mb-4">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-3 h-3">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M3 8.689c0-.864.933-1.406 1.683-.977l7.108 4.061a1.125 1.125 0 0 1 0 1.954l-7.108 4.061A1.125 1.125 0 0 1 3 16.811V8.69ZM12.75 8.689c0-.864.933-1.406 1.683-.977l7.108 4.061a1.125 1.125 0 0 1 0 1.954l-7.108 4.061a1.125 1.125 0 0 1-1.683-.977V8.69Z" />
+          <!-- Badge with map pin -->
+          <span class="inline-flex items-center gap-2 rounded-full bg-emerald-50 px-4 py-2 text-sm font-semibold text-emerald-700 border border-emerald-100 mb-6 shadow-sm">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-4 h-4">
+              <path fill="#059669" d="M16 0C9.37 0 4 5.37 4 12c0 7.47 10.9 19.35 11.43 19.92a.75.75 0 0 0 1.14 0C17.1 31.35 28 19.47 28 12 28 5.37 22.63 0 16 0z"></path>
+              <path fill="#ECFDF5" d="M16 4a8 8 0 1 0 0 16 8 8 0 0 0 0-16zm-3.5 7.5l2 3 2.5-4 2.5 4h-9l2.5-3z"></path>
             </svg>
             Fast response time
           </span>
-          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight font-display">Get your fast quote</h2>
-          <div class="mt-2 h-1 w-16 rounded bg-brand-600"></div>
-          <p class="mt-4 text-base text-slate-600">Tell us about your move and we'll follow up quickly with a clear, no-pressure estimate.</p>
+          
+          <h2 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight font-display mb-4">
+            <span class="bg-gradient-to-r from-emerald-700 via-emerald-600 to-emerald-700 bg-clip-text text-transparent">Get Your Fast Quote</span>
+          </h2>
+          
+          <!-- Mountain-inspired underline -->
+          <div class="flex items-end gap-1 mb-6">
+            <div class="w-3 h-1 bg-emerald-400 rounded-full"></div>
+            <div class="w-3 h-2 bg-emerald-500 rounded-full"></div>
+            <div class="w-3 h-3 bg-emerald-600 rounded-full"></div>
+            <div class="w-3 h-4 bg-emerald-600 rounded-full"></div>
+            <div class="w-3 h-3 bg-emerald-600 rounded-full"></div>
+            <div class="w-3 h-2 bg-emerald-500 rounded-full"></div>
+            <div class="w-3 h-1 bg-emerald-400 rounded-full"></div>
+          </div>
+          
+          <p class="text-lg text-gray-600 leading-relaxed">Tell us about your move and we'll follow up quickly with a <span class="font-semibold text-emerald-700">clear, no-pressure estimate</span>.</p>
 
           <div class="mt-8 space-y-3">
             <div v-for="item in items" :key="item.title" class="flex items-start gap-3">
-              <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-brand-50 text-brand-600 flex-shrink-0">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+              <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-emerald-50 text-emerald-600 flex-shrink-0">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-5 h-5">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                 </svg>
               </div>

@@ -1,15 +1,53 @@
 <template>
-  <section id="faq" class="py-16 sm:py-20 bg-white">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+  <section id="faq" class="relative py-16 sm:py-20 bg-gradient-to-b from-white via-emerald-50/30 to-white overflow-hidden">
+    <!-- Mountain backdrop -->
+    <div class="absolute inset-0 overflow-hidden pointer-events-none">
+      <div class="absolute -bottom-20 left-0 right-0 h-72 opacity-[0.03]">
+        <svg viewBox="0 0 1200 300" class="w-full h-full" preserveAspectRatio="none">
+          <path fill="#059669" d="M0,300 L0,140 L160,70 L320,170 L480,50 L640,130 L800,80 L960,150 L1120,100 L1200,180 L1200,300 Z"/>
+        </svg>
+      </div>
+      <div class="absolute top-20 left-10 w-72 h-72 bg-emerald-100/20 rounded-full blur-3xl"></div>
+    </div>
+
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
       <div class="mx-auto max-w-3xl text-center">
-        <div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-brand-100 text-brand-600 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-8 h-8">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
+        <!-- Question Mark with Map Pins -->
+        <div class="inline-flex items-center justify-center gap-3 mb-8">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-16 h-16 opacity-60 drop-shadow-lg">
+            <path fill="#059669" d="M16 0C9.37 0 4 5.37 4 12c0 7.47 10.9 19.35 11.43 19.92a.75.75 0 0 0 1.14 0C17.1 31.35 28 19.47 28 12 28 5.37 22.63 0 16 0z"></path>
+            <path fill="#ECFDF5" d="M16 4a8 8 0 1 0 0 16 8 8 0 0 0 0-16zm-3.5 7.5l2 3 2.5-4 2.5 4h-9l2.5-3z"></path>
+          </svg>
+          <div class="relative">
+            <div class="absolute inset-0 bg-emerald-100 rounded-full blur-xl opacity-50"></div>
+            <div class="relative flex h-20 w-20 items-center justify-center rounded-full bg-gradient-to-br from-emerald-500 to-emerald-600 text-white shadow-xl">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-10 h-10">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
+              </svg>
+            </div>
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-16 h-16 opacity-60 drop-shadow-lg">
+            <path fill="#059669" d="M16 0C9.37 0 4 5.37 4 12c0 7.47 10.9 19.35 11.43 19.92a.75.75 0 0 0 1.14 0C17.1 31.35 28 19.47 28 12 28 5.37 22.63 0 16 0z"></path>
+            <path fill="#ECFDF5" d="M16 4a8 8 0 1 0 0 16 8 8 0 0 0 0-16zm-3.5 7.5l2 3 2.5-4 2.5 4h-9l2.5-3z"></path>
           </svg>
         </div>
-        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight font-display">Questions, answered</h2>
-        <div class="mx-auto mt-2 h-1 w-16 rounded bg-brand-600"></div>
-        <p class="mt-4 text-base text-slate-600">Quick info about pricing, timing, protection, and what's included.</p>
+        
+        <h2 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight font-display mb-4">
+          <span class="bg-gradient-to-r from-emerald-700 via-emerald-600 to-emerald-700 bg-clip-text text-transparent">Questions, Answered</span>
+        </h2>
+        
+        <!-- Question mark pattern underline -->
+        <div class="flex justify-center items-center gap-2 mb-6">
+          <span class="text-emerald-500 text-2xl font-bold">?</span>
+          <span class="text-emerald-400 text-xl font-bold">?</span>
+          <span class="text-emerald-600 text-3xl font-bold">?</span>
+          <span class="text-emerald-400 text-xl font-bold">?</span>
+          <span class="text-emerald-500 text-2xl font-bold">?</span>
+        </div>
+        
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+          Quick info about <span class="font-semibold text-emerald-700">pricing, timing, protection</span>, and what's included
+        </p>
       </div>
 
       <!-- FAQ Image -->
