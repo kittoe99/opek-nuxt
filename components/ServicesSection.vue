@@ -1,18 +1,48 @@
 <template>
-  <section id="services" class="relative py-16 sm:py-20 bg-white">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+  <section id="services" class="relative py-16 sm:py-20 bg-gradient-to-b from-white via-emerald-50/30 to-white overflow-hidden">
+    <!-- Decorative Elements with Mountain Theme -->
+    <div class="absolute inset-0 overflow-hidden pointer-events-none">
+      <!-- Subtle mountain shapes in background -->
+      <div class="absolute -bottom-20 left-0 right-0 h-96 opacity-5">
+        <svg viewBox="0 0 1200 400" class="w-full h-full" preserveAspectRatio="none">
+          <path fill="#059669" d="M0,400 L0,200 L200,100 L400,250 L600,50 L800,200 L1000,150 L1200,300 L1200,400 Z"/>
+        </svg>
+      </div>
+      <div class="absolute top-20 left-10 w-72 h-72 bg-emerald-100/40 rounded-full blur-3xl"></div>
+      <div class="absolute bottom-20 right-10 w-96 h-96 bg-emerald-50/50 rounded-full blur-3xl"></div>
+    </div>
+
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
       <div class="mx-auto max-w-3xl text-center">
-        <div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-brand-100 text-brand-600 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-8 h-8">
-            <rect x="3" y="9" width="11" height="6" rx="1" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M14 11h3l2 2v2h-5v-4z" stroke-linecap="round" stroke-linejoin="round"/>
-            <circle cx="7.5" cy="17.5" r="1.5" />
-            <circle cx="16.5" cy="17.5" r="1.5" />
+        <!-- Map Pin with Mountains Icon -->
+        <div class="inline-flex items-center justify-center mb-8 relative group">
+          <div class="absolute inset-0 bg-gradient-to-br from-emerald-400/20 to-emerald-600/20 rounded-full blur-2xl group-hover:blur-3xl transition-all duration-500"></div>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-28 h-28 relative drop-shadow-2xl transform group-hover:scale-110 transition-transform duration-300">
+            <!-- The main map pin shape (dark green) -->
+            <path fill="#059669" d="M16 0C9.37 0 4 5.37 4 12c0 7.47 10.9 19.35 11.43 19.92a.75.75 0 0 0 1.14 0C17.1 31.35 28 19.47 28 12 28 5.37 22.63 0 16 0z"></path>
+            <!-- The inner circle and mountains (light green) -->
+            <path fill="#ECFDF5" d="M16 4a8 8 0 1 0 0 16 8 8 0 0 0 0-16zm-3.5 7.5l2 3 2.5-4 2.5 4h-9l2.5-3z"></path>
           </svg>
         </div>
-        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight font-display">Our Services</h2>
-        <div class="mx-auto mt-2 h-1 w-16 rounded bg-brand-600"></div>
-        <p class="mt-4 text-base text-slate-600">Professional moving solutions tailored to your needs</p>
+        
+        <h2 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight font-display mb-4">
+          <span class="bg-gradient-to-r from-emerald-700 via-emerald-600 to-emerald-700 bg-clip-text text-transparent">Our Services</span>
+        </h2>
+        
+        <!-- Mountain-inspired underline -->
+        <div class="flex justify-center items-end gap-1 mb-6">
+          <div class="w-3 h-1 bg-emerald-400 rounded-full"></div>
+          <div class="w-3 h-2 bg-emerald-500 rounded-full"></div>
+          <div class="w-3 h-3 bg-emerald-600 rounded-full"></div>
+          <div class="w-3 h-4 bg-emerald-600 rounded-full"></div>
+          <div class="w-3 h-3 bg-emerald-600 rounded-full"></div>
+          <div class="w-3 h-2 bg-emerald-500 rounded-full"></div>
+          <div class="w-3 h-1 bg-emerald-400 rounded-full"></div>
+        </div>
+        
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+          Professional moving solutions across <span class="font-semibold text-emerald-700">Denver's landscape</span>, delivered with care and precision
+        </p>
       </div>
       <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         <!-- Card 1: Residential -->
