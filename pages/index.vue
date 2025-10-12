@@ -21,7 +21,7 @@
               <span class="text-xs sm:text-sm font-semibold">Denver's Trusted Movers</span>
             </div>
 
-            <h1 class="reveal text-4xl leading-tight sm:text-5xl sm:leading-tight lg:text-6xl lg:leading-tight font-extrabold tracking-tight font-display mb-4">
+            <h1 class="reveal text-5xl leading-tight sm:text-5xl sm:leading-tight lg:text-6xl lg:leading-tight font-extrabold tracking-tight font-display mb-4">
               Move without the stress. <span class="text-brand-600 underline decoration-brand-500 decoration-4 underline-offset-4">We handle the rest.</span>
             </h1>
             
@@ -53,9 +53,14 @@
 
             <!-- Mobile Image (bottom) -->
             <div class="mt-6 lg:hidden">
-              <div class="relative">
-                <div class="rounded-2xl overflow-hidden w-full h-56 sm:h-64 shadow-2xl ring-4 ring-gray-200">
+              <div class="relative rounded-3xl overflow-hidden">
+                <div class="aspect-[21/9] relative">
                   <img src="/assets/Opek.png" alt="Opek Moving team at work" class="w-full h-full object-cover" />
+                  <div class="absolute inset-0 bg-gradient-to-t from-slate-900/70 via-slate-900/40 to-transparent"></div>
+                  <div class="absolute bottom-4 left-4 right-4 text-white">
+                    <p class="text-lg font-bold">Professional Moving Services</p>
+                    <p class="text-xs text-white/90 mt-1">Denver's most trusted moving company</p>
+                  </div>
                 </div>
               </div>
             </div>
