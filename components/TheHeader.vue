@@ -3,7 +3,7 @@
     id="site-header"
     :class="[
       'fixed inset-x-0 top-0 z-50 transition-all duration-300',
-      isScrolled ? 'bg-black/80 shadow-lg ring-1 ring-black/10' : 'bg-transparent'
+      isScrolled ? 'bg-black/80 shadow-lg ring-1 ring-black/10' : 'bg-gray-900/70 backdrop-blur-sm'
     ]"
   >
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
