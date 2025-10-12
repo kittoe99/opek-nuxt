@@ -1,15 +1,44 @@
 <template>
-  <section id="process" class="relative py-16 sm:py-20 bg-white">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+  <section id="process" class="relative py-16 sm:py-20 bg-gradient-to-b from-white via-emerald-50/20 to-white overflow-hidden">
+    <!-- Mountain backdrop -->
+    <div class="absolute inset-0 overflow-hidden pointer-events-none">
+      <div class="absolute top-0 left-0 right-0 h-48 opacity-[0.04]">
+        <svg viewBox="0 0 1200 200" class="w-full h-full" preserveAspectRatio="none">
+          <path fill="#059669" d="M0,200 L0,100 L200,50 L400,120 L600,30 L800,90 L1000,60 L1200,130 L1200,200 Z"/>
+        </svg>
+      </div>
+      <div class="absolute bottom-10 left-20 w-72 h-72 bg-emerald-100/20 rounded-full blur-3xl"></div>
+    </div>
+
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
       <div class="mx-auto max-w-3xl text-center">
-        <div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-brand-100 text-brand-600 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-8 h-8">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
+        <!-- Map Pin Icon -->
+        <div class="inline-flex items-center justify-center mb-8 relative group">
+          <div class="absolute inset-0 bg-gradient-to-br from-emerald-400/20 to-emerald-600/20 rounded-full blur-2xl group-hover:blur-3xl transition-all duration-500"></div>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-24 h-24 relative drop-shadow-2xl transform group-hover:scale-110 transition-transform duration-300">
+            <path fill="#059669" d="M16 0C9.37 0 4 5.37 4 12c0 7.47 10.9 19.35 11.43 19.92a.75.75 0 0 0 1.14 0C17.1 31.35 28 19.47 28 12 28 5.37 22.63 0 16 0z"></path>
+            <path fill="#ECFDF5" d="M16 4a8 8 0 1 0 0 16 8 8 0 0 0 0-16zm-3.5 7.5l2 3 2.5-4 2.5 4h-9l2.5-3z"></path>
           </svg>
         </div>
-        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight font-display">Our moving process</h2>
-        <div class="mx-auto mt-2 h-1 w-16 rounded bg-brand-600"></div>
-        <p class="mt-4 text-base text-slate-600">Three simple steps to a stress-free move</p>
+        
+        <h2 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight font-display mb-4">
+          <span class="bg-gradient-to-r from-emerald-700 via-emerald-600 to-emerald-700 bg-clip-text text-transparent">Our Moving Process</span>
+        </h2>
+        
+        <!-- Mountain-inspired underline -->
+        <div class="flex justify-center items-end gap-1 mb-6">
+          <div class="w-3 h-1 bg-emerald-400 rounded-full"></div>
+          <div class="w-3 h-2 bg-emerald-500 rounded-full"></div>
+          <div class="w-3 h-3 bg-emerald-600 rounded-full"></div>
+          <div class="w-3 h-4 bg-emerald-600 rounded-full"></div>
+          <div class="w-3 h-3 bg-emerald-600 rounded-full"></div>
+          <div class="w-3 h-2 bg-emerald-500 rounded-full"></div>
+          <div class="w-3 h-1 bg-emerald-400 rounded-full"></div>
+        </div>
+        
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+          <span class="font-semibold text-emerald-700">Three simple steps</span> to a stress-free move
+        </p>
       </div>
 
       <div class="mt-12 grid gap-8 lg:grid-cols-2 lg:items-start">

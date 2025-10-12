@@ -4,25 +4,37 @@
     <MobileFAB />
 
     <!-- Hero -->
-    <section id="home" class="relative isolate min-h-[70vh] sm:min-h-[80vh] lg:min-h-[85vh] flex items-center overflow-hidden bg-white">
-      <!-- Light gradient overlay for texture -->
-      <div class="absolute inset-0 -z-10">
-        <div class="absolute inset-0 bg-gradient-to-br from-gray-50 via-white to-gray-50"></div>
-        <div class="absolute inset-0 opacity-5" style="background-image: radial-gradient(circle at 1px 1px, rgb(0 0 0 / 0.1) 1px, transparent 0); background-size: 40px 40px;"></div>
+    <section id="home" class="relative isolate min-h-[70vh] sm:min-h-[80vh] lg:min-h-[85vh] flex items-center overflow-hidden bg-gradient-to-b from-emerald-50/20 via-white to-white">
+      <!-- Mountain-inspired background -->
+      <div class="absolute inset-0 -z-10 overflow-hidden">
+        <!-- Subtle mountain silhouette -->
+        <div class="absolute bottom-0 left-0 right-0 h-96 opacity-[0.02]">
+          <svg viewBox="0 0 1200 400" class="w-full h-full" preserveAspectRatio="none">
+            <path fill="#059669" d="M0,400 L0,180 L250,80 L500,220 L750,40 L1000,160 L1200,100 L1200,400 Z"/>
+          </svg>
+        </div>
+        <!-- Gradient overlay -->
+        <div class="absolute inset-0 bg-gradient-to-br from-emerald-50/30 via-white to-white"></div>
+        <!-- Decorative elements -->
+        <div class="absolute top-20 right-10 w-96 h-96 bg-emerald-100/20 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-20 left-10 w-72 h-72 bg-emerald-50/30 rounded-full blur-3xl"></div>
       </div>
 
       <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 sm:py-16 w-full">
         <div class="grid lg:grid-cols-2 gap-12 items-center">
           <!-- Left: Content -->
           <div class="text-gray-900 text-left">
-            <!-- Badge -->
-            <div class="inline-flex items-center gap-2 rounded-full bg-brand-600/10 px-4 py-2 mb-6 mt-8 sm:mt-12 lg:mt-16 text-brand-700 border border-brand-500/20 backdrop-blur-sm shadow-sm">
-              <span class="inline-block w-2 h-2 rounded-full bg-brand-600"></span>
-              <span class="text-xs sm:text-sm font-semibold">Denver's Trusted Movers</span>
+            <!-- Badge with map pin icon -->
+            <div class="inline-flex items-center gap-3 rounded-full bg-emerald-600/10 px-5 py-3 mb-6 mt-8 sm:mt-12 lg:mt-16 text-emerald-700 border border-emerald-500/20 backdrop-blur-sm shadow-lg">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-5 h-5">
+                <path fill="#059669" d="M16 0C9.37 0 4 5.37 4 12c0 7.47 10.9 19.35 11.43 19.92a.75.75 0 0 0 1.14 0C17.1 31.35 28 19.47 28 12 28 5.37 22.63 0 16 0z"></path>
+                <path fill="#ECFDF5" d="M16 4a8 8 0 1 0 0 16 8 8 0 0 0 0-16zm-3.5 7.5l2 3 2.5-4 2.5 4h-9l2.5-3z"></path>
+              </svg>
+              <span class="text-sm sm:text-base font-bold">Denver's Trusted Movers</span>
             </div>
 
             <h1 class="reveal text-5xl leading-tight sm:text-5xl sm:leading-tight lg:text-6xl lg:leading-tight font-extrabold tracking-tight font-display mb-4">
-              Move without the stress. <span class="text-brand-600">We handle the rest.</span>
+              Move without the stress. <span class="bg-gradient-to-r from-emerald-700 to-emerald-600 bg-clip-text text-transparent">We handle the rest.</span>
             </h1>
             
             <p class="reveal delay-1 text-base sm:text-lg text-gray-600 leading-relaxed mb-6">
