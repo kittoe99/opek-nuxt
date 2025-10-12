@@ -76,9 +76,9 @@
               </div>
             </div>
             <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-gray-900 font-display mb-4">
-              <span class="bg-gradient-to-r from-emerald-700 via-emerald-600 to-emerald-700 bg-clip-text text-transparent">Our Moving Services</span>
+              <span class="bg-gradient-to-r from-emerald-700 via-emerald-600 to-emerald-700 bg-clip-text text-transparent">Residential Services At-A-Glance</span>
             </h2>
-            <p class="text-base text-gray-600 leading-relaxed mb-8">From labor-only help to full-service moves—we handle it all.</p>
+            <p class="text-base text-gray-600 leading-relaxed mb-8">Tell us about your home, timeline, and must-have support, and we build the exact crew and service plan you need.</p>
 
             <div class="grid gap-4">
               <!-- Card 1 -->
@@ -86,12 +86,12 @@
                 <div class="flex items-start gap-4">
                   <div class="flex-shrink-0 w-14 h-14 rounded-xl bg-white/20 backdrop-blur-sm text-white flex items-center justify-center border border-white/30">
                     <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 9.75l7.5-6 7.5 6v9.75a.75.75 0 01-.75.75h-4.5a.75.75 0 01-.75-.75v-4.5h-3v4.5a.75.75 0 01-.75.75h-4.5a.75.75 0 01-.75-.75V9.75z" />
                     </svg>
                   </div>
                   <div class="flex-1">
-                    <h3 class="text-xl font-extrabold text-white mb-2 font-display">Labor-Only Moves</h3>
-                    <p class="text-sm text-emerald-50 leading-relaxed">Loading help without the truck. Perfect for PODs and DIY moves.</p>
+                    <h3 class="text-xl font-extrabold text-white mb-2 font-display">Apartments & Condos</h3>
+                    <p class="text-sm text-emerald-50 leading-relaxed">Tight stairwells, elevators, and loading dock rules handled with the right equipment and crew size.</p>
                   </div>
                 </div>
               </article>
@@ -101,12 +101,12 @@
                 <div class="flex items-start gap-4">
                   <div class="flex-shrink-0 w-14 h-14 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center group-hover:bg-emerald-600 group-hover:text-white transition-colors">
                     <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9.75l8.25-6 8.25 6v8.25a1.5 1.5 0 01-1.5 1.5h-3a1.5 1.5 0 01-1.5-1.5V12h-4.5v6a1.5 1.5 0 01-1.5 1.5h-3a1.5 1.5 0 01-1.5-1.5V9.75z" />
                     </svg>
                   </div>
                   <div class="flex-1">
-                    <h3 class="text-xl font-extrabold text-gray-900 mb-2 font-display">Apartments & Small Homes</h3>
-                    <p class="text-sm text-gray-600 leading-relaxed">Studios to 2-bedroom moves with full protection.</p>
+                    <h3 class="text-xl font-extrabold text-gray-900 mb-2 font-display">Family Homes</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Room-by-room packing, labeling, and protection for multi-story homes and garages.</p>
                   </div>
                 </div>
               </article>
@@ -116,12 +116,12 @@
                 <div class="flex items-start gap-4">
                   <div class="flex-shrink-0 w-14 h-14 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center group-hover:bg-emerald-600 group-hover:text-white transition-colors">
                     <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M11.7 2.25a.75.75 0 01.6 0l7.5 3.214a.75.75 0 01.45.686V14.3c0 4.745-3.741 7.87-7.677 9.39a.75.75 0 01-.546 0C8.09 22.17 4.35 19.045 4.35 14.3V6.15a.75.75 0 01.45-.686L12.3 2.25z" />
                     </svg>
                   </div>
                   <div class="flex-1">
-                    <h3 class="text-xl font-extrabold text-gray-900 mb-2 font-display">Full-Service Homes</h3>
-                    <p class="text-sm text-gray-600 leading-relaxed">3+ bedroom homes with larger crews.</p>
+                    <h3 class="text-xl font-extrabold text-gray-900 mb-2 font-display">Long-Distance Prep</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Inventory creation, staging, and hand-off coordination for partner carriers heading out of state.</p>
                   </div>
                 </div>
               </article>
@@ -131,12 +131,12 @@
                 <div class="flex items-start gap-4">
                   <div class="flex-shrink-0 w-14 h-14 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center group-hover:bg-emerald-600 group-hover:text-white transition-colors">
                     <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/>
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3a.75.75 0 01.75-.75h3a.75.75 0 01.75.75v1.5h4.5a.75.75 0 01.75.75V9a6.75 6.75 0 01-6 6.708V21a.75.75 0 01-.75.75H10.5a.75.75 0 01-.75-.75v-5.292A6.75 6.75 0 013.75 9V5.25a.75.75 0 01.75-.75h4.5z" />
                     </svg>
                   </div>
                   <div class="flex-1">
-                    <h3 class="text-xl font-extrabold text-gray-900 mb-2 font-display">Packing & Specialty</h3>
-                    <p class="text-sm text-gray-600 leading-relaxed">Packing services, pianos, safes, and heavy items.</p>
+                    <h3 class="text-xl font-extrabold text-gray-900 mb-2 font-display">Special Handling</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Pianos, safes, workout equipment, and heirlooms rigged and padded with specialty crews.</p>
                   </div>
                 </div>
               </article>
@@ -145,9 +145,418 @@
         </div>
       </div>
     </section>
+    <!-- Why Choose Opek -->
+    <section class="py-20 bg-emerald-950 relative overflow-hidden">
+      <div class="absolute inset-0 opacity-[0.04] pointer-events-none">
+        <svg viewBox="0 0 1200 400" class="w-full h-full" preserveAspectRatio="none">
+          <path fill="#34D399" d="M0,200 L1200,0 L1200,400 L0,400 Z" />
+        </svg>
+      </div>
+
+      <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <div class="inline-flex items-center justify-center mb-6">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-16 h-16 drop-shadow-2xl">
+              <path fill="#10B981" d="M16 0C9.37 0 4 5.37 4 12c0 7.47 10.9 19.35 11.43 19.92a.75.75 0 0 0 1.14 0C17.1 31.35 28 19.47 28 12 28 5.37 22.63 0 16 0z"></path>
+              <path fill="#ECFDF5" d="M16 4a8 8 0 1 0 0 16 8 8 0 0 0 0-16zm-2 6h4l-2 4 3 5h-6l3-5-2-4z"></path>
+            </svg>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white font-display mb-4">
+            Why Denver Families Choose Opek
+          </h2>
+          <p class="text-base sm:text-lg text-emerald-100/80 leading-relaxed">
+            We combine hospitality-level care with organized crews and modern equipment so your home stays protected from first box to final placement.
+          </p>
+        </div>
+
+        <div class="grid lg:grid-cols-4 gap-6">
+          <div class="rounded-3xl bg-white/10 border border-white/10 backdrop-blur-lg p-6 text-white">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-white/20">
+                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
+              </span>
+              <p class="text-sm uppercase tracking-wider text-emerald-200/90 font-semibold">Trusted Movers</p>
+            </div>
+            <h3 class="text-2xl font-bold mb-2">Certified Crews</h3>
+            <p class="text-sm text-emerald-100/80 leading-relaxed">Background-checked team leads with 200+ residential moves completed per year.</p>
+          </div>
+
+          <div class="rounded-3xl bg-white/10 border border-white/10 backdrop-blur-lg p-6 text-white">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-white/20">
+                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-8 7a7 7 0 100-14 7 7 0 000 14z" />
+                </svg>
+              </span>
+              <p class="text-sm uppercase tracking-wider text-emerald-200/90 font-semibold">Home Protection</p>
+            </div>
+            <h3 class="text-2xl font-bold mb-2">Floor & Door Guards</h3>
+            <p class="text-sm text-emerald-100/80 leading-relaxed">Entryways, banisters, and flooring are padded and wrapped before any furniture moves.</p>
+          </div>
+
+          <div class="rounded-3xl bg-white/10 border border-white/10 backdrop-blur-lg p-6 text-white">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-white/20">
+                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 1.343-3 3v4h6v-4c0-1.657-1.343-3-3-3z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 20h14" />
+                </svg>
+              </span>
+              <p class="text-sm uppercase tracking-wider text-emerald-200/90 font-semibold">Transparent Pricing</p>
+            </div>
+            <h3 class="text-2xl font-bold mb-2">No Surprise Fees</h3>
+            <p class="text-sm text-emerald-100/80 leading-relaxed">Clear, flat-rate or hourly options with detailed arrival windows and crew sizes.</p>
+          </div>
+
+          <div class="rounded-3xl bg-white/10 border border-white/10 backdrop-blur-lg p-6 text-white">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-white/20">
+                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M11 5h2m-1 0v14m4-10a4 4 0 01-8 0 4 4 0 018 0z" />
+                </svg>
+              </span>
+              <p class="text-sm uppercase tracking-wider text-emerald-200/90 font-semibold">Customer Support</p>
+            </div>
+            <h3 class="text-2xl font-bold mb-2">Move Concierge</h3>
+            <p class="text-sm text-emerald-100/80 leading-relaxed">Dedicated coordinator checks in before, during, and after move day for a smooth experience.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tailored Packages -->
+    <section class="py-20 bg-emerald-50">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mb-12">
+          <span class="inline-flex items-center rounded-full bg-emerald-100 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-emerald-700">Move Packages</span>
+          <h2 class="mt-4 text-3xl sm:text-4xl font-extrabold tracking-tight text-emerald-900 font-display">Tailored Packages for Every Home</h2>
+          <p class="mt-3 text-base sm:text-lg text-emerald-800 leading-relaxed">Pick the support level that fits your household. Every package includes licensed movers, full home protection, and concierge updates from your move coordinator.</p>
+        </div>
+
+        <div class="grid gap-6 lg:grid-cols-3">
+          <article class="rounded-3xl border border-emerald-100 bg-white p-8 shadow-sm">
+            <p class="text-sm font-semibold uppercase tracking-wider text-emerald-500">Essential</p>
+            <h3 class="mt-3 text-2xl font-extrabold text-emerald-900 font-display">Apartment Refresh</h3>
+            <p class="mt-3 text-sm text-emerald-800">Ideal for studios and one-bedroom moves needing the essentials done quickly.</p>
+            <ul class="mt-5 space-y-3 text-sm text-emerald-700">
+              <li class="flex items-start gap-2"><svg class="mt-1 h-4 w-4 text-emerald-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m5 13 4 4L19 7" /></svg>2-3 movers and a 26' truck</li>
+              <li class="flex items-start gap-2"><svg class="mt-1 h-4 w-4 text-emerald-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m5 13 4 4L19 7" /></svg>Disassembly/reassembly of standard furniture</li>
+              <li class="flex items-start gap-2"><svg class="mt-1 h-4 w-4 text-emerald-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m5 13 4 4L19 7" /></svg>Padding and shrink-wrap of every piece</li>
+            </ul>
+          </article>
+
+          <article class="relative overflow-hidden rounded-3xl border border-emerald-200 bg-gradient-to-br from-emerald-600 via-emerald-500 to-emerald-600 p-8 text-white shadow-lg">
+            <div class="absolute inset-0 opacity-10" aria-hidden="true">
+              <svg viewBox="0 0 400 400" class="h-full w-full" fill="none"><defs><linearGradient id="grad" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#A7F3D0"/><stop offset="100%" stop-color="#10B981"/></linearGradient></defs><rect width="400" height="400" fill="url(#grad)"/></svg>
+            </div>
+            <div class="relative">
+              <p class="text-sm font-semibold uppercase tracking-wider text-emerald-200">Most Popular</p>
+              <h3 class="mt-3 text-2xl font-extrabold font-display">Family Home Signature</h3>
+              <p class="mt-3 text-sm text-emerald-100">For homes with multiple bedrooms, garages, and specialty furniture that need meticulous packing.</p>
+              <ul class="mt-5 space-y-3 text-sm text-emerald-50">
+                <li class="flex items-start gap-2"><svg class="mt-1 h-4 w-4 text-emerald-200" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m5 13 4 4L19 7" /></svg>4-6 movers plus a dedicated crew lead</li>
+                <li class="flex items-start gap-2"><svg class="mt-1 h-4 w-4 text-emerald-200" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m5 13 4 4L19 7" /></svg>Full kitchen, closet, and fragile packing service</li>
+                <li class="flex items-start gap-2"><svg class="mt-1 h-4 w-4 text-emerald-200" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m5 13 4 4L19 7" /></svg>Home prep with floor runners, door jamb guards, and banister protection</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="rounded-3xl border border-emerald-100 bg-white p-8 shadow-sm">
+            <p class="text-sm font-semibold uppercase tracking-wider text-emerald-500">Premium</p>
+            <h3 class="mt-3 text-2xl font-extrabold text-emerald-900 font-display">Luxury White-Glove</h3>
+            <p class="mt-3 text-sm text-emerald-800">Perfect for estates, art collections, and families relocating with high-touch service expectations.</p>
+            <ul class="mt-5 space-y-3 text-sm text-emerald-700">
+              <li class="flex items-start gap-2"><svg class="mt-1 h-4 w-4 text-emerald-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m5 13 4 4L19 7" /></svg>On-site project manager on move day</li>
+              <li class="flex items-start gap-2"><svg class="mt-1 h-4 w-4 text-emerald-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m5 13 4 4L19 7" /></svg>Custom crating for artwork, pianos, and designer pieces</li>
+              <li class="flex items-start gap-2"><svg class="mt-1 h-4 w-4 text-emerald-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m5 13 4 4L19 7" /></svg>Evening unpacking session and donation/dump runs</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Moving Process -->
+    <section class="py-20 bg-white">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <div class="inline-flex items-center justify-center mb-6">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-16 h-16 drop-shadow-2xl">
+              <path fill="#059669" d="M16 0C9.37 0 4 5.37 4 12c0 7.47 10.9 19.35 11.43 19.92a.75.75 0 0 0 1.14 0C17.1 31.35 28 19.47 28 12 28 5.37 22.63 0 16 0z"></path>
+              <path fill="#ECFDF5" d="M16 6a6 6 0 016 6h-4l6 8 6-8h-4a10 10 0 10-10 10v-4a6 6 0 110-12z"></path>
+            </svg>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-gray-900 font-display mb-4">How Our Residential Moves Work</h2>
+          <p class="text-base sm:text-lg text-gray-600 leading-relaxed">Every project follows a proven timeline so you always know what happens next.</p>
+        </div>
+
+        <div class="grid md:grid-cols-4 gap-6">
+          <div class="relative rounded-3xl border border-emerald-100 bg-white p-6 shadow-sm">
+            <div class="absolute -top-4 left-6 flex h-10 w-10 items-center justify-center rounded-2xl bg-emerald-600 text-white font-bold">1</div>
+            <h3 class="text-xl font-bold text-gray-900 mb-2 font-display">Pre-Move Planning</h3>
+            <p class="text-sm text-gray-600 leading-relaxed">Virtual or in-home walk-through, checklist review, and customized estimate delivered within hours.</p>
+          </div>
+          <div class="relative rounded-3xl border border-emerald-100 bg-white p-6 shadow-sm">
+            <div class="absolute -top-4 left-6 flex h-10 w-10 items-center justify-center rounded-2xl bg-emerald-600 text-white font-bold">2</div>
+            <h3 class="text-xl font-bold text-gray-900 mb-2 font-display">Packing & Prep</h3>
+            <p class="text-sm text-gray-600 leading-relaxed">Full or partial packing, reusable crates, and labeled boxes ready before moving day.</p>
+          </div>
+          <div class="relative rounded-3xl border border-emerald-100 bg-white p-6 shadow-sm">
+            <div class="absolute -top-4 left-6 flex h-10 w-10 items-center justify-center rounded-2xl bg-emerald-600 text-white font-bold">3</div>
+            <h3 class="text-xl font-bold text-gray-900 mb-2 font-display">Move Execution</h3>
+            <p class="text-sm text-gray-600 leading-relaxed">Crew lead confirms plan, wraps furniture, protects the home, and coordinates load/unload sequence.</p>
+          </div>
+          <div class="relative rounded-3xl border border-emerald-100 bg-white p-6 shadow-sm">
+            <div class="absolute -top-4 left-6 flex h-10 w-10 items-center justify-center rounded-2xl bg-emerald-600 text-white font-bold">4</div>
+            <h3 class="text-xl font-bold text-gray-900 mb-2 font-display">Settle-In Support</h3>
+            <p class="text-sm text-gray-600 leading-relaxed">Placement adjustments, debris haul away, and post-move follow-up to ensure everything feels right.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Move Day Timeline -->
+    <section class="py-20 bg-emerald-900">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl text-white">
+          <span class="inline-flex items-center rounded-full bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-emerald-200">What to Expect</span>
+          <h2 class="mt-4 text-3xl sm:text-4xl font-extrabold tracking-tight font-display">Your Move Day Timeline</h2>
+          <p class="mt-3 text-base sm:text-lg text-emerald-100 leading-relaxed">We keep you informed at every checkpoint. Here is how a typical residential move flows once crews arrive on-site.</p>
+        </div>
+
+        <div class="mt-10 space-y-6">
+          <div class="flex flex-col gap-4 rounded-3xl border border-white/10 bg-white/5 p-6 sm:flex-row sm:items-center sm:gap-6">
+            <div class="flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-2xl bg-white/10 text-lg font-bold text-emerald-200">8:00a</div>
+            <div class="text-white">
+              <h3 class="text-xl font-semibold font-display">Arrival & Home Walkthrough</h3>
+              <p class="mt-1 text-sm text-emerald-100">Crew lead reviews the inventory, confirms fragile items, and lays runners, corner guards, and door pads throughout the home.</p>
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-4 rounded-3xl border border-white/10 bg-white/5 p-6 sm:flex-row sm:items-center sm:gap-6">
+            <div class="flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-2xl bg-white/10 text-lg font-bold text-emerald-200">9:30a</div>
+            <div class="text-white">
+              <h3 class="text-xl font-semibold font-display">Strategic Loading</h3>
+              <p class="mt-1 text-sm text-emerald-100">Furniture and boxes load in a choreographed order to minimize trips and protect high-value pieces. Your coordinator texts ETA updates.</p>
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-4 rounded-3xl border border-white/10 bg-white/5 p-6 sm:flex-row sm:items-center sm:gap-6">
+            <div class="flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-2xl bg-white/10 text-lg font-bold text-emerald-200">12:30p</div>
+            <div class="text-white">
+              <h3 class="text-xl font-semibold font-display">Transit & Unload Prep</h3>
+              <p class="mt-1 text-sm text-emerald-100">We stage the new home with floor protection, confirm room labels, and reset beds or cribs first so family spaces are ready quickly.</p>
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-4 rounded-3xl border border-white/10 bg-white/5 p-6 sm:flex-row sm:items-center sm:gap-6">
+            <div class="flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-2xl bg-white/10 text-lg font-bold text-emerald-200">3:00p</div>
+            <div class="text-white">
+              <h3 class="text-xl font-semibold font-display">Final Placement & Sign-Off</h3>
+              <p class="mt-1 text-sm text-emerald-100">We adjust furniture layout, haul away debris, and capture a quick walkthrough video so you can review and request tweaks after the crew departs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Add-On Services -->
+    <section class="py-20 bg-gradient-to-br from-emerald-50 via-white to-emerald-50">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div class="order-2 lg:order-1">
+            <div class="inline-flex items-center justify-center mb-6">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-16 h-16 drop-shadow-2xl">
+                <path fill="#059669" d="M16 0C9.37 0 4 5.37 4 12c0 7.47 10.9 19.35 11.43 19.92a.75.75 0 0 0 1.14 0C17.1 31.35 28 19.47 28 12 28 5.37 22.63 0 16 0z"></path>
+                <path fill="#ECFDF5" d="M11 9h10l3 5-3 5H11l-3-5 3-5zm5 1a2 2 0 100 4 2 2 0 000-4zm-3 6h6l1.5 2.5L19 21h-6l-1.5-2.5L13 16z"></path>
+              </svg>
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-gray-900 font-display mb-4">Premium Add-Ons & Specialty Care</h2>
+            <p class="text-base sm:text-lg text-gray-600 leading-relaxed mb-6">
+              Upgrade your move with specialty services that protect heirlooms, simplify settling in, and keep you organized from start to finish.
+            </p>
+
+            <div class="space-y-4">
+              <div class="flex items-start gap-4 p-4 rounded-2xl bg-white border border-emerald-100 shadow-sm">
+                <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-emerald-100 text-emerald-700">
+                  <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 1.343-3 3v4h6v-4c0-1.657-1.343-3-3-3z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 20h14" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-lg font-bold text-gray-900 mb-1 font-display">White-Glove Packing</h3>
+                  <p class="text-sm text-gray-600 leading-relaxed">Professional packers handle kitchens, closets, and artwork with cataloged inventory sheets.</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4 p-4 rounded-2xl bg-white border border-emerald-100 shadow-sm">
+                <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-emerald-100 text-emerald-700">
+                  <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 1.343-3 3v4h6v-4c0-1.657-1.343-3-3-3z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M7 20h10M9 8h6l3 8H6l3-8z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-lg font-bold text-gray-900 mb-1 font-display">Specialty Item Handling</h3>
+                  <p class="text-sm text-gray-600 leading-relaxed">Climate-controlled transport and custom crating for pianos, safes, wine collections, and art.</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4 p-4 rounded-2xl bg-white border border-emerald-100 shadow-sm">
+                <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-emerald-100 text-emerald-700">
+                  <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 1.343-3 3v4h6v-4c0-1.657-1.343-3-3-3z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V5a3 3 0 016 0v2m4 0h1a2 2 0 012 2v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9a2 2 0 012-2h1m3 0h4" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-lg font-bold text-gray-900 mb-1 font-display">Settling-In Services</h3>
+                  <p class="text-sm text-gray-600 leading-relaxed">Furniture assembly, TV mounting, and donation or recycling drop-off once the boxes are unpacked.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="order-1 lg:order-2 relative">
+            <div class="rounded-[2.5rem] overflow-hidden shadow-2xl border border-emerald-100">
+              <img src="/assets/movers-in-denver-min.png" alt="Residential moving crew packing a living room" class="w-full h-full object-cover" />
+            </div>
+            <div class="absolute -bottom-6 -left-6 bg-white rounded-3xl p-6 shadow-xl border border-emerald-100 w-64">
+              <p class="text-sm font-semibold text-gray-900 mb-1">98% Five-Star Reviews</p>
+              <p class="text-xs text-gray-500">Based on 250+ post-move surveys completed in 2023.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Denver Neighborhood Expertise -->
+    <section class="py-20 bg-white">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div class="grid gap-12 lg:grid-cols-2 lg:items-center">
+          <div>
+            <span class="inline-flex items-center rounded-full bg-emerald-100 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-emerald-700">Local Knowledge</span>
+            <h2 class="mt-4 text-3xl sm:text-4xl font-extrabold tracking-tight text-gray-900 font-display">Dialed-In Support Across Denver Neighborhoods</h2>
+            <p class="mt-3 text-base sm:text-lg text-gray-600 leading-relaxed">Every crew is staffed with movers who know the loading rules, parking permits, and quirks of the neighborhoods they service. That means fewer delays and a smoother hand-off in your new home.</p>
+            <dl class="mt-8 grid gap-6 sm:grid-cols-2">
+              <div class="rounded-2xl border border-emerald-100 bg-emerald-50/60 p-6">
+                <dt class="text-sm font-semibold uppercase tracking-wider text-emerald-600">Downtown & LoDo</dt>
+                <dd class="mt-2 text-sm text-gray-700">Freight elevator reservations, loading dock scheduling, and after-hours moves to avoid traffic.</dd>
+              </div>
+              <div class="rounded-2xl border border-emerald-100 bg-white p-6 shadow-sm">
+                <dt class="text-sm font-semibold uppercase tracking-wider text-emerald-600">Park Hill & Stapleton</dt>
+                <dd class="mt-2 text-sm text-gray-700">Large crew availability for multi-level homes, plus nursery and playroom setup before bedtime.</dd>
+              </div>
+              <div class="rounded-2xl border border-emerald-100 bg-white p-6 shadow-sm">
+                <dt class="text-sm font-semibold uppercase tracking-wider text-emerald-600">Highlands & Sunnyside</dt>
+                <dd class="mt-2 text-sm text-gray-700">Tight street parking solutions, alley load-ins, and floor protection for historic hardwoods.</dd>
+              </div>
+              <div class="rounded-2xl border border-emerald-100 bg-white p-6 shadow-sm">
+                <dt class="text-sm font-semibold uppercase tracking-wider text-emerald-600">Suburban Moves</dt>
+                <dd class="mt-2 text-sm text-gray-700">Coordinated start times with HOAs, appliance disconnect/reconnect partners, and debris removal.</dd>
+              </div>
+            </dl>
+          </div>
+          <div class="relative">
+            <div class="overflow-hidden rounded-[2.5rem] border border-emerald-100 shadow-2xl">
+              <img src="/assets/packers-and-movers.png" alt="Mover carrying boxes into a Denver home" class="h-full w-full object-cover" />
+            </div>
+            <div class="absolute -bottom-6 right-0 w-64 rounded-3xl border border-emerald-100 bg-white p-6 shadow-xl">
+              <p class="text-sm font-semibold text-gray-900">Average 35 minute arrival window</p>
+              <p class="mt-1 text-xs text-gray-500">Confirmed through 2023-2024 move data across Denver metro.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Service Areas Section -->
     <ServiceAreasSection />
+
+    <!-- Testimonials -->
+    <section class="py-20 bg-emerald-950 text-white">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl text-center mx-auto">
+          <span class="inline-flex items-center justify-center rounded-full bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-emerald-200">Neighbors Love Opek</span>
+          <h2 class="mt-4 text-3xl sm:text-4xl font-extrabold tracking-tight font-display">Residential Stories From Denver Families</h2>
+          <p class="mt-3 text-base sm:text-lg text-emerald-100">Five-star service backed by transparency, careful crews, and real support before and after move day.</p>
+        </div>
+
+        <div class="mt-12 grid gap-6 lg:grid-cols-3">
+          <figure class="relative rounded-3xl border border-white/10 bg-white/5 p-6 shadow-lg">
+            <blockquote class="text-sm text-emerald-100 leading-relaxed">“Opek handled our Wash Park bungalow move in one day, including packing the kitchen. They even reassembled the kids’ bunk beds before dinner.”</blockquote>
+            <figcaption class="mt-4 flex items-center gap-3 text-xs text-emerald-200">
+              <div class="h-10 w-10 rounded-full bg-emerald-600/40 flex items-center justify-center font-semibold">JR</div>
+              <div>
+                <p class="font-semibold">Jamie R.</p>
+                <p class="text-emerald-200/80">Washington Park</p>
+              </div>
+            </figcaption>
+          </figure>
+
+          <figure class="relative rounded-3xl border border-white/10 bg-emerald-800/40 p-6 shadow-lg">
+            <blockquote class="text-sm text-emerald-100 leading-relaxed">“They coordinated a freight elevator in LoDo and wrapped every wall. Zero damage, clear communication, and the crew was genuinely kind.”</blockquote>
+            <figcaption class="mt-4 flex items-center gap-3 text-xs text-emerald-200">
+              <div class="h-10 w-10 rounded-full bg-emerald-600/40 flex items-center justify-center font-semibold">CL</div>
+              <div>
+                <p class="font-semibold">Chris L.</p>
+                <p class="text-emerald-200/80">Lower Downtown</p>
+              </div>
+            </figcaption>
+          </figure>
+
+          <figure class="relative rounded-3xl border border-white/10 bg-white/5 p-6 shadow-lg">
+            <blockquote class="text-sm text-emerald-100 leading-relaxed">“Our long-distance prep was flawless. Inventory photos, itemized labels, and hand-off notes for our carrier made unpacking a breeze.”</blockquote>
+            <figcaption class="mt-4 flex items-center gap-3 text-xs text-emerald-200">
+              <div class="h-10 w-10 rounded-full bg-emerald-600/40 flex items-center justify-center font-semibold">MP</div>
+              <div>
+                <p class="font-semibold">Morgan P.</p>
+                <p class="text-emerald-200/80">Greenwood Village</p>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Planning Resources -->
+    <section class="py-20 bg-emerald-50">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl text-center mx-auto">
+          <span class="inline-flex items-center justify-center rounded-full bg-emerald-100 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-emerald-700">Helpful Guides</span>
+          <h2 class="mt-4 text-3xl sm:text-4xl font-extrabold tracking-tight text-emerald-900 font-display">Plan With Confidence</h2>
+          <p class="mt-3 text-base sm:text-lg text-emerald-800">Use our checklists and calculators to prepare for every stage of your residential move.</p>
+        </div>
+
+        <div class="mt-12 grid gap-6 md:grid-cols-3">
+          <article class="rounded-3xl border border-emerald-100 bg-white p-6 shadow-sm hover:shadow-lg transition">
+            <h3 class="text-lg font-semibold text-emerald-900 font-display">Move Budget Worksheet</h3>
+            <p class="mt-2 text-sm text-emerald-700">Estimate crew size, hours, and specialty add-ons with a downloadable spreadsheet.</p>
+            <a href="/#quote" class="mt-4 inline-flex items-center text-sm font-semibold text-emerald-600 hover:text-emerald-700">Download template
+              <svg class="ml-2 h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 4h16M4 12h16M4 20h16" /></svg>
+            </a>
+          </article>
+
+          <article class="rounded-3xl border border-emerald-100 bg-white p-6 shadow-sm hover:shadow-lg transition">
+            <h3 class="text-lg font-semibold text-emerald-900 font-display">Packing Supply Checklist</h3>
+            <p class="mt-2 text-sm text-emerald-700">Know exactly how many boxes, wardrobe cartons, and specialty crates to order.</p>
+            <a href="/#sms-quote" class="mt-4 inline-flex items-center text-sm font-semibold text-emerald-600 hover:text-emerald-700">Text the concierge
+              <svg class="ml-2 h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 10h.01M12 10h.01M16 10h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4-.8L3 21l1.8-4A7.944 7.944 0 013 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" /></svg>
+            </a>
+          </article>
+
+          <article class="rounded-3xl border border-emerald-100 bg-white p-6 shadow-sm hover:shadow-lg transition">
+            <h3 class="text-lg font-semibold text-emerald-900 font-display">Move Day Playbook</h3>
+            <p class="mt-2 text-sm text-emerald-700">Step-by-step schedule with reminders for pets, utilities, and final walkthroughs.</p>
+            <a href="mailto:hello@opekmoving.com" class="mt-4 inline-flex items-center text-sm font-semibold text-emerald-600 hover:text-emerald-700">Request via email
+              <svg class="ml-2 h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l9 6 9-6m-18 8h18V8H3v8z" /></svg>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
 
     <!-- FAQ -->
     <section class="py-20 bg-white">
@@ -191,7 +600,7 @@
 useHead({
   title: 'Residential Moving | Opek Moving',
   meta: [
-    { name: 'description', content: 'Residential moving in Denver by Opek Moving. From labor-only help to full-service moves for apartments, condos, and family homes. Floor and door protection, trained crews, and fast quotes.' }
+    { name: 'description', content: 'Residential moving in Denver by Opek Moving. Certified crews, tailored packages, move-day timeline, neighborhood expertise, premium add-ons, and planning resources for every home.' }
   ]
 })
 </script>
