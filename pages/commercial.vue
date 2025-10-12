@@ -3,31 +3,46 @@
     <TheHeader />
 
     <!-- Page Hero - Mini Version -->
-    <section class="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 py-12 sm:py-16">
+    <section class="relative bg-gradient-to-br from-emerald-900 via-emerald-800 to-emerald-900 py-12 sm:py-16 overflow-hidden">
+      <!-- Mountain Pattern Background -->
+      <div class="absolute inset-0 opacity-[0.03] pointer-events-none">
+        <svg viewBox="0 0 1200 400" class="w-full h-full" preserveAspectRatio="none">
+          <path fill="#10B981" d="M0,400 L0,180 L250,80 L500,220 L750,40 L1000,160 L1200,100 L1200,400 Z"/>
+        </svg>
+      </div>
+      
       <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <nav aria-label="Breadcrumb" class="text-white/70 text-xs sm:text-sm mb-6">
+        <nav aria-label="Breadcrumb" class="text-emerald-100/70 text-xs sm:text-sm mb-6">
           <ol class="flex items-center gap-1.5 sm:gap-2">
-            <li><NuxtLink to="/#home" class="hover:text-brand-300 transition">Home</NuxtLink></li>
+            <li><NuxtLink to="/#home" class="hover:text-emerald-200 transition">Home</NuxtLink></li>
             <li><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></li>
-            <li><NuxtLink to="/#services" class="hover:text-brand-300 transition">Services</NuxtLink></li>
+            <li><NuxtLink to="/#services" class="hover:text-emerald-200 transition">Services</NuxtLink></li>
             <li><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></li>
-            <li class="text-brand-300 font-medium">Commercial Moving</li>
+            <li class="text-emerald-300 font-medium">Commercial Moving</li>
           </ol>
         </nav>
 
         <div class="text-center max-w-4xl mx-auto">
+          <!-- Map Pin Icon -->
+          <div class="inline-flex items-center justify-center mb-6">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-16 h-16 drop-shadow-2xl">
+              <path fill="#10B981" d="M16 0C9.37 0 4 5.37 4 12c0 7.47 10.9 19.35 11.43 19.92a.75.75 0 0 0 1.14 0C17.1 31.35 28 19.47 28 12 28 5.37 22.63 0 16 0z"></path>
+              <path fill="#ECFDF5" d="M16 4a8 8 0 1 0 0 16 8 8 0 0 0 0-16zm-3.5 7.5l2 3 2.5-4 2.5 4h-9l2.5-3z"></path>
+            </svg>
+          </div>
+          
           <h1 class="text-3xl leading-tight sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight font-extrabold tracking-tight text-white font-display mb-4">
-            Commercial Moving <span class="text-brand-300">With Minimal Downtime</span>
+            Commercial Moving <span class="text-emerald-300">With Minimal Downtime</span>
           </h1>
-          <p class="text-base sm:text-lg text-slate-300 leading-relaxed mb-8">
+          <p class="text-base sm:text-lg text-emerald-50 leading-relaxed mb-8">
             Professional office moving services for businesses across Denver. Coordinated scheduling, equipment protection, and weekend moves available.
           </p>
           <div class="flex flex-row flex-wrap justify-center gap-3">
-            <a href="/#sms-quote" class="group inline-flex items-center justify-center gap-2 rounded-xl bg-brand-600 px-6 sm:px-8 py-3.5 sm:py-4 text-sm sm:text-base font-bold text-white hover:bg-brand-700 transition-all shadow-lg shadow-brand-600/30 hover:shadow-xl hover:scale-105">
+            <a href="/#sms-quote" class="group inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-emerald-600 to-emerald-500 px-6 sm:px-8 py-3.5 sm:py-4 text-sm sm:text-base font-bold text-white hover:from-emerald-700 hover:to-emerald-600 transition-all shadow-lg shadow-emerald-600/30 hover:shadow-xl hover:scale-105">
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
               Get Instant Pricing
             </a>
-            <a href="/#quote" class="group inline-flex items-center justify-center gap-2 rounded-xl bg-white/10 backdrop-blur-sm px-6 sm:px-8 py-3.5 sm:py-4 text-sm sm:text-base font-bold text-white border-2 border-white/20 hover:bg-white/20 hover:border-white/30 transition-all">
+            <a href="/#quote" class="group inline-flex items-center justify-center gap-2 rounded-xl bg-white/10 backdrop-blur-sm px-6 sm:px-8 py-3.5 sm:py-4 text-sm sm:text-base font-bold text-white border-2 border-emerald-400/30 hover:bg-white/20 hover:border-emerald-400/50 transition-all">
               Request Quote
             </a>
           </div>

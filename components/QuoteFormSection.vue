@@ -47,37 +47,36 @@
                 </svg>
               </div>
               <div>
-                <p class="text-sm font-semibold text-slate-900">{{ item.title }}</p>
-                <p class="text-xs text-slate-600">{{ item.description }}</p>
+                <p class="text-sm font-bold text-gray-900">{{ item.title }}</p>
+                <p class="text-xs text-gray-600">{{ item.description }}</p>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="relative group">
-          <div class="absolute -inset-0.5 bg-gradient-to-br from-brand-600 to-brand-500 rounded-3xl opacity-0 group-hover:opacity-100 transition duration-300"></div>
-          <form @submit.prevent="handleSubmit" class="relative rounded-3xl border border-slate-200 bg-white p-6 sm:p-8 grid gap-5 md:grid-cols-2 shadow-xl">
+        <div class="relative">
+          <form @submit.prevent="handleSubmit" class="relative rounded-3xl border-2 border-emerald-100 bg-white p-6 sm:p-8 grid gap-5 md:grid-cols-2 shadow-xl hover:border-emerald-200 hover:shadow-2xl transition-all duration-300">
             <div class="space-y-2">
-              <label class="text-sm font-semibold text-slate-900" for="name">Name</label>
-              <input v-model="form.name" id="name" type="text" class="w-full rounded-xl border border-slate-200 px-4 py-3 text-base hover:border-slate-300 focus:border-brand-600 focus:ring-0 transition" placeholder="Your name" />
+              <label class="text-sm font-bold text-gray-900" for="name">Name</label>
+              <input v-model="form.name" id="name" type="text" class="w-full rounded-xl border-2 border-gray-200 px-4 py-3 text-base hover:border-emerald-300 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-100 transition-all" placeholder="Your name" />
             </div>
             <div class="space-y-2">
-              <label class="text-sm font-semibold text-slate-900" for="email">Email</label>
-              <input v-model="form.email" id="email" type="email" class="w-full rounded-xl border border-slate-200 px-4 py-3 text-base hover:border-slate-300 focus:border-brand-600 focus:ring-0 transition" placeholder="you@example.com" />
+              <label class="text-sm font-bold text-gray-900" for="email">Email</label>
+              <input v-model="form.email" id="email" type="email" class="w-full rounded-xl border-2 border-gray-200 px-4 py-3 text-base hover:border-emerald-300 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-100 transition-all" placeholder="you@example.com" />
             </div>
             <div class="space-y-2 md:col-span-2">
-              <label class="text-sm font-semibold text-slate-900" for="details">Move details</label>
-              <textarea v-model="form.details" id="details" rows="4" class="w-full rounded-xl border border-slate-200 px-4 py-3 text-base hover:border-slate-300 focus:border-brand-600 focus:ring-0 transition" placeholder="From / To, date, size, special items…"></textarea>
+              <label class="text-sm font-bold text-gray-900" for="details">Move details</label>
+              <textarea v-model="form.details" id="details" rows="4" class="w-full rounded-xl border-2 border-gray-200 px-4 py-3 text-base hover:border-emerald-300 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-100 transition-all resize-none" placeholder="From / To, date, size, special items…"></textarea>
             </div>
             <div class="md:col-span-2 space-y-3">
-              <button type="submit" :disabled="isSubmitting" class="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-brand-600 px-6 py-3 text-base font-semibold text-white hover:bg-brand-700 transition disabled:opacity-70 disabled:cursor-not-allowed">
+              <button type="submit" :disabled="isSubmitting" class="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-emerald-600 to-emerald-500 px-6 py-4 text-base font-bold text-white hover:from-emerald-700 hover:to-emerald-600 transition-all shadow-lg shadow-emerald-600/30 hover:shadow-xl hover:scale-[1.02] disabled:opacity-70 disabled:cursor-not-allowed disabled:hover:scale-100">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-5 w-5">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5" />
                 </svg>
                 Submit Request
               </button>
-              <p class="text-xs text-slate-500 text-center">We'll respond fast. No spam—ever.</p>
-              <p v-if="feedback" :class="['text-sm font-semibold text-center', feedbackClass]" role="status" aria-live="polite">
+              <p class="text-xs text-gray-500 text-center">We'll respond fast. No spam—ever.</p>
+              <p v-if="feedback" :class="['text-sm font-bold text-center', feedbackClass]" role="status" aria-live="polite">
                 {{ feedback }}
               </p>
             </div>
@@ -113,7 +112,7 @@ const handleSubmit = () => {
   // Simulate async request
   setTimeout(() => {
     feedback.value = 'Thanks! We\'ll get back to you shortly.'
-    feedbackClass.value = 'text-brand-700'
+    feedbackClass.value = 'text-emerald-700'
     isSubmitting.value = false
     form.name = ''
     form.email = ''

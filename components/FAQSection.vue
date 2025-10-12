@@ -63,18 +63,25 @@
       </div>
 
       <div class="mx-auto max-w-3xl">
-        <div class="rounded-3xl border border-slate-200 bg-white divide-y divide-slate-200 overflow-hidden shadow-lg">
+        <div class="grid gap-4">
           <details v-for="(faq, index) in faqs" :key="index" class="group">
-            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 p-6 hover:bg-slate-50 transition">
-              <h3 class="text-base sm:text-lg font-bold text-slate-900">{{ faq.question }}</h3>
-              <div class="flex h-10 w-10 items-center justify-center rounded-full bg-slate-100 text-slate-600 group-open:bg-brand-600 group-open:text-white transition flex-shrink-0">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-5 h-5 group-open:rotate-45 transition">
+            <summary class="flex cursor-pointer list-none items-start justify-between gap-4 p-6 rounded-2xl bg-white border-2 border-emerald-100 hover:border-emerald-300 hover:shadow-lg transition-all duration-300">
+              <div class="flex items-start gap-4 flex-1">
+                <div class="flex-shrink-0 w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center group-open:bg-emerald-600 group-open:text-white transition-colors">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
+                  </svg>
+                </div>
+                <h3 class="text-lg font-extrabold text-gray-900 pt-2">{{ faq.question }}</h3>
+              </div>
+              <div class="flex h-10 w-10 items-center justify-center rounded-full bg-emerald-50 text-emerald-600 group-open:bg-emerald-600 group-open:text-white transition-all flex-shrink-0 mt-1">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-5 h-5 group-open:rotate-45 transition-transform">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
                 </svg>
               </div>
             </summary>
-            <div class="px-6 pb-6">
-              <p class="text-sm text-slate-600 leading-relaxed">{{ faq.answer }}</p>
+            <div class="px-6 pb-6 pt-2 ml-16">
+              <p class="text-sm text-gray-600 leading-relaxed">{{ faq.answer }}</p>
             </div>
           </details>
         </div>

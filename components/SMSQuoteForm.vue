@@ -11,8 +11,8 @@
             </svg>
           </div>
           <div class="block">
-            <h3 class="text-base sm:text-lg font-extrabold text-slate-900 leading-tight">Get Instant Pricing</h3>
-            <p class="text-xs text-slate-600">Quick SMS estimate in seconds</p>
+            <h3 class="text-base sm:text-lg font-extrabold text-gray-900 leading-tight">Get Instant Pricing</h3>
+            <p class="text-xs text-gray-600">Quick SMS estimate in seconds</p>
           </div>
         </div>
 
@@ -29,7 +29,7 @@
               inputmode="tel"
               autocomplete="tel"
               placeholder="(555) 123-4567"
-              class="w-full rounded-xl border border-slate-200 px-4 py-3 text-base hover:border-slate-300 focus:border-emerald-600 focus:ring-0 transition"
+              class="w-full rounded-xl border-2 border-gray-200 px-4 py-3 text-base hover:border-emerald-300 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-100 transition-all"
               pattern="^[0-9()+\-\s]{7,}$"
               aria-describedby="sms-help"
               required
@@ -50,8 +50,8 @@
         <!-- Feedback under bar -->
       </form>
       <div class="mt-2 w-full lg:max-w-4xl xl:max-w-3xl 2xl:max-w-4xl mx-auto">
-        <p id="sms-help" class="text-xs text-slate-500 text-center sm:text-left">By submitting, you agree to receive a one-time SMS with pricing. No spam.</p>
-        <p v-if="feedback" :class="['text-sm font-semibold', feedbackClass]" role="status" aria-live="polite">
+        <p id="sms-help" class="text-xs text-gray-500 text-center sm:text-left">By submitting, you agree to receive a one-time SMS with pricing. No spam.</p>
+        <p v-if="feedback" :class="['text-sm font-bold', feedbackClass]" role="status" aria-live="polite">
           {{ feedback }}
         </p>
       </div>
@@ -82,7 +82,7 @@ const handleSubmit = () => {
   // Simulate async request
   setTimeout(() => {
     feedback.value = "Thanks! We'll text you pricing shortly."
-    feedbackClass.value = 'text-brand-700'
+    feedbackClass.value = 'text-emerald-700'
     isSubmitting.value = false
     phone.value = ''
   }, 800)
