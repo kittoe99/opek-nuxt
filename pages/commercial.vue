@@ -41,11 +41,11 @@
           </div>
 
           <h1 class="text-3xl leading-tight sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white font-display mb-4">
-            Commercial Relocations <span class="text-emerald-300">Engineered for Continuity</span>
+            Commercial Moving <span class="text-emerald-300">Engineered for Continuity</span>
           </h1>
           <p class="text-base sm:text-lg text-emerald-50 leading-relaxed mb-8">
-            Program managers, union-compliant crews, and IT coordination keep offices, labs, and studios productive while we
-            execute your move overnight or on weekends.
+            Opek Moving's commercial relocation specialists coordinate project managers, union-compliant crews, IT disconnects,
+            and freight elevator access so your office, lab, or studio keeps working while we execute overnight or weekend moves.
           </p>
           <div class="flex flex-row flex-wrap justify-center gap-3">
             <a
@@ -128,7 +128,7 @@
               Commercial Programs At-A-Glance
             </h2>
             <p class="text-base text-slate-600 leading-relaxed mb-8">
-              We partner with operations teams to map every dock schedule, elevator reservation, and IT dependency so your team keeps working while we relocate.
+              Our business moving consultants map every dock schedule, elevator reservation, and IT dependency so your teams stay productive while we relocate furniture, servers, and inventory.
             </p>
 
             <div class="grid gap-4">
@@ -211,7 +211,7 @@
           </div>
           <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white font-display mb-4">Why Denver Companies Choose Opek</h2>
           <p class="text-base sm:text-lg text-emerald-100/80 leading-relaxed">
-            Your facilities and people stay protected while we manage every vendor, hallway, and data closet tied to the relocation.
+            Your facilities and people stay protected while our commercial moving company manages every vendor, hallway, dock schedule, and data closet tied to the relocation.
           </p>
         </div>
 
@@ -278,7 +278,7 @@
           <span class="inline-flex items-center rounded-full bg-emerald-100 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-emerald-700">Project Playbooks</span>
           <h2 class="mt-4 text-3xl sm:text-4xl font-extrabold tracking-tight text-emerald-900 font-display">Tailored Commercial Move Packages</h2>
           <p class="mt-3 text-base sm:text-lg text-emerald-800 leading-relaxed">
-            Each package includes a dedicated project manager, building protection materials, detailed labeling systems, and post-move QA walk-throughs.
+            Each business moving package includes a dedicated project manager, building protection materials, detailed labeling systems, asset tracking, and post-move QA walk-throughs.
           </p>
         </div>
 
@@ -642,12 +642,12 @@
 
 <script setup>
 useHead({
-  title: 'Commercial Moving | Opek Moving',
+  title: 'commercial moving',
   meta: [
     {
       name: 'description',
       content:
-        'Denver commercial relocation specialists delivering continuity-focused plans for offices, labs, and industrial teams with 24/7 command coverage, compliance-ready crews, and technology coordination.'
+        'Denver commercial moving company providing office relocation, industrial moving, lab transport, IT disconnect/reconnect, union crews, facility protection, and 24/7 command center support.'
     }
   ]
 })

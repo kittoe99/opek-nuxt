@@ -35,11 +35,11 @@
           </div>
           
           <h1 class="text-3xl leading-tight sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight font-extrabold tracking-tight text-white font-display mb-4">
-            Residential Moves <span class="text-emerald-300">With Concierge Precision</span>
+            Residential Moving <span class="text-emerald-300">Concierge-Level Home Relocation</span>
           </h1>
           <p class="text-base sm:text-lg text-emerald-50 leading-relaxed mb-8">
-            Dedicated move planners, certified crews, and proactive building coordination keep your apartment, condo, or family
-            home relocation running on schedule.
+            Opek Moving's licensed residential movers handle apartment, condo, and single-family relocations with precision scheduling,
+            premium packing materials, and building coordination so moving day stays stress-free.
           </p>
           <div class="flex flex-row flex-wrap justify-center gap-3">
             <a href="/#sms-quote" class="group inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-emerald-600 to-emerald-500 px-6 sm:px-8 py-3.5 sm:py-4 text-sm sm:text-base font-bold text-white hover:from-emerald-700 hover:to-emerald-600 transition-all shadow-lg shadow-emerald-600/30 hover:shadow-xl hover:scale-105">
@@ -113,7 +113,7 @@
             <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-gray-900 font-display mb-4">
               <span class="bg-gradient-to-r from-emerald-700 via-emerald-600 to-emerald-700 bg-clip-text text-transparent">Residential Services At-A-Glance</span>
             </h2>
-            <p class="text-base text-gray-600 leading-relaxed mb-8">Tell us about your home, timeline, and must-have support, and we build the exact crew and service plan you need.</p>
+            <p class="text-base text-gray-600 leading-relaxed mb-8">Share your move date, origin, destination, and specialty items—our certified home moving consultants assemble the ideal crew, trucks, and protection plan for your household.</p>
 
             <div class="grid gap-4">
               <!-- Card 1 -->
@@ -266,8 +266,8 @@
       <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div class="max-w-3xl mb-12">
           <span class="inline-flex items-center rounded-full bg-emerald-100 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-emerald-700">Move Packages</span>
-          <h2 class="mt-4 text-3xl sm:text-4xl font-extrabold tracking-tight text-emerald-900 font-display">Tailored Packages for Every Home</h2>
-          <p class="mt-3 text-base sm:text-lg text-emerald-800 leading-relaxed">Pick the support level that fits your household. Every package includes licensed movers, full home protection, and concierge updates from your move coordinator.</p>
+          <h2 class="mt-4 text-3xl sm:text-4xl font-extrabold tracking-tight text-emerald-900 font-display">Tailored Moving Packages for Every Home</h2>
+          <p class="mt-3 text-base sm:text-lg text-emerald-800 leading-relaxed">Pick the level of residential moving support that fits your household. Every package includes vetted movers, floor and door protection, climate-controlled trucks, and concierge updates from your move coordinator.</p>
         </div>
 
         <div class="grid gap-6 lg:grid-cols-3">
@@ -323,7 +323,7 @@
             </svg>
           </div>
           <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-gray-900 font-display mb-4">How Our Residential Moves Work</h2>
-          <p class="text-base sm:text-lg text-gray-600 leading-relaxed">Every project follows a proven timeline so you always know what happens next.</p>
+          <p class="text-base sm:text-lg text-gray-600 leading-relaxed">Every household move follows our proven relocation playbook, covering in-home estimates, packing, loading, transport, and furniture placement so you always know the next step.</p>
         </div>
 
         <div class="grid md:grid-cols-4 gap-6">
@@ -357,7 +357,7 @@
         <div class="max-w-3xl text-white">
           <span class="inline-flex items-center rounded-full bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-emerald-200">What to Expect</span>
           <h2 class="mt-4 text-3xl sm:text-4xl font-extrabold tracking-tight font-display">Your Move Day Timeline</h2>
-          <p class="mt-3 text-base sm:text-lg text-emerald-100 leading-relaxed">We keep you informed at every checkpoint. Here is how a typical residential move flows once crews arrive on-site.</p>
+          <p class="mt-3 text-base sm:text-lg text-emerald-100 leading-relaxed">We keep you informed at every checkpoint. Here is how a typical residential move flows once our moving trucks and crew members arrive on-site.</p>
         </div>
 
         <div class="mt-10 space-y-6">
@@ -409,7 +409,7 @@
             </div>
             <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-gray-900 font-display mb-4">Premium Add-Ons & Specialty Care</h2>
             <p class="text-base sm:text-lg text-gray-600 leading-relaxed mb-6">
-              Upgrade your move with specialty services that protect heirlooms, simplify settling in, and keep you organized from start to finish.
+              Upgrade your residential move with white-glove packing teams, custom crating, storage transfers, and debris removal that protect heirlooms, simplify settling in, and keep every room organized from start to finish.
             </p>
 
             <div class="space-y-4">
@@ -562,7 +562,7 @@
         <div class="max-w-3xl text-center mx-auto">
           <span class="inline-flex items-center justify-center rounded-full bg-emerald-100 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-emerald-700">Helpful Guides</span>
           <h2 class="mt-4 text-3xl sm:text-4xl font-extrabold tracking-tight text-emerald-900 font-display">Plan With Confidence</h2>
-          <p class="mt-3 text-base sm:text-lg text-emerald-800">Use our checklists and calculators to prepare for every stage of your residential move.</p>
+          <p class="mt-3 text-base sm:text-lg text-emerald-800">Use our moving checklists, packing calculators, and day-of reminders to prepare for every stage of your residential relocation.</p>
         </div>
 
         <div class="mt-12 grid gap-6 md:grid-cols-3">
@@ -633,12 +633,12 @@
 
 <script setup>
 useHead({
-  title: 'Residential Moving | Opek Moving',
+  title: 'Residential Moving',
   meta: [
     {
       name: 'description',
       content:
-        'Concierge residential moving across Denver with certified crews, fast-track scheduling, specialty handling, premium add-ons, and planning resources for apartments, condos, and family homes.'
+        'Denver residential movers delivering full-service home moving, custom packing, secure loading, specialty handling, storage transfers, and concierge planning for apartments, condos, and single-family homes.'
     }
   ]
 })

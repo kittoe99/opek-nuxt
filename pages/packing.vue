@@ -40,11 +40,10 @@
             </svg>
           </div>
           <h1 class="text-3xl leading-tight sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white font-display mb-4">
-            Premium Packing <span class="text-brand-300">Designed for Move-In Ready Days</span>
+            Packing <span class="text-brand-300">Designed for Move-In Ready Days</span>
           </h1>
           <p class="text-base sm:text-lg text-slate-300 leading-relaxed mb-8">
-            Senior packing leads, museum-grade materials, and digital inventories create labeled boxes that unpack in perfect
-            room order.
+            Senior packing leads, museum-grade materials, and digital inventories create clearly labeled boxes that unpack in perfect room order and protect every item for transport with our moving crews.
           </p>
           <div class="flex flex-row flex-wrap justify-center gap-3">
             <a
@@ -123,7 +122,7 @@
             </div>
             <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900 font-display mb-4">Packing Programs At-A-Glance</h2>
             <p class="text-base text-slate-600 leading-relaxed mb-8">
-              Tell us which rooms and items matter most. We tailor crews, materials, and labeling systems to match your timeline and unpacking plan.
+              Tell us which rooms, collections, and fixtures matter most. We tailor packing crews, specialty materials, and labeling systems to match your moving timeline and unpacking plan.
             </p>
 
             <div class="grid gap-4">
@@ -205,7 +204,7 @@
             </svg>
           </div>
           <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white font-display mb-4">Why Denver Families Trust Our Packers</h2>
-          <p class="text-base sm:text-lg text-slate-200/90 leading-relaxed">We treat every drawer like it’s our own—organized, protected, and ready for a stress-free move-in.</p>
+          <p class="text-base sm:text-lg text-slate-200/90 leading-relaxed">We treat every drawer like it’s our own—professionally packed, cataloged, and protected for a stress-free move-in with our moving crews.</p>
         </div>
 
         <div class="grid lg:grid-cols-4 gap-6">
@@ -632,12 +631,12 @@
 
 <script setup>
 useHead({
-  title: 'Packing Services | Opek Moving',
+  title: 'packing',
   meta: [
     {
       name: 'description',
       content:
-        'Denver packing experts delivering concierge whole-home, kitchen, and collection services with museum-grade materials, digital inventories, and same-day unpack partnerships.'
+        'Denver packing specialists handling whole-home boxing, kitchen organization, luxury collection protection, digital inventories, and same-day unpacking that pair seamlessly with our moving services.'
     }
   ]
 })
