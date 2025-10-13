@@ -3,7 +3,10 @@
     <TheHeader />
 
     <!-- Page Hero - Mini Version -->
-    <section class="relative bg-gradient-to-br from-emerald-900 via-emerald-800 to-emerald-900 py-12 sm:py-16 overflow-hidden">
+    <section
+      id="residential-hero"
+      class="relative bg-gradient-to-br from-emerald-900 via-emerald-800 to-emerald-900 py-12 sm:py-16 overflow-hidden"
+    >
       <!-- Mountain Pattern Background -->
       <div class="absolute inset-0 opacity-[0.03] pointer-events-none">
         <svg viewBox="0 0 1200 400" class="w-full h-full" preserveAspectRatio="none">
@@ -51,7 +54,7 @@
     </section>
 
     <!-- Services spectrum -->
-    <section class="py-16 bg-white">
+    <section id="residential-services" class="py-16 bg-white">
       <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div class="grid lg:grid-cols-2 gap-10 items-center">
           <div class="relative">
@@ -146,7 +149,7 @@
       </div>
     </section>
     <!-- Why Choose Opek -->
-    <section class="py-20 bg-emerald-950 relative overflow-hidden">
+    <section id="residential-proof" class="py-20 bg-emerald-950 relative overflow-hidden">
       <div class="absolute inset-0 opacity-[0.04] pointer-events-none">
         <svg viewBox="0 0 1200 400" class="w-full h-full" preserveAspectRatio="none">
           <path fill="#34D399" d="M0,200 L1200,0 L1200,400 L0,400 Z" />
@@ -227,7 +230,7 @@
     </section>
 
     <!-- Tailored Packages -->
-    <section class="py-20 bg-emerald-50">
+    <section id="residential-packages" class="py-20 bg-emerald-50">
       <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div class="max-w-3xl mb-12">
           <span class="inline-flex items-center rounded-full bg-emerald-100 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-emerald-700">Move Packages</span>
@@ -278,7 +281,7 @@
     </section>
 
     <!-- Moving Process -->
-    <section class="py-20 bg-white">
+    <section id="residential-process" class="py-20 bg-white">
       <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-3xl mx-auto mb-16">
           <div class="inline-flex items-center justify-center mb-6">
@@ -317,7 +320,7 @@
     </section>
 
     <!-- Move Day Timeline -->
-    <section class="py-20 bg-emerald-900">
+    <section id="residential-timeline" class="py-20 bg-emerald-900">
       <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div class="max-w-3xl text-white">
           <span class="inline-flex items-center rounded-full bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-emerald-200">What to Expect</span>
@@ -362,7 +365,7 @@
     </section>
 
     <!-- Add-On Services -->
-    <section class="py-20 bg-gradient-to-br from-emerald-50 via-white to-emerald-50">
+    <section id="residential-addons" class="py-20 bg-gradient-to-br from-emerald-50 via-white to-emerald-50">
       <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div class="grid lg:grid-cols-2 gap-12 items-center">
           <div class="order-2 lg:order-1">
@@ -433,7 +436,7 @@
     </section>
 
     <!-- Denver Neighborhood Expertise -->
-    <section class="py-20 bg-white">
+    <section id="residential-neighborhoods" class="py-20 bg-white">
       <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div class="grid gap-12 lg:grid-cols-2 lg:items-center">
           <div>
@@ -476,7 +479,7 @@
     <ServiceAreasSection />
 
     <!-- Testimonials -->
-    <section class="py-20 bg-emerald-950 text-white">
+    <section id="residential-testimonials" class="py-20 bg-emerald-950 text-white">
       <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div class="max-w-3xl text-center mx-auto">
           <span class="inline-flex items-center justify-center rounded-full bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-emerald-200">Neighbors Love Opek</span>
@@ -522,7 +525,7 @@
     </section>
 
     <!-- Planning Resources -->
-    <section class="py-20 bg-emerald-50">
+    <section id="residential-resources" class="py-20 bg-emerald-50">
       <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div class="max-w-3xl text-center mx-auto">
           <span class="inline-flex items-center justify-center rounded-full bg-emerald-100 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-emerald-700">Helpful Guides</span>
@@ -559,7 +562,7 @@
     </section>
 
     <!-- FAQ -->
-    <section class="py-20 bg-white">
+    <section id="residential-faq" class="py-20 bg-white">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="mx-auto max-w-3xl">
           <div class="text-center mb-12">

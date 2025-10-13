@@ -3,7 +3,10 @@
     <TheHeader />
 
     <!-- Hero -->
-    <section class="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 py-12 sm:py-16 overflow-hidden">
+    <section
+      id="packing-hero"
+      class="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 py-12 sm:py-16 overflow-hidden"
+    >
       <div class="absolute inset-0 opacity-[0.04] pointer-events-none">
         <svg viewBox="0 0 1200 400" class="w-full h-full" preserveAspectRatio="none">
           <path fill="#38BDF8" d="M0,320 L0,140 L220,60 L480,200 L760,20 L1040,160 L1200,80 L1200,320 Z" />
@@ -64,7 +67,7 @@
     </section>
 
     <!-- Packing Programs -->
-    <section class="py-16 bg-white">
+    <section id="packing-programs" class="py-16 bg-white">
       <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div class="grid lg:grid-cols-2 gap-10 items-center">
           <div class="relative">
@@ -155,7 +158,7 @@
     </section>
 
     <!-- Proof Points -->
-    <section class="py-20 bg-slate-950 relative overflow-hidden">
+    <section id="packing-proof" class="py-20 bg-slate-950 relative overflow-hidden">
       <div class="absolute inset-0 opacity-[0.05] pointer-events-none">
         <svg viewBox="0 0 1200 400" class="w-full h-full" preserveAspectRatio="none">
           <path fill="#38BDF8" d="M0,200 L1200,0 L1200,400 L0,400 Z" />
@@ -231,7 +234,7 @@
     </section>
 
     <!-- Packages -->
-    <section class="py-20 bg-sky-50">
+    <section id="packing-packages" class="py-20 bg-sky-50">
       <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div class="max-w-3xl mb-12">
           <span class="inline-flex items-center rounded-full bg-sky-100 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-sky-700">Packing Packages</span>
@@ -335,7 +338,7 @@
     </section>
 
     <!-- Process -->
-    <section class="py-20 bg-white">
+    <section id="packing-process" class="py-20 bg-white">
       <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-3xl mx-auto mb-16">
           <div class="inline-flex items-center justify-center mb-6">
@@ -374,7 +377,7 @@
     </section>
 
     <!-- Timeline -->
-    <section class="py-20 bg-slate-900">
+    <section id="packing-timeline" class="py-20 bg-slate-900">
       <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div class="max-w-3xl text-white">
           <span class="inline-flex items-center rounded-full bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-sky-200">Packing Day Timeline</span>
@@ -419,7 +422,7 @@
     </section>
 
     <!-- Add-On Services -->
-    <section class="py-20 bg-gradient-to-br from-sky-50 via-white to-sky-50">
+    <section id="packing-addons" class="py-20 bg-gradient-to-br from-sky-50 via-white to-sky-50">
       <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div class="grid lg:grid-cols-2 gap-12 items-center">
           <div class="order-2 lg:order-1">
@@ -516,7 +519,7 @@
     </section>
 
     <!-- Planning Resources -->
-    <section class="py-20 bg-white">
+    <section id="packing-resources" class="py-20 bg-white">
       <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div class="max-w-3xl mb-12">
           <span class="inline-flex items-center rounded-full bg-sky-100 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-sky-700">Planning Resources</span>
@@ -562,7 +565,7 @@
     <ServiceAreasSection />
 
     <!-- FAQ -->
-    <section class="py-20 bg-slate-50">
+    <section id="packing-faq" class="py-20 bg-slate-50">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="mx-auto max-w-3xl">
           <div class="text-center mb-12">
