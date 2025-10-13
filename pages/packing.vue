@@ -28,7 +28,7 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
               </svg>
             </li>
-            <li class="text-brand-300 font-medium">Packing Services</li>
+            <li class="text-brand-300 font-medium">Packing</li>
           </ol>
         </nav>
 
@@ -40,11 +40,10 @@
             </svg>
           </div>
           <h1 class="text-3xl leading-tight sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white font-display mb-4">
-            Premium Packing <span class="text-brand-300">Designed for Move-In Ready Days</span>
+            Packing <span class="text-brand-300">Built for Move-In Ready Moves</span>
           </h1>
           <p class="text-base sm:text-lg text-slate-300 leading-relaxed mb-8">
-            Senior packing leads, museum-grade materials, and digital inventories create labeled boxes that unpack in perfect
-            room order.
+            Senior packing leads, museum-grade materials, and digital inventories create clearly labeled boxes that unpack in perfect room order and protect every item for transport with our moving crews.
           </p>
           <div class="flex flex-row flex-wrap justify-center gap-3">
             <a
@@ -101,13 +100,39 @@
     <section id="packing-programs" class="py-16 bg-white">
       <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div class="grid lg:grid-cols-2 gap-10 items-center">
-          <div class="relative">
-            <div class="aspect-[4/5] rounded-xl overflow-hidden">
-              <img src="/assets/Opek.png" alt="Professional packing services" class="w-full h-full object-cover" />
+          <div class="relative pt-10">
+            <div class="absolute -top-2 left-8 z-20">
+              <span
+                class="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-[10px] font-semibold uppercase tracking-[0.3em] text-white backdrop-blur-lg shadow-lg"
+              >
+                <svg class="h-3.5 w-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 7h11a3 3 0 0 1 3 3v7H6a3 3 0 0 1-3-3V7zm11 0 3.4 4.25a2 2 0 0 1 .42 1.25V17a2 2 0 0 0 2 2h1"
+                  />
+                </svg>
+                Packing Crew
+              </span>
             </div>
-            <div class="absolute -bottom-4 -right-4 bg-brand-600 text-white rounded-xl p-4 shadow-lg">
-              <div class="text-2xl font-bold">4.9★</div>
-              <div class="text-xs font-medium">Packing Rating</div>
+            <div class="absolute -top-12 -left-10 hidden lg:block h-36 w-36 rounded-full bg-gradient-to-br from-brand-200/50 via-brand-300/50 to-brand-400/50 blur-3xl"></div>
+            <div class="absolute -bottom-16 -right-16 hidden md:block h-48 w-48 rounded-[36px] border border-brand-200/60"></div>
+            <div class="relative overflow-hidden rounded-[32px] bg-gradient-to-br from-brand-700 via-brand-800 to-brand-700 p-3 shadow-[0_35px_70px_-25px_rgba(14,160,90,0.7)]">
+              <div class="relative aspect-[4/5] overflow-hidden rounded-[26px]">
+                <img src="/assets/Opek.png" alt="Packing specialists wrapping glassware" class="w-full h-full object-cover" />
+                <div class="absolute inset-0 bg-gradient-to-t from-brand-900/80 via-transparent to-brand-500/40 mix-blend-multiply"></div>
+                <div class="absolute inset-x-6 bottom-6 flex items-center justify-between rounded-2xl bg-white/10 px-5 py-4 backdrop-blur-lg text-white shadow-xl">
+                  <div>
+                    <p class="text-xs font-semibold uppercase tracking-[0.3em] text-brand-50/90">Protection</p>
+                    <p class="text-sm font-medium text-brand-50">Fragile collections & wardrobe boxes</p>
+                  </div>
+                  <div class="flex flex-col items-center">
+                    <span class="text-2xl font-extrabold leading-none">4.9★</span>
+                    <span class="text-[10px] uppercase tracking-[0.25em] text-brand-50/70">Packing Rated</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -123,7 +148,7 @@
             </div>
             <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900 font-display mb-4">Packing Programs At-A-Glance</h2>
             <p class="text-base text-slate-600 leading-relaxed mb-8">
-              Tell us which rooms and items matter most. We tailor crews, materials, and labeling systems to match your timeline and unpacking plan.
+              Tell us which rooms, collections, and fixtures matter most. We tailor packing crews, specialty materials, and labeling systems to match your moving timeline and unpacking plan.
             </p>
 
             <div class="grid gap-4">
@@ -164,7 +189,7 @@
                   </div>
                   <div class="flex-1">
                     <h3 class="text-xl font-extrabold text-slate-900 mb-2 font-display">Luxury & Collections</h3>
-                    <p class="text-sm text-slate-600 leading-relaxed">Climate-aware wraps, bar-coded photo logs, and concierge wardrobe transfers for high-value collections.</p>
+                    <p class="text-sm text-slate-600 leading-relaxed">Climate-aware wraps, bar-coded photo logs, and white-glove wardrobe transfers for high-value collections.</p>
                   </div>
                 </div>
               </article>
@@ -205,7 +230,7 @@
             </svg>
           </div>
           <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white font-display mb-4">Why Denver Families Trust Our Packers</h2>
-          <p class="text-base sm:text-lg text-slate-200/90 leading-relaxed">We treat every drawer like it’s our own—organized, protected, and ready for a stress-free move-in.</p>
+          <p class="text-base sm:text-lg text-slate-200/90 leading-relaxed">We treat every drawer like it’s our own—professionally packed, cataloged, and protected for a stress-free move-in with our moving crews.</p>
         </div>
 
         <div class="grid lg:grid-cols-4 gap-6">
@@ -270,7 +295,7 @@
         <div class="max-w-3xl mb-12">
           <span class="inline-flex items-center rounded-full bg-sky-100 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-sky-700">Packing Packages</span>
           <h2 class="mt-4 text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900 font-display">Choose the Support That Fits</h2>
-          <p class="mt-3 text-base sm:text-lg text-slate-600 leading-relaxed">Every package includes licensed packers, premium materials, home protection, and next-day check-ins from your move concierge.</p>
+          <p class="mt-3 text-base sm:text-lg text-slate-600 leading-relaxed">Every package includes licensed packers, premium materials, home protection, and next-day check-ins from your move coordinator.</p>
         </div>
 
         <div class="grid gap-6 lg:grid-cols-3">
@@ -632,12 +657,12 @@
 
 <script setup>
 useHead({
-  title: 'Packing Services | Opek Moving',
+  title: 'packing',
   meta: [
     {
       name: 'description',
       content:
-        'Denver packing experts delivering concierge whole-home, kitchen, and collection services with museum-grade materials, digital inventories, and same-day unpack partnerships.'
+        'Denver packing specialists handling whole-home boxing, kitchen organization, luxury collection protection, digital inventories, and same-day unpacking that pair seamlessly with our moving crews.'
     }
   ]
 })
