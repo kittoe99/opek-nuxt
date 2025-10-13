@@ -104,13 +104,39 @@
     <section id="commercial-programs" class="py-16 bg-white">
       <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div class="grid lg:grid-cols-2 gap-10 items-center">
-          <div class="relative">
-            <div class="aspect-[4/5] rounded-xl overflow-hidden">
-              <img src="/assets/Opek.png" alt="Commercial movers protecting equipment" class="w-full h-full object-cover" />
+          <div class="relative pt-10">
+            <div class="absolute -top-2 left-8 z-20">
+              <span
+                class="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-[10px] font-semibold uppercase tracking-[0.3em] text-emerald-50 backdrop-blur-lg shadow-lg"
+              >
+                <svg class="h-3.5 w-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 7h11a3 3 0 0 1 3 3v7H6a3 3 0 0 1-3-3V7zm11 0 3.5 4.25a2 2 0 0 1 .4 1.25V17a2 2 0 0 0 2 2h1.5"
+                  />
+                </svg>
+                Move Command
+              </span>
             </div>
-            <div class="absolute -bottom-4 -right-4 bg-gradient-to-br from-emerald-600 to-emerald-500 text-white rounded-xl p-4 shadow-lg">
-              <div class="text-2xl font-bold">4.9★</div>
-              <div class="text-xs font-medium">Business Rating</div>
+            <div class="absolute -top-12 -left-10 hidden lg:block h-36 w-36 rounded-full bg-gradient-to-br from-emerald-300/40 via-emerald-400/40 to-emerald-500/40 blur-3xl"></div>
+            <div class="absolute -bottom-16 -right-16 hidden md:block h-48 w-48 rounded-[36px] border border-emerald-200/50"></div>
+            <div class="relative overflow-hidden rounded-[32px] bg-gradient-to-br from-emerald-800 via-emerald-900 to-emerald-800 p-3 shadow-[0_35px_70px_-25px_rgba(16,185,129,0.7)]">
+              <div class="relative aspect-[4/5] overflow-hidden rounded-[26px]">
+                <img src="/assets/Opek.png" alt="Commercial relocation team staging crates" class="w-full h-full object-cover" />
+                <div class="absolute inset-0 bg-gradient-to-t from-emerald-950/70 via-transparent to-emerald-500/30 mix-blend-multiply"></div>
+                <div class="absolute inset-x-6 bottom-6 flex items-center justify-between rounded-2xl bg-white/10 px-5 py-4 backdrop-blur-lg text-white shadow-xl">
+                  <div>
+                    <p class="text-xs font-semibold uppercase tracking-[0.3em] text-emerald-100/80">Facility Scope</p>
+                    <p class="text-sm font-medium text-emerald-50">HQ, data center & lab relocations</p>
+                  </div>
+                  <div class="flex flex-col items-center">
+                    <span class="text-2xl font-extrabold leading-none">4.9★</span>
+                    <span class="text-[10px] uppercase tracking-[0.25em] text-emerald-100/70">B2B Rated</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
