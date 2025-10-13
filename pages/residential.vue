@@ -35,7 +35,7 @@
           </div>
           
           <h1 class="text-3xl leading-tight sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight font-extrabold tracking-tight text-white font-display mb-4">
-            Residential Moving <span class="text-emerald-300">Concierge-Level Home Relocation</span>
+            Residential Moving <span class="text-emerald-300">Full-Service Home Moving Crews</span>
           </h1>
           <p class="text-base sm:text-lg text-emerald-50 leading-relaxed mb-8">
             Opek Moving's licensed residential movers handle apartment, condo, and single-family relocations with precision scheduling,
@@ -70,7 +70,7 @@
             <p class="text-sm font-semibold uppercase tracking-wide text-emerald-600">Average Lead Time</p>
             <p class="mt-3 text-3xl font-extrabold text-emerald-900 font-display">6 days</p>
             <p class="mt-3 text-sm text-emerald-700 leading-relaxed">
-              Need a quick move? Our concierge confirms elevator reservations and parking permits within 24 hours of booking.
+              Need a quick move? Our move coordinators confirm elevator reservations and parking permits within 24 hours of booking.
             </p>
           </div>
           <div class="rounded-2xl bg-white p-6 shadow-md shadow-emerald-100/50 border border-emerald-100">
@@ -111,7 +111,7 @@
               </div>
             </div>
             <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-gray-900 font-display mb-4">
-              <span class="bg-gradient-to-r from-emerald-700 via-emerald-600 to-emerald-700 bg-clip-text text-transparent">Residential Services At-A-Glance</span>
+              <span class="bg-gradient-to-r from-emerald-700 via-emerald-600 to-emerald-700 bg-clip-text text-transparent">Residential Moving At-A-Glance</span>
             </h2>
             <p class="text-base text-gray-600 leading-relaxed mb-8">Share your move date, origin, destination, and specialty items—our certified home moving consultants assemble the ideal crew, trucks, and protection plan for your household.</p>
 
@@ -254,7 +254,7 @@
               </span>
               <p class="text-sm uppercase tracking-wider text-emerald-200/90 font-semibold">Customer Support</p>
             </div>
-            <h3 class="text-2xl font-bold mb-2">Move Concierge</h3>
+            <h3 class="text-2xl font-bold mb-2">Move Coordinator</h3>
             <p class="text-sm text-emerald-100/80 leading-relaxed">Dedicated coordinator checks in before, during, and after move day for a smooth experience.</p>
           </div>
         </div>
@@ -267,13 +267,13 @@
         <div class="max-w-3xl mb-12">
           <span class="inline-flex items-center rounded-full bg-emerald-100 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-emerald-700">Move Packages</span>
           <h2 class="mt-4 text-3xl sm:text-4xl font-extrabold tracking-tight text-emerald-900 font-display">Tailored Moving Packages for Every Home</h2>
-          <p class="mt-3 text-base sm:text-lg text-emerald-800 leading-relaxed">Pick the level of residential moving support that fits your household. Every package includes vetted movers, floor and door protection, climate-controlled trucks, and concierge updates from your move coordinator.</p>
+          <p class="mt-3 text-base sm:text-lg text-emerald-800 leading-relaxed">Pick the level of residential moving support that fits your household. Every package includes vetted movers, floor and door protection, climate-controlled trucks, and proactive updates from your move coordinator.</p>
         </div>
 
         <div class="grid gap-6 lg:grid-cols-3">
           <article class="rounded-3xl border border-emerald-100 bg-white p-8 shadow-sm">
             <p class="text-sm font-semibold uppercase tracking-wider text-emerald-500">Essential</p>
-            <h3 class="mt-3 text-2xl font-extrabold text-emerald-900 font-display">Apartment Refresh</h3>
+            <h3 class="mt-3 text-2xl font-extrabold text-emerald-900 font-display">Apartment Move Essentials</h3>
             <p class="mt-3 text-sm text-emerald-800">Ideal for studios and one-bedroom moves needing the essentials done quickly.</p>
             <ul class="mt-5 space-y-3 text-sm text-emerald-700">
               <li class="flex items-start gap-2"><svg class="mt-1 h-4 w-4 text-emerald-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m5 13 4 4L19 7" /></svg>2-3 movers and a 26' truck</li>
@@ -292,7 +292,7 @@
               <p class="mt-3 text-sm text-emerald-100">For homes with multiple bedrooms, garages, and specialty furniture that need meticulous packing.</p>
               <ul class="mt-5 space-y-3 text-sm text-emerald-50">
                 <li class="flex items-start gap-2"><svg class="mt-1 h-4 w-4 text-emerald-200" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m5 13 4 4L19 7" /></svg>4-6 movers plus a dedicated crew lead</li>
-                <li class="flex items-start gap-2"><svg class="mt-1 h-4 w-4 text-emerald-200" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m5 13 4 4L19 7" /></svg>Full kitchen, closet, and fragile packing service</li>
+                <li class="flex items-start gap-2"><svg class="mt-1 h-4 w-4 text-emerald-200" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m5 13 4 4L19 7" /></svg>Full kitchen, closet, and fragile packing support</li>
                 <li class="flex items-start gap-2"><svg class="mt-1 h-4 w-4 text-emerald-200" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m5 13 4 4L19 7" /></svg>Home prep with floor runners, door jamb guards, and banister protection</li>
               </ul>
             </div>
@@ -577,7 +577,7 @@
           <article class="rounded-3xl border border-emerald-100 bg-white p-6 shadow-sm hover:shadow-lg transition">
             <h3 class="text-lg font-semibold text-emerald-900 font-display">Packing Supply Checklist</h3>
             <p class="mt-2 text-sm text-emerald-700">Know exactly how many boxes, wardrobe cartons, and specialty crates to order.</p>
-            <a href="/#sms-quote" class="mt-4 inline-flex items-center text-sm font-semibold text-emerald-600 hover:text-emerald-700">Text the concierge
+            <a href="/#sms-quote" class="mt-4 inline-flex items-center text-sm font-semibold text-emerald-600 hover:text-emerald-700">Text our moving team
               <svg class="ml-2 h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 10h.01M12 10h.01M16 10h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4-.8L3 21l1.8-4A7.944 7.944 0 013 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" /></svg>
             </a>
           </article>
@@ -638,7 +638,7 @@ useHead({
     {
       name: 'description',
       content:
-        'Denver residential movers delivering full-service home moving, custom packing, secure loading, specialty handling, storage transfers, and concierge planning for apartments, condos, and single-family homes.'
+        'Denver residential movers delivering full-service home moving, custom packing, secure loading, specialty handling, storage transfers, and coordinator-led planning for apartments, condos, and single-family homes.'
     }
   ]
 })

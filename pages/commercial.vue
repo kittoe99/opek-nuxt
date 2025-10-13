@@ -41,10 +41,10 @@
           </div>
 
           <h1 class="text-3xl leading-tight sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white font-display mb-4">
-            Commercial Moving <span class="text-emerald-300">Engineered for Continuity</span>
+            Commercial Moving <span class="text-emerald-300">Engineered for Zero Downtime Moves</span>
           </h1>
           <p class="text-base sm:text-lg text-emerald-50 leading-relaxed mb-8">
-            Opek Moving's commercial relocation specialists coordinate project managers, union-compliant crews, IT disconnects,
+            Opek Moving's commercial relocation specialists coordinate project managers, union-compliant moving crews, IT disconnects,
             and freight elevator access so your office, lab, or studio keeps working while we execute overnight or weekend moves.
           </p>
           <div class="flex flex-row flex-wrap justify-center gap-3">
@@ -125,7 +125,7 @@
               </div>
             </div>
             <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900 font-display mb-4">
-              Commercial Programs At-A-Glance
+              Commercial Moving Programs At-A-Glance
             </h2>
             <p class="text-base text-slate-600 leading-relaxed mb-8">
               Our business moving consultants map every dock schedule, elevator reservation, and IT dependency so your teams stay productive while we relocate furniture, servers, and inventory.

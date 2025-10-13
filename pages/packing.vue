@@ -28,7 +28,7 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
               </svg>
             </li>
-            <li class="text-brand-300 font-medium">Packing Services</li>
+            <li class="text-brand-300 font-medium">Packing</li>
           </ol>
         </nav>
 
@@ -40,7 +40,7 @@
             </svg>
           </div>
           <h1 class="text-3xl leading-tight sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white font-display mb-4">
-            Packing <span class="text-brand-300">Designed for Move-In Ready Days</span>
+            Packing <span class="text-brand-300">Built for Move-In Ready Moves</span>
           </h1>
           <p class="text-base sm:text-lg text-slate-300 leading-relaxed mb-8">
             Senior packing leads, museum-grade materials, and digital inventories create clearly labeled boxes that unpack in perfect room order and protect every item for transport with our moving crews.
@@ -163,7 +163,7 @@
                   </div>
                   <div class="flex-1">
                     <h3 class="text-xl font-extrabold text-slate-900 mb-2 font-display">Luxury & Collections</h3>
-                    <p class="text-sm text-slate-600 leading-relaxed">Climate-aware wraps, bar-coded photo logs, and concierge wardrobe transfers for high-value collections.</p>
+                    <p class="text-sm text-slate-600 leading-relaxed">Climate-aware wraps, bar-coded photo logs, and white-glove wardrobe transfers for high-value collections.</p>
                   </div>
                 </div>
               </article>
@@ -269,7 +269,7 @@
         <div class="max-w-3xl mb-12">
           <span class="inline-flex items-center rounded-full bg-sky-100 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-sky-700">Packing Packages</span>
           <h2 class="mt-4 text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900 font-display">Choose the Support That Fits</h2>
-          <p class="mt-3 text-base sm:text-lg text-slate-600 leading-relaxed">Every package includes licensed packers, premium materials, home protection, and next-day check-ins from your move concierge.</p>
+          <p class="mt-3 text-base sm:text-lg text-slate-600 leading-relaxed">Every package includes licensed packers, premium materials, home protection, and next-day check-ins from your move coordinator.</p>
         </div>
 
         <div class="grid gap-6 lg:grid-cols-3">
@@ -636,7 +636,7 @@ useHead({
     {
       name: 'description',
       content:
-        'Denver packing specialists handling whole-home boxing, kitchen organization, luxury collection protection, digital inventories, and same-day unpacking that pair seamlessly with our moving services.'
+        'Denver packing specialists handling whole-home boxing, kitchen organization, luxury collection protection, digital inventories, and same-day unpacking that pair seamlessly with our moving crews.'
     }
   ]
 })
