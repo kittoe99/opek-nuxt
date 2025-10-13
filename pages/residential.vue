@@ -35,10 +35,11 @@
           </div>
           
           <h1 class="text-3xl leading-tight sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight font-extrabold tracking-tight text-white font-display mb-4">
-            Residential Moving <span class="text-emerald-300">Made Simple</span>
+            Residential Moves <span class="text-emerald-300">With Concierge Precision</span>
           </h1>
           <p class="text-base sm:text-lg text-emerald-50 leading-relaxed mb-8">
-            Professional moving services for apartments, condos, and family homes across Denver. Licensed, insured, and trusted by 1,000+ families.
+            Dedicated move planners, certified crews, and proactive building coordination keep your apartment, condo, or family
+            home relocation running on schedule.
           </p>
           <div class="flex flex-row flex-wrap justify-center gap-3">
             <a href="/#sms-quote" class="group inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-emerald-600 to-emerald-500 px-6 sm:px-8 py-3.5 sm:py-4 text-sm sm:text-base font-bold text-white hover:from-emerald-700 hover:to-emerald-600 transition-all shadow-lg shadow-emerald-600/30 hover:shadow-xl hover:scale-105">
@@ -48,6 +49,37 @@
             <a href="/#quote" class="group inline-flex items-center justify-center gap-2 rounded-xl bg-white/10 backdrop-blur-sm px-6 sm:px-8 py-3.5 sm:py-4 text-sm sm:text-base font-bold text-white border-2 border-emerald-400/30 hover:bg-white/20 hover:border-emerald-400/50 transition-all">
               Request Quote
             </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Residential Fast Facts -->
+    <section id="residential-fast-facts" class="bg-emerald-50 py-12">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div class="grid gap-6 md:grid-cols-3">
+          <div class="rounded-2xl bg-white p-6 shadow-md shadow-emerald-100/50 border border-emerald-100">
+            <p class="text-sm font-semibold uppercase tracking-wide text-emerald-600">Projects Delivered</p>
+            <p class="mt-3 text-3xl font-extrabold text-emerald-900 font-display">1,240 homes</p>
+            <p class="mt-3 text-sm text-emerald-700 leading-relaxed">
+              From historic bungalows in Congress Park to high-rise condos downtown, our teams tailor equipment and building
+              protection plans to each home.
+            </p>
+          </div>
+          <div class="rounded-2xl bg-white p-6 shadow-md shadow-emerald-100/50 border border-emerald-100">
+            <p class="text-sm font-semibold uppercase tracking-wide text-emerald-600">Average Lead Time</p>
+            <p class="mt-3 text-3xl font-extrabold text-emerald-900 font-display">6 days</p>
+            <p class="mt-3 text-sm text-emerald-700 leading-relaxed">
+              Need a quick move? Our concierge confirms elevator reservations and parking permits within 24 hours of booking.
+            </p>
+          </div>
+          <div class="rounded-2xl bg-white p-6 shadow-md shadow-emerald-100/50 border border-emerald-100">
+            <p class="text-sm font-semibold uppercase tracking-wide text-emerald-600">Customer Satisfaction</p>
+            <p class="mt-3 text-3xl font-extrabold text-emerald-900 font-display">97% 5★ reviews</p>
+            <p class="mt-3 text-sm text-emerald-700 leading-relaxed">
+              Post-move surveys highlight careful labeling, itemized inventories, and unpacking support as the top reasons
+              families recommend Opek.
+            </p>
           </div>
         </div>
       </div>
@@ -93,8 +125,8 @@
                     </svg>
                   </div>
                   <div class="flex-1">
-                    <h3 class="text-xl font-extrabold text-white mb-2 font-display">Apartments & Condos</h3>
-                    <p class="text-sm text-emerald-50 leading-relaxed">Tight stairwells, elevators, and loading dock rules handled with the right equipment and crew size.</p>
+                    <h3 class="text-xl font-extrabold text-white mb-2 font-display">Apartments &amp; Condos</h3>
+                    <p class="text-sm text-emerald-50 leading-relaxed">Reserved freight elevators, certificate of insurance delivery, and arrival windows tuned to your leasing office.</p>
                   </div>
                 </div>
               </article>
@@ -109,7 +141,7 @@
                   </div>
                   <div class="flex-1">
                     <h3 class="text-xl font-extrabold text-gray-900 mb-2 font-display">Family Homes</h3>
-                    <p class="text-sm text-gray-600 leading-relaxed">Room-by-room packing, labeling, and protection for multi-story homes and garages.</p>
+                    <p class="text-sm text-gray-600 leading-relaxed">Room-by-room packing, appliance disconnects, and bulky storage moves for multi-story homes and garages.</p>
                   </div>
                 </div>
               </article>
@@ -124,7 +156,7 @@
                   </div>
                   <div class="flex-1">
                     <h3 class="text-xl font-extrabold text-gray-900 mb-2 font-display">Long-Distance Prep</h3>
-                    <p class="text-sm text-gray-600 leading-relaxed">Inventory creation, staging, and hand-off coordination for partner carriers heading out of state.</p>
+                    <p class="text-sm text-gray-600 leading-relaxed">Detailed inventories, staging for line-haul carriers, and last-mile delivery coordination for interstate moves.</p>
                   </div>
                 </div>
               </article>
@@ -139,7 +171,7 @@
                   </div>
                   <div class="flex-1">
                     <h3 class="text-xl font-extrabold text-gray-900 mb-2 font-display">Special Handling</h3>
-                    <p class="text-sm text-gray-600 leading-relaxed">Pianos, safes, workout equipment, and heirlooms rigged and padded with specialty crews.</p>
+                    <p class="text-sm text-gray-600 leading-relaxed">Pianos, safes, gyms, and heirlooms hoisted, padded, and crated by specialty rigging teams.</p>
                   </div>
                 </div>
               </article>
@@ -603,7 +635,11 @@
 useHead({
   title: 'Residential Moving | Opek Moving',
   meta: [
-    { name: 'description', content: 'Residential moving in Denver by Opek Moving. Certified crews, tailored packages, move-day timeline, neighborhood expertise, premium add-ons, and planning resources for every home.' }
+    {
+      name: 'description',
+      content:
+        'Concierge residential moving across Denver with certified crews, fast-track scheduling, specialty handling, premium add-ons, and planning resources for apartments, condos, and family homes.'
+    }
   ]
 })
 </script>

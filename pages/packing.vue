@@ -40,10 +40,11 @@
             </svg>
           </div>
           <h1 class="text-3xl leading-tight sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white font-display mb-4">
-            Professional Packing <span class="text-brand-300">Without the Stress</span>
+            Premium Packing <span class="text-brand-300">Designed for Move-In Ready Days</span>
           </h1>
           <p class="text-base sm:text-lg text-slate-300 leading-relaxed mb-8">
-            Licensed packers, premium materials, and organized labeling so every box is ready for moving day or same-day unpacking.
+            Senior packing leads, museum-grade materials, and digital inventories create labeled boxes that unpack in perfect
+            room order.
           </p>
           <div class="flex flex-row flex-wrap justify-center gap-3">
             <a
@@ -61,6 +62,36 @@
             >
               Request Quote
             </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Packing Fast Facts -->
+    <section id="packing-fast-facts" class="bg-sky-50 py-12">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div class="grid gap-6 md:grid-cols-3">
+          <div class="rounded-2xl bg-white p-6 shadow-md shadow-sky-100/60 border border-sky-100">
+            <p class="text-sm font-semibold uppercase tracking-wide text-sky-600">Boxes Packed</p>
+            <p class="mt-3 text-3xl font-extrabold text-slate-900 font-display">32,000+</p>
+            <p class="mt-3 text-sm text-slate-700 leading-relaxed">
+              Custom packing plans for estates, lofts, and mountain homes using reinforced cartons, wardrobe boxes, and art
+              crates.
+            </p>
+          </div>
+          <div class="rounded-2xl bg-white p-6 shadow-md shadow-sky-100/60 border border-sky-100">
+            <p class="text-sm font-semibold uppercase tracking-wide text-sky-600">Material Quality</p>
+            <p class="mt-3 text-3xl font-extrabold text-slate-900 font-display">Certified grade</p>
+            <p class="mt-3 text-sm text-slate-700 leading-relaxed">
+              We deploy double-walled cartons, museum-grade wrapping, and reusable eco-totes when requested.
+            </p>
+          </div>
+          <div class="rounded-2xl bg-white p-6 shadow-md shadow-sky-100/60 border border-sky-100">
+            <p class="text-sm font-semibold uppercase tracking-wide text-sky-600">Same-Day Unpack</p>
+            <p class="mt-3 text-3xl font-extrabold text-slate-900 font-display">87% adoption</p>
+            <p class="mt-3 text-sm text-slate-700 leading-relaxed">
+              Most clients pair our packing crew with same-day setup, closet resets, and haul-away for used materials.
+            </p>
           </div>
         </div>
       </div>
@@ -105,7 +136,7 @@
                   </div>
                   <div class="flex-1">
                     <h3 class="text-xl font-extrabold text-white mb-2 font-display">Whole Home Packing</h3>
-                    <p class="text-sm text-sky-50 leading-relaxed">Room-by-room packing, staging, and inventory for primary residences and second homes.</p>
+                    <p class="text-sm text-sky-50 leading-relaxed">Dedicated leads map each room, safeguard furnishings, and deliver color-coded labels for seamless unloading.</p>
                   </div>
                 </div>
               </article>
@@ -119,7 +150,7 @@
                   </div>
                   <div class="flex-1">
                     <h3 class="text-xl font-extrabold text-slate-900 mb-2 font-display">Kitchen Reset</h3>
-                    <p class="text-sm text-slate-600 leading-relaxed">Specialty dish packs, pantry categorization, and first-night essentials ready to go.</p>
+                    <p class="text-sm text-slate-600 leading-relaxed">Specialty dish packs, spice cataloging, and counter setups so the kitchen fires up on day one.</p>
                   </div>
                 </div>
               </article>
@@ -133,7 +164,7 @@
                   </div>
                   <div class="flex-1">
                     <h3 class="text-xl font-extrabold text-slate-900 mb-2 font-display">Luxury & Collections</h3>
-                    <p class="text-sm text-slate-600 leading-relaxed">Climate-aware materials and photo documentation for art, wine, and designer wardrobes.</p>
+                    <p class="text-sm text-slate-600 leading-relaxed">Climate-aware wraps, bar-coded photo logs, and concierge wardrobe transfers for high-value collections.</p>
                   </div>
                 </div>
               </article>
@@ -147,7 +178,7 @@
                   </div>
                   <div class="flex-1">
                     <h3 class="text-xl font-extrabold text-slate-900 mb-2 font-display">Last-Minute Relief</h3>
-                    <p class="text-sm text-slate-600 leading-relaxed">Emergency crews for rush timelines, move-out clean sweeps, and donation drop-offs.</p>
+                    <p class="text-sm text-slate-600 leading-relaxed">Rapid-response crews for rush timelines, move-out cleaning coordination, and donation drop-offs.</p>
                   </div>
                 </div>
               </article>
@@ -606,7 +637,7 @@ useHead({
     {
       name: 'description',
       content:
-        'Packing services in Denver delivering whole-home, kitchen, and luxury collection packing with premium materials, digital labeling, and white-glove unpacking options.'
+        'Denver packing experts delivering concierge whole-home, kitchen, and collection services with museum-grade materials, digital inventories, and same-day unpack partnerships.'
     }
   ]
 })

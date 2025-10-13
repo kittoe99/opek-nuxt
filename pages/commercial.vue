@@ -41,10 +41,11 @@
           </div>
 
           <h1 class="text-3xl leading-tight sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white font-display mb-4">
-            Commercial Moving <span class="text-emerald-300">Without the Downtime</span>
+            Commercial Relocations <span class="text-emerald-300">Engineered for Continuity</span>
           </h1>
           <p class="text-base sm:text-lg text-emerald-50 leading-relaxed mb-8">
-            Relocate offices, studios, and warehouses across Denver with playbooks built around your schedule, equipment, and compliance requirements.
+            Program managers, union-compliant crews, and IT coordination keep offices, labs, and studios productive while we
+            execute your move overnight or on weekends.
           </p>
           <div class="flex flex-row flex-wrap justify-center gap-3">
             <a
@@ -62,6 +63,38 @@
             >
               Request Quote
             </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Commercial Fast Facts -->
+    <section id="commercial-fast-facts" class="bg-emerald-50 py-12">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div class="grid gap-6 md:grid-cols-3">
+          <div class="rounded-2xl bg-white p-6 shadow-md shadow-emerald-100/50 border border-emerald-100">
+            <p class="text-sm font-semibold uppercase tracking-wide text-emerald-600">Workstations Relocated</p>
+            <p class="mt-3 text-3xl font-extrabold text-emerald-900 font-display">18,500+</p>
+            <p class="mt-3 text-sm text-emerald-700 leading-relaxed">
+              Sequenced overnight moves with IT disconnect / reconnect services for SaaS, finance, and healthcare teams across
+              the Front Range.
+            </p>
+          </div>
+          <div class="rounded-2xl bg-white p-6 shadow-md shadow-emerald-100/50 border border-emerald-100">
+            <p class="text-sm font-semibold uppercase tracking-wide text-emerald-600">Compliance Ready</p>
+            <p class="mt-3 text-3xl font-extrabold text-emerald-900 font-display">42 buildings</p>
+            <p class="mt-3 text-sm text-emerald-700 leading-relaxed">
+              Vendor approvals, COI management, and dock scheduling already in place with Denver Tech Center and downtown
+              property managers.
+            </p>
+          </div>
+          <div class="rounded-2xl bg-white p-6 shadow-md shadow-emerald-100/50 border border-emerald-100">
+            <p class="text-sm font-semibold uppercase tracking-wide text-emerald-600">Team Availability</p>
+            <p class="mt-3 text-3xl font-extrabold text-emerald-900 font-display">24/7 command</p>
+            <p class="mt-3 text-sm text-emerald-700 leading-relaxed">
+              A dedicated move captain manages status updates, issue resolution, and post-move punch lists with your facilities
+              lead in real time.
+            </p>
           </div>
         </div>
       </div>
@@ -107,8 +140,8 @@
                     </svg>
                   </div>
                   <div class="flex-1">
-                    <h3 class="text-xl font-extrabold text-white mb-2 font-display">Corporate HQ & Multi-Floor</h3>
-                    <p class="text-sm text-emerald-50 leading-relaxed">Stacked floor moves with elevator captains, building protection, and department-by-department sequencing.</p>
+                    <h3 class="text-xl font-extrabold text-white mb-2 font-display">Corporate HQ &amp; Multi-Floor</h3>
+                    <p class="text-sm text-emerald-50 leading-relaxed">Dedicated floor captains, marble lobby protection, and load plans timed to IT cutovers for each department.</p>
                   </div>
                 </div>
               </article>
@@ -122,7 +155,7 @@
                   </div>
                   <div class="flex-1">
                     <h3 class="text-xl font-extrabold text-slate-900 mb-2 font-display">Professional Offices</h3>
-                    <p class="text-sm text-slate-600 leading-relaxed">Law firms, finance teams, and creative studios with file sequencing, packing, and next-day tech setup.</p>
+                    <p class="text-sm text-slate-600 leading-relaxed">Law firms, finance teams, and studios supported with digitized file tracking, packing, and next-day workstation setups.</p>
                   </div>
                 </div>
               </article>
@@ -136,7 +169,7 @@
                   </div>
                   <div class="flex-1">
                     <h3 class="text-xl font-extrabold text-slate-900 mb-2 font-display">Industrial & Logistics</h3>
-                    <p class="text-sm text-slate-600 leading-relaxed">Racking breakdown, pallet reorganization, and equipment transport with certified riggers.</p>
+                    <p class="text-sm text-slate-600 leading-relaxed">Racking breakdown, pallet redesign, and machinery transport led by certified rigging partners.</p>
                   </div>
                 </div>
               </article>
@@ -150,7 +183,7 @@
                   </div>
                   <div class="flex-1">
                     <h3 class="text-xl font-extrabold text-slate-900 mb-2 font-display">Healthcare & Labs</h3>
-                    <p class="text-sm text-slate-600 leading-relaxed">Chain-of-custody documentation, calibrated equipment protection, and HIPAA-conscious packing.</p>
+                    <p class="text-sm text-slate-600 leading-relaxed">Chain-of-custody documentation, temperature-controlled transport, and HIPAA-conscious packing.</p>
                   </div>
                 </div>
               </article>
@@ -614,7 +647,7 @@ useHead({
     {
       name: 'description',
       content:
-        'Commercial movers in Denver handling offices, headquarters, industrial facilities, and labs with weekend scheduling, dedicated project managers, and IT transition support.'
+        'Denver commercial relocation specialists delivering continuity-focused plans for offices, labs, and industrial teams with 24/7 command coverage, compliance-ready crews, and technology coordination.'
     }
   ]
 })
