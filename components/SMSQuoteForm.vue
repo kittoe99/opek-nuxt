@@ -35,7 +35,7 @@
               inputmode="tel"
               autocomplete="tel"
               placeholder="(555) 123-4567"
-              class="form-field form-field--compact sms-input placeholder:text-slate-500/90"
+              class="form-field form-field--compact sms-input placeholder:text-slate-400"
               pattern="^[0-9()+\-\s]{7,}$"
               aria-describedby="sms-help"
               required
