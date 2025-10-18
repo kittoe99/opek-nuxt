@@ -83,65 +83,6 @@
             </a>
           </div>
 
-          <p class="reveal delay-3 mt-10 text-sm uppercase tracking-[0.35em] text-white/60">Trusted locally & statewide</p>
-
-          <div class="mt-4 grid grid-cols-1 sm:flex sm:flex-wrap sm:items-center gap-4 sm:gap-8 text-white/80 text-sm">
-            <div class="flex items-center gap-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="2"
-                stroke="currentColor"
-                class="w-5 h-5 text-brand-300 flex-shrink-0"
-              >
-                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-              </svg>
-              <span>Licensed & insured</span>
-            </div>
-            <div class="flex items-center gap-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="2"
-                stroke="currentColor"
-                class="w-5 h-5 text-brand-300 flex-shrink-0"
-              >
-                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-              </svg>
-              <span>Same-day available</span>
-            </div>
-            <div class="flex items-center gap-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="2"
-                stroke="currentColor"
-                class="w-5 h-5 text-brand-300 flex-shrink-0"
-              >
-                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-              </svg>
-              <span>No hidden fees</span>
-            </div>
-          </div>
-        </div>
-        <div class="absolute right-4 top-24 hidden lg:flex flex-col gap-6 pointer-events-none">
-          <div class="relative rounded-3xl border border-white/10 bg-white/10 px-6 py-5 backdrop-blur-xl text-left shadow-brand float-diagonal">
-            <div class="text-xs uppercase tracking-[0.25em] text-white/60 mb-2">Premium move</div>
-            <div class="text-lg font-semibold text-white">Full packing & staging</div>
-            <p class="mt-1 text-sm text-white/70">Dedicated crew and materials included.</p>
-          </div>
-          <div class="relative rounded-3xl border border-white/10 bg-slate-900/60 px-6 py-5 backdrop-blur-xl text-left shadow-brand animate-float">
-            <div class="flex items-center justify-between text-white/80 text-sm">
-              <span>Avg. response</span>
-              <span class="font-semibold text-white">6 mins</span>
-            </div>
-            <div class="mt-4 h-2 w-full overflow-hidden rounded-full bg-white/10">
-              <div class="h-full w-3/4 rounded-full bg-gradient-to-r from-brand-500 to-emerald-300 animate-shimmer"></div>
-            </div>
-          </div>
         </div>
       </div>
 
