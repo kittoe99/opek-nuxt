@@ -42,6 +42,7 @@ export default {
         'lg': '0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)',
         'xl': '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)',
         '2xl': '0 25px 50px -12px rgb(0 0 0 / 0.25)',
+        'elevated': '0 10px 30px -12px rgba(2, 6, 23, 0.25)',
         'brand': '0 10px 25px -5px rgba(10, 138, 76, 0.2), 0 8px 10px -6px rgba(10, 138, 76, 0.1)',
         'brand-lg': '0 20px 40px -10px rgba(10, 138, 76, 0.3), 0 10px 20px -8px rgba(10, 138, 76, 0.15)',
       },
