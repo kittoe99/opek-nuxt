@@ -6,7 +6,7 @@
     <!-- Hero -->
     <section
       id="home"
-      class="relative isolate min-h-[62vh] md:min-h-[105vh] grid place-items-center overflow-hidden bg-slate-950 text-white"
+      class="relative isolate min-h-[55vh] sm:min-h-[90vh] md:min-h-[105vh] grid place-items-center overflow-hidden bg-slate-950 text-white"
     >
       <div class="absolute inset-0 -z-20 bg-slate-950"></div>
       <div class="hero-animated-gradient"></div>
@@ -28,10 +28,10 @@
       <div class="hero-soft-glow -top-24 -left-24 hidden lg:block z-[-2]"></div>
       <div class="hero-soft-glow float-diagonal -bottom-40 right-[-140px] hidden xl:block z-[-2]"></div>
 
-      <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-12 pb-6 sm:pt-28 sm:pb-24">
+      <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-8 pb-4 sm:pt-24 sm:pb-20">
         <div class="max-w-3xl">
           <div
-            class="inline-flex items-center gap-2 rounded-full bg-white/10 border border-white/40 px-4 py-1.5 mb-1.5 sm:py-2 sm:mb-6 backdrop-blur"
+            class="inline-flex items-center gap-2 rounded-full bg-white/10 border border-white/40 px-4 py-1.5 mb-1 sm:py-2 sm:mb-6 backdrop-blur"
           >
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-yellow-400">
               <path
@@ -49,11 +49,11 @@
             Move without the stress. We handle the rest.
           </h1>
 
-          <p class="reveal delay-1 mt-2 sm:mt-6 text-lg sm:text-xl text-white/90 leading-relaxed max-w-2xl">
+          <p class="reveal delay-1 mt-1.5 sm:mt-6 text-lg sm:text-xl text-white/90 leading-relaxed max-w-2xl">
             Careful packing, on-time arrivals, and friendly pros—every move.
           </p>
 
-          <div class="mt-3.5 sm:mt-8 flex flex-wrap gap-4">
+          <div class="mt-3 sm:mt-8 flex flex-wrap gap-4">
             <a
               href="#sms-quote"
               class="group inline-flex items-center gap-2 rounded-2xl bg-gradient-to-r from-brand-600 via-brand-500 to-emerald-400 px-8 py-4 text-base font-bold text-white shadow-brand-lg hover:shadow-brand transition duration-300 reveal delay-2"

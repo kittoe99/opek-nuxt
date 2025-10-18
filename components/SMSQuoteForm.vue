@@ -35,7 +35,7 @@
               inputmode="tel"
               autocomplete="tel"
               placeholder="(555) 123-4567"
-              class="w-full rounded-xl border border-slate-200 px-4 py-3 text-base hover:border-brand-200 focus:border-brand-500 focus:ring-2 focus:ring-brand-100 transition-colors"
+              class="sms-input w-full rounded-xl border border-slate-200 px-4 py-3 text-base placeholder:text-slate-400 transition-colors"
               pattern="^[0-9()+\-\s]{7,}$"
               aria-describedby="sms-help"
               required
