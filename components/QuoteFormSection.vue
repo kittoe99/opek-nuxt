@@ -48,7 +48,7 @@
                 v-model="form.name"
                 id="name"
                 type="text"
-                class="w-full rounded-xl border border-slate-200 px-4 py-3 text-base hover:border-brand-200 focus:border-brand-500 focus:ring-2 focus:ring-brand-100 transition-colors"
+                class="form-field"
                 placeholder="Your name"
               />
             </div>
@@ -58,7 +58,7 @@
                 v-model="form.email"
                 id="email"
                 type="email"
-                class="w-full rounded-xl border border-slate-200 px-4 py-3 text-base hover:border-brand-200 focus:border-brand-500 focus:ring-2 focus:ring-brand-100 transition-colors"
+                class="form-field"
                 placeholder="you@example.com"
               />
             </div>
@@ -68,7 +68,7 @@
                 v-model="form.details"
                 id="details"
                 rows="4"
-                class="w-full rounded-xl border border-slate-200 px-4 py-3 text-base hover:border-brand-200 focus:border-brand-500 focus:ring-2 focus:ring-brand-100 transition-colors resize-none"
+                class="form-field form-field--textarea"
                 placeholder="From / To, date, size, special items…"
               ></textarea>
             </div>
