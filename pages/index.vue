@@ -28,9 +28,11 @@
       <div class="hero-soft-glow -top-24 -left-24 hidden lg:block z-[-2]"></div>
       <div class="hero-soft-glow float-diagonal -bottom-40 right-[-140px] hidden xl:block z-[-2]"></div>
 
-      <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-24 pb-16 sm:pt-28 sm:pb-24">
+      <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-20 pb-14 sm:pt-28 sm:pb-24">
         <div class="max-w-3xl">
-          <div class="inline-flex items-center gap-2 rounded-full bg-white/10 border border-white/40 px-4 py-2 mb-6 backdrop-blur">
+          <div
+            class="inline-flex items-center gap-2 rounded-full bg-white/10 border border-white/40 px-4 py-2 mb-4 sm:mb-6 backdrop-blur"
+          >
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-yellow-400">
               <path
                 fill-rule="evenodd"
@@ -47,11 +49,11 @@
             Move without the stress. We handle the rest.
           </h1>
 
-          <p class="reveal delay-1 mt-6 text-lg sm:text-xl text-white/90 leading-relaxed max-w-2xl">
+          <p class="reveal delay-1 mt-4 sm:mt-6 text-lg sm:text-xl text-white/90 leading-relaxed max-w-2xl">
             Careful packing, on-time arrivals, and friendly pros—every move.
           </p>
 
-          <div class="mt-8 flex flex-wrap gap-4">
+          <div class="mt-6 sm:mt-8 flex flex-wrap gap-4">
             <a
               href="#sms-quote"
               class="group inline-flex items-center gap-2 rounded-2xl bg-gradient-to-r from-brand-600 via-brand-500 to-emerald-400 px-8 py-4 text-base font-bold text-white shadow-brand-lg hover:shadow-brand transition duration-300 reveal delay-2"
