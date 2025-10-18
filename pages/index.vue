@@ -6,8 +6,11 @@
     <!-- Hero -->
     <section
       id="home"
-      class="relative isolate min-h-[90vh] md:min-h-[105vh] grid place-items-center overflow-hidden bg-slate-950"
+      class="relative isolate min-h-[90vh] md:min-h-[105vh] grid place-items-center overflow-hidden bg-slate-950 text-white"
     >
+      <div class="absolute inset-0 -z-20 bg-slate-950"></div>
+      <div class="hero-animated-gradient"></div>
+
       <!-- Background image -->
       <div class="absolute inset-0 -z-10">
         <img
@@ -19,11 +22,15 @@
       </div>
 
       <!-- Overlay -->
-      <div class="absolute inset-0 bg-black/55 -z-10"></div>
+      <div class="absolute inset-0 z-[-5] bg-gradient-to-br from-slate-950/70 via-slate-900/55 to-brand-900/40 mix-blend-multiply"></div>
+
+      <!-- Accent glows -->
+      <div class="hero-soft-glow -top-24 -left-24 hidden lg:block z-[-2]"></div>
+      <div class="hero-soft-glow float-diagonal -bottom-40 right-[-140px] hidden xl:block z-[-2]"></div>
 
       <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-24 pb-16 sm:pt-28 sm:pb-24">
-        <div class="max-w-3xl text-white">
-          <div class="inline-flex items-center gap-2 rounded-full bg-black/50 border border-white/40 px-4 py-2 mb-6">
+        <div class="max-w-3xl">
+          <div class="inline-flex items-center gap-2 rounded-full bg-white/10 border border-white/40 px-4 py-2 mb-6 backdrop-blur">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-yellow-400">
               <path
                 fill-rule="evenodd"
@@ -35,19 +42,19 @@
           </div>
 
           <h1
-            class="reveal text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight font-display leading-tight bg-gradient-to-r from-white via-white to-brand-200 bg-clip-text text-transparent"
+            class="reveal text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight font-display leading-tight bg-gradient-to-r from-white via-white to-brand-100 bg-clip-text text-transparent drop-shadow-[0_10px_35px_rgba(14,138,76,0.35)]"
           >
             Move without the stress. We handle the rest.
           </h1>
 
-          <p class="reveal delay-1 mt-6 text-lg sm:text-xl text-white/90 leading-relaxed">
+          <p class="reveal delay-1 mt-6 text-lg sm:text-xl text-white/90 leading-relaxed max-w-2xl">
             Careful packing, on-time arrivals, and friendly pros—every move.
           </p>
 
           <div class="mt-8 flex flex-wrap gap-4">
             <a
               href="#sms-quote"
-              class="group inline-flex items-center gap-2 rounded-xl bg-brand-600 px-8 py-4 text-base font-bold text-white hover:bg-brand-700 transition reveal delay-2"
+              class="group inline-flex items-center gap-2 rounded-2xl bg-gradient-to-r from-brand-600 via-brand-500 to-emerald-400 px-8 py-4 text-base font-bold text-white shadow-brand-lg hover:shadow-brand transition duration-300 reveal delay-2"
             >
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
                 <path
@@ -70,13 +77,15 @@
             </a>
             <a
               href="#process"
-              class="group inline-flex items-center gap-2 rounded-xl bg-black/40 border border-white/50 px-8 py-4 text-base font-bold text-white hover:bg-black/60 transition reveal delay-2"
+              class="group inline-flex items-center gap-2 rounded-2xl bg-white/10 border border-white/30 px-8 py-4 text-base font-bold text-white hover:bg-white/15 hover:border-white/40 transition backdrop-blur reveal delay-2"
             >
               How it works
             </a>
           </div>
 
-          <div class="mt-12 grid grid-cols-1 sm:flex sm:flex-wrap sm:items-center gap-4 sm:gap-8 text-white/80 text-sm">
+          <p class="reveal delay-3 mt-10 text-sm uppercase tracking-[0.35em] text-white/60">Trusted locally & statewide</p>
+
+          <div class="mt-4 grid grid-cols-1 sm:flex sm:flex-wrap sm:items-center gap-4 sm:gap-8 text-white/80 text-sm">
             <div class="flex items-center gap-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -115,6 +124,22 @@
                 <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
               </svg>
               <span>No hidden fees</span>
+            </div>
+          </div>
+        </div>
+        <div class="absolute right-4 top-24 hidden lg:flex flex-col gap-6 pointer-events-none">
+          <div class="relative rounded-3xl border border-white/10 bg-white/10 px-6 py-5 backdrop-blur-xl text-left shadow-brand float-diagonal">
+            <div class="text-xs uppercase tracking-[0.25em] text-white/60 mb-2">Premium move</div>
+            <div class="text-lg font-semibold text-white">Full packing & staging</div>
+            <p class="mt-1 text-sm text-white/70">Dedicated crew and materials included.</p>
+          </div>
+          <div class="relative rounded-3xl border border-white/10 bg-slate-900/60 px-6 py-5 backdrop-blur-xl text-left shadow-brand animate-float">
+            <div class="flex items-center justify-between text-white/80 text-sm">
+              <span>Avg. response</span>
+              <span class="font-semibold text-white">6 mins</span>
+            </div>
+            <div class="mt-4 h-2 w-full overflow-hidden rounded-full bg-white/10">
+              <div class="h-full w-3/4 rounded-full bg-gradient-to-r from-brand-500 to-emerald-300 animate-shimmer"></div>
             </div>
           </div>
         </div>
@@ -163,7 +188,7 @@ import { onMounted } from 'vue'
 const onHeroImageError = (event) => {
   const section = document.getElementById('home')
   if (section) {
-    section.classList.add('bg-gradient-to-b', 'from-slate-900', 'via-slate-900', 'to-black')
+    section.classList.add('bg-gradient-to-br', 'from-slate-950', 'via-slate-900', 'to-brand-900')
   }
 
   if (event?.target?.remove) {

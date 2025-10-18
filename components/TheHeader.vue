@@ -4,8 +4,8 @@
     :class="[
       'fixed inset-x-0 top-0 z-50 transition-all duration-300 border-b',
       isScrolled
-        ? 'bg-black/90 shadow-2xl shadow-black/40 border-white/10'
-        : 'bg-slate-950/80 backdrop-blur-sm border-white/10'
+        ? 'bg-slate-950/90 backdrop-blur-xl border-white/10 shadow-brand-lg'
+        : 'bg-gradient-to-r from-slate-950/85 via-slate-900/70 to-brand-900/60 backdrop-blur-md border-white/10 shadow-brand'
     ]"
   >
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -26,12 +26,12 @@
         <!-- Desktop Nav -->
         <nav class="hidden lg:block">
           <ul class="flex items-center gap-8">
-            <li><a href="#home" class="nav-link text-[15px] font-semibold transition text-white hover:text-brand-200">Home</a></li>
-            <li><a href="#services" class="nav-link text-[15px] font-semibold transition text-white hover:text-brand-200">Services</a></li>
-            <li><a href="#about" class="nav-link text-[15px] font-semibold transition text-white hover:text-brand-200">About</a></li>
-            <li><a href="#reviews" class="nav-link text-[15px] font-semibold transition text-white hover:text-brand-200">Reviews</a></li>
-            <li><a href="#process" class="nav-link text-[15px] font-semibold transition text-white hover:text-brand-200">Process</a></li>
-            <li><a href="#contact" class="nav-link text-[15px] font-semibold transition text-white hover:text-brand-200">Contact</a></li>
+            <li><a href="#home" class="nav-link text-[15px] font-semibold transition-colors duration-200 text-white/80 hover:text-white">Home</a></li>
+            <li><a href="#services" class="nav-link text-[15px] font-semibold transition-colors duration-200 text-white/80 hover:text-white">Services</a></li>
+            <li><a href="#about" class="nav-link text-[15px] font-semibold transition-colors duration-200 text-white/80 hover:text-white">About</a></li>
+            <li><a href="#reviews" class="nav-link text-[15px] font-semibold transition-colors duration-200 text-white/80 hover:text-white">Reviews</a></li>
+            <li><a href="#process" class="nav-link text-[15px] font-semibold transition-colors duration-200 text-white/80 hover:text-white">Process</a></li>
+            <li><a href="#contact" class="nav-link text-[15px] font-semibold transition-colors duration-200 text-white/80 hover:text-white">Contact</a></li>
           </ul>
         </nav>
 
@@ -40,7 +40,7 @@
           <a href="#contact" class="inline-flex items-center gap-2 rounded-xl px-4 py-2 text-sm font-semibold text-white/80 hover:text-white transition">
             <span>Call us</span>
           </a>
-          <a href="#quote" class="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-brand-600 to-brand-500 px-5 py-2.5 text-sm font-semibold text-white hover:from-brand-700 hover:to-brand-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900 transition-all shadow-lg shadow-brand-600/30">
+          <a href="#quote" class="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-brand-600 via-brand-500 to-emerald-400 px-5 py-2.5 text-sm font-semibold text-white hover:from-brand-700 hover:via-brand-600 hover:to-emerald-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900 transition-all shadow-brand-lg">
             Get a Quote
           </a>
         </div>
@@ -92,7 +92,7 @@
       <div
         v-if="mobileMenuOpen"
         id="mobile-nav"
-        class="lg:hidden fixed top-0 right-0 bottom-0 z-50 w-80 max-w-[85vw] bg-gradient-to-br from-slate-950 via-slate-900 to-black shadow-2xl overflow-hidden"
+        class="lg:hidden fixed top-0 right-0 bottom-0 z-50 w-80 max-w-[85vw] bg-gradient-to-br from-slate-950 via-slate-900 to-brand-900 shadow-2xl overflow-hidden"
       >
         <!-- Mountain Pattern Background -->
         <div class="absolute inset-0 opacity-[0.03] pointer-events-none">

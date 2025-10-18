@@ -162,6 +162,67 @@
     background-size: 200% 100%;
     animation: shimmer 3s ease-in-out infinite;
   }
+
+  @keyframes floatDiagonal {
+    0%,
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+    25% {
+      transform: translate3d(6px, -4px, 0);
+    }
+    50% {
+      transform: translate3d(2px, -10px, 0);
+    }
+    75% {
+      transform: translate3d(-4px, -4px, 0);
+    }
+  }
+
+  .float-diagonal {
+    animation: floatDiagonal 14s ease-in-out infinite;
+  }
+
+  @keyframes heroGradientShift {
+    0% {
+      transform: translate3d(-2%, 0, 0) scale(1);
+      filter: saturate(110%);
+    }
+    50% {
+      transform: translate3d(0, -1%, 0) scale(1.05);
+      filter: saturate(130%);
+    }
+    100% {
+      transform: translate3d(2%, 0, 0) scale(1.08);
+      filter: saturate(125%);
+    }
+  }
+
+  .hero-animated-gradient {
+    position: absolute;
+    inset: 0;
+    z-index: -15;
+    background:
+      radial-gradient(60% 65% at 18% 22%, rgba(37, 208, 127, 0.35), transparent 70%),
+      radial-gradient(45% 50% at 82% 28%, rgba(125, 211, 252, 0.22), transparent 72%),
+      radial-gradient(35% 45% at 70% 78%, rgba(14, 160, 90, 0.28), transparent 80%),
+      linear-gradient(120deg, rgba(15, 23, 42, 0.95), rgba(15, 23, 42, 0.75));
+    filter: saturate(120%);
+    opacity: 0.95;
+    animation: heroGradientShift 18s ease-in-out infinite alternate;
+    pointer-events: none;
+  }
+
+  .hero-soft-glow {
+    position: absolute;
+    width: 520px;
+    height: 520px;
+    border-radius: 9999px;
+    background: radial-gradient(circle at center, rgba(37, 208, 127, 0.28), rgba(3, 68, 40, 0));
+    filter: blur(0px);
+    opacity: 0.65;
+    pointer-events: none;
+  }
 }
 
 
