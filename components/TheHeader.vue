@@ -7,10 +7,10 @@
     ]"
   >
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <div class="flex h-20 items-center justify-between">
+      <div class="flex h-[4.5rem] items-center justify-between">
         <!-- Brand -->
         <a href="#" class="group inline-flex items-center">
-          <img src="/assets/opek-logo.png" alt="Opek Moving LLC logo" class="h-20 lg:h-24 w-auto object-contain" />
+          <img src="/assets/opek-logo.png" alt="Opek Moving LLC logo" class="h-16 lg:h-24 w-auto object-contain" />
         </a>
 
         <!-- Desktop Nav -->
