@@ -1,46 +1,15 @@
 <template>
-  <section id="areas" class="relative py-16 sm:py-20 bg-gradient-to-b from-emerald-50/30 via-white to-emerald-50/30 overflow-hidden">
-    <!-- Mountain backdrop -->
-    <div class="absolute inset-0 overflow-hidden pointer-events-none">
-      <div class="absolute -bottom-10 left-0 right-0 h-64 opacity-[0.03]">
-        <svg viewBox="0 0 1200 300" class="w-full h-full" preserveAspectRatio="none">
-          <path fill="#059669" d="M0,300 L0,150 L150,80 L300,180 L450,40 L600,120 L750,90 L900,160 L1050,100 L1200,200 L1200,300 Z"/>
-        </svg>
-      </div>
-      <div class="absolute top-10 right-20 w-64 h-64 bg-emerald-100/30 rounded-full blur-3xl"></div>
-    </div>
-
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
+  <section id="areas" class="py-16 sm:py-20 bg-slate-50">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="mx-auto max-w-3xl text-center">
-        <!-- Large Single Map Pin with Pulse Effect -->
-        <div class="inline-flex items-center justify-center mb-8 relative">
-          <!-- Pulse rings -->
-          <div class="absolute inset-0 flex items-center justify-center">
-            <div class="w-32 h-32 rounded-full bg-emerald-500/20 animate-ping"></div>
-          </div>
-          <div class="absolute inset-0 flex items-center justify-center">
-            <div class="w-28 h-28 rounded-full bg-emerald-500/30 animate-pulse"></div>
-          </div>
-          <!-- Main pin -->
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-32 h-32 relative drop-shadow-2xl transform hover:scale-105 transition-transform duration-300">
-            <path fill="#059669" d="M16 0C9.37 0 4 5.37 4 12c0 7.47 10.9 19.35 11.43 19.92a.75.75 0 0 0 1.14 0C17.1 31.35 28 19.47 28 12 28 5.37 22.63 0 16 0z"></path>
-            <path fill="#ECFDF5" d="M16 4a8 8 0 1 0 0 16 8 8 0 0 0 0-16zm-3.5 7.5l2 3 2.5-4 2.5 4h-9l2.5-3z"></path>
-          </svg>
-        </div>
-        
-        <h2 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight font-display mb-4">
-          <span class="bg-gradient-to-r from-emerald-700 via-emerald-600 to-emerald-700 bg-clip-text text-transparent">Service Areas</span>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-900 font-display">
+          Service areas
         </h2>
-        
-        <!-- Wave underline instead of mountains -->
-        <div class="flex justify-center mb-6">
-          <svg width="120" height="8" viewBox="0 0 120 8" class="text-emerald-500">
-            <path d="M0,4 Q15,0 30,4 T60,4 T90,4 T120,4" stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round"/>
-          </svg>
-        </div>
-        
-        <p class="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
-          Serving the <span class="font-semibold text-emerald-700">greater Denver metro area</span> within a 50-mile radius
+
+        <div class="mx-auto mt-4 h-1 w-16 rounded-full bg-emerald-500"></div>
+
+        <p class="mt-4 text-base sm:text-lg text-slate-600 leading-relaxed">
+          Serving the <span class="font-semibold text-slate-900">greater Denver metro area</span> within a 50-mile radius
         </p>
       </div>
 
