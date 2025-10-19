@@ -13,6 +13,21 @@
         </p>
       </div>
 
+      <div class="mx-auto mt-10 max-w-4xl">
+        <div class="relative overflow-hidden rounded-3xl shadow-lg shadow-emerald-900/5 border border-slate-200">
+          <img
+            src="/assets/movers-in-denver-min.png"
+            alt="Opek crew helping a Denver family move"
+            class="h-full w-full object-cover"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/40 to-transparent"></div>
+          <div class="absolute bottom-6 left-6 right-6 text-white">
+            <p class="text-lg font-semibold">Need answers fast?</p>
+            <p class="text-sm text-white/80">Our move coordinators are standing by to walk you through the details.</p>
+          </div>
+        </div>
+      </div>
+
       <div class="mx-auto max-w-3xl">
         <div class="grid gap-4">
           <details v-for="(faq, index) in faqs" :key="index" class="group">

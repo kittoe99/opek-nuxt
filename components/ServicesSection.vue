@@ -3,8 +3,8 @@
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="mx-auto max-w-3xl text-center">
         <div class="mx-auto mb-6 h-1 w-24 rounded-full bg-emerald-200"></div>
-        <h2 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight font-display mb-6">
-          <span class="bg-gradient-to-r from-emerald-700 via-emerald-600 to-emerald-700 bg-clip-text text-transparent">Our Services</span>
+        <h2 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight font-display mb-6 text-slate-900">
+          Our Services
         </h2>
 
         <p class="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">

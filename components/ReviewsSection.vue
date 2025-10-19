@@ -31,8 +31,8 @@
           </div>
         </div>
         
-        <h2 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight font-display mb-4">
-          <span class="bg-gradient-to-r from-emerald-700 via-emerald-600 to-emerald-700 bg-clip-text text-transparent">Customers Love Us</span>
+        <h2 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight font-display mb-4 text-slate-900">
+          Customers Love Us
         </h2>
         
         <!-- Star pattern underline -->
